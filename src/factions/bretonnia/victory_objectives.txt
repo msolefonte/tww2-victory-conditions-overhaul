@@ -1,0 +1,501 @@
+    // # RACE Bretonnia
+
+    // ## FACTION Couronne
+
+    //** SINGLE PLAYER **
+	victory_objective
+	{
+		faction wh_main_brt_bretonnia;
+		campaign_type sp_normal;
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_dlc03_victory_type_ultimate;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective // Attain Chivalrous Chivalry.
+				{
+					override_text mission_text_text_mis_activity_attain_chivalry_1000;
+                    type SCRIPTED;
+                    script_key attain_chivalry_2000;
+				}
+				objective
+                {
+                    type CONTROL_N_PROVINCES_INCLUDING;							// Unify Bretonnia
+                    total 7;
+                    province wh_main_bastonne_et_montfort;
+                    province wh_main_bordeleaux_et_aquitaine;
+                    province wh_main_carcassone_et_brionne;
+                    province wh_main_couronne_et_languille;
+                    province wh_main_forest_of_arden;
+                    province wh_main_lyonesse;
+                    province wh_main_parravon_et_quenelles;
+                }
+                objective
+				{
+					type DESTROY_FACTION;
+					faction wh_main_vmp_mousillon;
+					faction wh_main_vmp_schwartzhafen;
+					faction wh2_dlc11_vmp_the_barrow_legion;
+					faction wh_main_vmp_vampire_counts;
+					confederation_valid;
+				}
+				objective // Complete the final Errantry War battle.
+				{
+					override_text mission_text_text_mis_activity_win_errantry_war;
+                    type SCRIPTED;
+                    script_key win_errantry_war;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh_main_brt_bretonnia;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh_main_brt_bretonnia;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Bordelaux
+
+    //** SINGLE PLAYER **
+	victory_objective
+	{
+		faction wh_main_brt_bordeleaux;
+		campaign_type sp_normal;
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_dlc03_victory_type_ultimate;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective // Attain Chivalrous Chivalry.
+				{
+					override_text mission_text_text_mis_activity_attain_chivalry_1000;
+                    type SCRIPTED;
+                    script_key attain_chivalry_1000;
+				}
+                objective
+				{
+					type DESTROY_FACTION;
+					faction wh2_dlc11_cst_rogue_boyz_of_the_forbidden_coast;
+
+					faction wh2_dlc11_cst_rogue_freebooters_of_port_royale;
+
+					faction wh2_main_emp_pirates_of_sartosa;
+					faction wh2_main_vmp_vampire_coast;
+					faction wh2_dlc11_cst_noctilus;
+					faction wh2_dlc11_cst_the_drowned;
+					faction wh2_dlc11_cst_vampire_coast_rebels;
+					faction wh2_dlc11_def_the_blessed_dread;
+					confederation_valid;
+				}
+				objective // Complete the final Errantry War battle.
+				{
+					override_text mission_text_text_mis_activity_win_errantry_war;
+                    type SCRIPTED;
+                    script_key win_errantry_war;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh_main_brt_bordeleaux;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh_main_brt_bordeleaux;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Carcossone
+
+    //** SINGLE PLAYER **
+	victory_objective
+	{
+		faction wh_main_brt_carcassonne;
+		campaign_type sp_normal;
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_dlc03_victory_type_ultimate;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective // Attain Chivalrous Chivalry.
+				{
+					override_text mission_text_text_mis_activity_attain_chivalry_1000;
+                    type SCRIPTED;
+                    script_key attain_chivalry_1000;
+				}
+                objective
+				{
+					type ACHIEVE_CHARACTER_RANK;
+					total 3;
+					total2 20;
+					agent wizard;
+				}
+				objective // Complete the final Errantry War battle.
+				{
+					override_text mission_text_text_mis_activity_win_errantry_war;
+                    type SCRIPTED;
+                    script_key win_errantry_war;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh_main_brt_carcassonne;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh_main_brt_carcassonne;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Chevaliers de Lyonesse
+
+    //** SINGLE PLAYER **
+	victory_objective
+	{
+		faction wh2_dlc14_brt_chevaliers_de_lyonesse;
+		campaign_type sp_normal;
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_dlc03_victory_type_ultimate;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective // Attain Chivalrous Chivalry.
+				{
+					override_text mission_text_text_mis_activity_attain_chivalry_1000;
+                    type SCRIPTED;
+                    script_key attain_chivalry_2000;
+				}
+                objective
+				{
+					type DESTROY_FACTION;
+					faction wh2_dlc09_tmb_dune_kingdoms;
+					faction wh2_dlc09_tmb_followers_of_nagash;
+					faction wh2_dlc09_tmb_khemri;
+					faction wh2_dlc09_tmb_numas;
+					faction wh2_dlc09_tmb_rakaph_dynasty;
+					faction wh2_dlc09_tmb_the_sentinels;
+
+					faction wh2_main_vmp_necrarch_brotherhood;
+					confederation_valid;
+				}
+				objective
+                {
+                    type CONTROL_N_PROVINCES_INCLUDING;							// Unify Araby
+                    total 3;
+                    province wh2_main_coast_of_araby;
+                    province wh2_main_great_desert_of_araby;
+                    province wh2_main_western_jungles;
+                }
+				objective // Complete the final Errantry War battle.
+				{
+					override_text mission_text_text_mis_activity_win_errantry_war;
+                    type SCRIPTED;
+                    script_key win_errantry_war;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_dlc14_brt_chevaliers_de_lyonesse;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_dlc14_brt_chevaliers_de_lyonesse;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}

@@ -1,0 +1,233 @@
+    // # RACE Wood Elves
+
+    // ## FACTION Talsyn
+
+    //** SINGLE PLAYER **
+	victory_objective
+	{
+		faction wh_dlc05_wef_wood_elves;
+		campaign_type sp_normal;
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_dlc03_victory_type_ultimate;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective													// Construct the Oak of Ages 5
+				{
+					type CONSTRUCT_N_BUILDINGS_INCLUDING;
+					faction wh_dlc05_wef_wood_elves;
+					total 1;
+					building_level wh_dlc05_wef_oak_of_ages_5;
+				}
+
+				objective													// Complete the final battle
+				{
+					type FIGHT_SET_PIECE_BATTLE;
+					set_piece_battle wh_dlc05_qb_wef_grand_defense_of_the_oak;
+				}
+
+				//
+				objective
+                {
+                    type SCRIPTED;
+                    script_key delay_victory;
+                }
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh_dlc05_wef_wood_elves;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh_dlc05_wef_wood_elves;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Argwylon
+
+    //** SINGLE PLAYER **
+	victory_objective
+	{
+		faction wh_dlc05_wef_argwylon;
+		campaign_type sp_normal;
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_dlc03_victory_type_ultimate;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective													// Construct the Oak of Ages 5
+				{
+					type CONSTRUCT_N_BUILDINGS_INCLUDING;
+					faction wh_dlc05_wef_argwylon;
+					total 1;
+					building_level wh_dlc05_wef_oak_of_ages_5;
+				}
+				objective
+                {
+                    type SCRIPTED;
+                    script_key delay_victory;
+                }
+
+				objective													// Complete the final battle
+				{
+					type FIGHT_SET_PIECE_BATTLE;
+					set_piece_battle wh_dlc05_qb_wef_grand_defense_of_the_oak;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh_dlc05_wef_argwylon;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh_dlc05_wef_argwylon;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}

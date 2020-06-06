@@ -1,0 +1,530 @@
+    // # RACE Vampire Counts
+
+    // ## FACTION Sylvania
+
+    //** SINGLE PLAYER **
+	victory_objective
+	{
+		faction wh_main_vmp_vampire_counts;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 12 provinces
+					total 12;
+				}
+				objective
+				{
+					type DESTROY_FACTION;										// Destroy the Empire faction
+					faction wh_main_emp_empire;
+					confederation_valid;
+				}
+				objective
+				{
+					type LIMIT_FACTION_TO_REGIONS;								// Defeat the Chaos Invasion
+					faction wh_main_chs_chaos;
+					faction wh_dlc03_bst_beastmen_chaos;
+					region wh_main_chaos_wastes;
+				}
+				objective
+                {
+					override_text mission_text_text_mis_activity_archaon_spawned;
+                    type SCRIPTED;
+                    script_key archaon_spawned;
+                }
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;								// Defeat Archaon
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 12 provinces
+					total 20;
+				}
+				objective
+				{
+					type LIMIT_FACTION_TO_REGIONS;								// Defeat the Chaos Invasion
+					faction wh_main_chs_chaos;
+					faction wh_dlc03_bst_beastmen_chaos;
+					region wh_main_chaos_wastes;
+				}
+				objective
+                {
+					override_text mission_text_text_mis_activity_archaon_spawned;
+                    type SCRIPTED;
+                    script_key archaon_spawned;
+                }
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;								// Defeat Archaon
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh_main_vmp_vampire_counts;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh_main_vmp_vampire_counts;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Von Carstein
+
+    //** SINGLE PLAYER **
+	victory_objective
+	{
+		faction wh_main_vmp_schwartzhafen;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 15 provinces
+					total 15;
+				}
+				objective
+				{
+					type DESTROY_FACTION;										// Destroy the Empire faction
+					faction wh_main_emp_empire;
+					confederation_valid;
+				}
+				objective
+				{
+					type CONTROL_N_REGIONS_INCLUDING;							// Own Castle Drankenhof
+					total 1;
+					region wh_main_eastern_sylvania_castle_drakenhof;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 20 provinces
+					total 20;
+				}
+				objective
+				{
+					type DESTROY_FACTION;										// Destroy the Empire faction
+					faction wh_main_emp_empire;
+					confederation_valid;
+				}
+				objective
+				{
+					type CONTROL_N_REGIONS_INCLUDING;							// Own Castle Drankenhof & Mousillon
+					total 2;
+					region wh_main_eastern_sylvania_castle_drakenhof;
+					region wh_main_lyonesse_mousillon;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh_main_vmp_schwartzhafen;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh_main_vmp_schwartzhafen;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION The Barrow Legion
+
+    //** SINGLE PLAYER **
+	victory_objective
+	{
+		faction wh2_dlc11_vmp_the_barrow_legion;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 12 provinces
+					total 12;
+				}
+				objective
+				{
+					type DESTROY_FACTION;										// Destroy factions
+					faction wh_main_brt_bretonnia;
+					faction wh_main_brt_carcassonne;
+					faction wh_main_brt_bordeleaux;
+					confederation_valid;
+				}
+				objective																		//Have 80 units
+				{
+					type OWN_N_UNITS;
+					total 80;
+				}
+				objective																		// Construct 3 Necromancy towers
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_dlc11_vmp_the_barrow_legion;
+					total 3;
+					building_level wh_main_vmp_necromancers_2;
+				}
+				objective																		// Construct some special buildings
+				{
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					faction wh2_dlc11_vmp_the_barrow_legion;
+					total 2;
+					building_level wh2_main_wef_oak_of_ages_occupied_1;
+					building_level wh2_main_special_drakenhof_court;
+					building_level wh_main_special_college_of_magic_vampires;
+					building_level wh_main_special_settlement_couronne_5_vmp;
+					building_level wh2_main_special_pyramid_of_nagash_vmp;
+					building_level wh2_dlc11_special_settlement_galleons_graveyard_5;
+
+				}
+				objective																		//Have 3 Necromancers
+				{
+					type HAVE_N_AGENTS_OF_TYPE;
+					total 3;
+					agent_subtype vmp_necromancer;
+				}
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;								// Capture at least 25 provinces
+					total 25;
+				}
+				objective
+				{
+					type DESTROY_FACTION;											// Destroy factions
+					faction wh_main_brt_bretonnia;
+					faction wh_main_brt_carcassonne;
+					faction wh_main_brt_bordeleaux;
+					faction wh_main_emp_empire;
+					faction wh2_dlc09_tmb_followers_of_nagash;
+					faction wh_main_vmp_vampire_counts;
+					faction wh_main_vmp_schwartzhafen;
+					faction wh_dlc05_wef_wood_elves;
+					faction wh_dlc05_wef_argwylon;
+					faction wh2_main_skv_clan_skyre;
+					confederation_valid;
+				}
+				objective																		//Have 160 units
+				{
+					type OWN_N_UNITS;
+					total 160;
+				}
+				objective																		// Construct 5 necromancy towers
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_dlc11_vmp_the_barrow_legion;
+					total 5;
+					building_level wh_main_vmp_necromancers_2;
+				}
+				objective																		// Construct some special buildings
+				{
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					faction wh2_dlc11_vmp_the_barrow_legion;
+					total 5;
+					building_level wh2_main_wef_oak_of_ages_occupied_1;
+					building_level wh2_main_special_drakenhof_court;
+					building_level wh_main_special_college_of_magic_vampires;
+					building_level wh_main_special_settlement_couronne_5_vmp;
+					building_level wh2_main_special_pyramid_of_nagash_vmp;
+					building_level wh2_dlc11_special_settlement_galleons_graveyard_5;
+
+				}
+				objective																		//Get 3 Necromancers to level 20
+				{
+					type ACHIEVE_CHARACTER_RANK;
+					total 3;
+					total2 20;
+					agent wizard;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_dlc11_vmp_the_barrow_legion;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_dlc11_vmp_the_barrow_legion;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}

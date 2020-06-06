@@ -1,0 +1,613 @@
+    // # RACE Empire
+
+    // ## FACTION Reikland
+
+    //** SINGLE PLAYER **
+	victory_objective
+	{
+		faction wh_main_emp_empire;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of the Empire
+					total 11;
+					override_text mission_text_text_wh_main_objective_override_empire_control;
+					province wh_main_nordland;
+					province wh_main_ostland;
+					province wh_main_hochland;
+					province wh_main_middenland;
+					province wh_main_talabecland;
+					province wh_main_ostermark;
+					province wh_main_reikland;
+					province wh_main_stirland;
+					province wh_main_averland;
+					province wh_main_wissenland;
+					province wh_main_the_wasteland;
+				}
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;
+					total 2;
+					override_text mission_text_text_wh_main_objective_override_empire_sylvania;	// Reconquer Sylvannia
+					province wh_main_eastern_sylvania;
+					province wh_main_western_sylvania;
+				}
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of the Empire
+					total 11;
+					override_text mission_text_text_wh_main_objective_override_empire_control;
+					province wh_main_nordland;
+					province wh_main_ostland;
+					province wh_main_hochland;
+					province wh_main_middenland;
+					province wh_main_talabecland;
+					province wh_main_ostermark;
+					province wh_main_reikland;
+					province wh_main_stirland;
+					province wh_main_averland;
+					province wh_main_wissenland;
+					province wh_main_the_wasteland;
+				}
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Reconquer Sylvannia
+					total 2;
+					override_text mission_text_text_wh_main_objective_override_empire_sylvania;
+					province wh_main_eastern_sylvania;
+					province wh_main_western_sylvania;
+				}
+				objective
+                {
+                    type DESTROY_FACTION;										// Destroy factions
+                    faction wh_main_grn_black_venom;
+                    faction wh_main_grn_broken_nose;
+                    faction wh_main_grn_crooked_moon;
+                    faction wh2_dlc12_grn_leaf_cutterz_tribe;
+                    faction wh_main_grn_skullsmasherz;
+
+                    faction wh_main_vmp_mousillon;
+                    faction wh_main_vmp_vampire_counts;
+                    faction wh_main_vmp_schwartzhafen;
+
+                    faction wh2_dlc15_skv_clan_kreepus;
+                    faction wh2_main_skv_clan_moulder;
+                    faction wh2_main_skv_clan_skyre;
+
+                    faction wh2_dlc11_cst_pirates_of_sartosa;
+
+                    faction wh_dlc08_nor_goromadny_tribe;
+                    faction wh_dlc08_nor_helspire_tribe;
+                    faction wh_dlc08_nor_naglfarlings;
+                    faction wh_main_nor_skaeling;
+                    faction wh_dlc08_nor_vanaheimlings;
+                    faction wh_main_nor_varg;
+                    faction wh_dlc08_nor_norsca;
+                    faction wh_dlc08_nor_wintertooth;
+
+                    confederation_valid;
+                }
+				objective
+				{
+					type LIMIT_FACTION_TO_REGIONS;												// Defeat the Chaos Invasion
+					faction wh_main_chs_chaos;
+					faction wh_dlc03_bst_beastmen_chaos;
+					region wh_main_chaos_wastes;
+				}
+				objective
+                {
+					override_text mission_text_text_mis_activity_archaon_spawned;
+                    type SCRIPTED;
+                    script_key archaon_spawned;
+                }
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
+				}
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh_main_emp_empire;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh_main_emp_empire;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION The Golden Order
+
+    //** SINGLE PLAYER **
+	victory_objective
+	{
+		faction wh2_dlc13_emp_golden_order;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of the Empire
+					total 11;
+					override_text mission_text_text_wh_main_objective_override_empire_control;
+					province wh_main_nordland;
+					province wh_main_ostland;
+					province wh_main_hochland;
+					province wh_main_middenland;
+					province wh_main_talabecland;
+					province wh_main_ostermark;
+					province wh_main_reikland;
+					province wh_main_stirland;
+					province wh_main_averland;
+					province wh_main_wissenland;
+					province wh_main_the_wasteland;
+				}
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;
+					total 2;
+					override_text mission_text_text_wh_main_objective_override_empire_sylvania;	// Reconquer Sylvannia
+					province wh_main_eastern_sylvania;
+					province wh_main_western_sylvania;
+				}
+				objective
+				{
+					type DESTROY_FACTION;
+					faction wh_main_grn_greenskins;
+					faction wh_main_grn_crooked_moon;
+					confederation_valid;
+				}
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of the Empire
+					total 11;
+					override_text mission_text_text_wh_main_objective_override_empire_control;
+					province wh_main_nordland;
+					province wh_main_ostland;
+					province wh_main_hochland;
+					province wh_main_middenland;
+					province wh_main_talabecland;
+					province wh_main_ostermark;
+					province wh_main_reikland;
+					province wh_main_stirland;
+					province wh_main_averland;
+					province wh_main_wissenland;
+					province wh_main_the_wasteland;
+				}
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Reconquer Sylvannia
+					total 2;
+					override_text mission_text_text_wh_main_objective_override_empire_sylvania;
+					province wh_main_eastern_sylvania;
+					province wh_main_western_sylvania;
+				}
+				objective
+                {
+                    type DESTROY_FACTION;										// Destroy factions
+                    faction wh_main_grn_black_venom;
+                    faction wh_main_grn_broken_nose;
+                    faction wh_main_grn_crooked_moon;
+                    faction wh_main_grn_greenskins;
+                    faction wh2_dlc12_grn_leaf_cutterz_tribe;
+                    faction wh_main_grn_skullsmasherz;
+
+                    faction wh_main_vmp_mousillon;
+                    faction wh_main_vmp_vampire_counts;
+                    faction wh_main_vmp_schwartzhafen;
+
+                    faction wh2_dlc15_skv_clan_kreepus;
+                    faction wh2_main_skv_clan_moulder;
+                    faction wh2_main_skv_clan_skyre;
+
+                    faction wh2_dlc11_cst_pirates_of_sartosa;
+
+                    confederation_valid;
+                }
+				objective
+				{
+					type LIMIT_FACTION_TO_REGIONS;												// Defeat the Chaos Invasion
+					faction wh_main_chs_chaos;
+					faction wh_dlc03_bst_beastmen_chaos;
+					region wh_main_chaos_wastes;
+				}
+				objective
+                {
+					override_text mission_text_text_mis_activity_archaon_spawned;
+                    type SCRIPTED;
+                    script_key archaon_spawned;
+                }
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_dlc13_emp_golden_order;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_dlc13_emp_golden_order;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION The Huntsmarshal's Expedition
+
+    //** SINGLE PLAYER **
+	victory_objective
+	{
+		faction wh2_dlc13_emp_the_huntmarshals_expedition;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of the Empire
+					total 11;
+					province wh2_main_the_creeping_jungle;
+					province wh2_main_northern_great_jungle;
+					province wh2_main_southern_great_jungle;
+					province wh2_main_vampire_coast;
+					province wh2_main_jungles_of_green_mists;
+					province wh2_main_headhunters_jungle;
+					province wh2_main_volcanic_islands;
+					province wh2_main_huahuan_desert;
+					province wh2_main_southern_jungle_of_pahualaxa;
+					province wh2_main_northern_jungle_of_pahualaxa;
+					province wh2_main_galleons_graveyard;
+				}
+				objective
+				{
+					type DESTROY_FACTION;
+					faction wh2_main_lzd_hexoatl;
+					faction wh2_main_lzd_itza;
+					faction wh2_main_skv_clan_pestilens;
+					faction wh2_dlc11_cst_vampire_coast;
+					faction wh2_dlc11_cst_noctilus;
+					confederation_valid;
+				}
+				objective
+				{
+					type HAVE_AT_LEAST_X_OF_A_POOLED_RESOURCE;
+					pooled_resource emp_progress;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of the Empire
+					total 11;
+					province wh2_main_the_creeping_jungle;
+					province wh2_main_northern_great_jungle;
+					province wh2_main_southern_great_jungle;
+					province wh2_main_vampire_coast;
+					province wh2_main_jungles_of_green_mists;
+					province wh2_main_headhunters_jungle;
+					province wh2_main_volcanic_islands;
+					province wh2_main_huahuan_desert;
+					province wh2_main_southern_jungle_of_pahualaxa;
+					province wh2_main_northern_jungle_of_pahualaxa;
+					province wh2_main_galleons_graveyard;
+				}
+				objective
+				{
+					type DESTROY_FACTION;
+					faction wh2_main_lzd_hexoatl;
+					faction wh2_dlc13_lzd_spirits_of_the_jungle;
+					faction wh2_main_lzd_itza;
+					faction wh2_main_skv_clan_pestilens;
+					faction wh2_main_skv_clan_mors;
+					faction wh2_dlc11_cst_vampire_coast;
+					faction wh2_dlc11_cst_noctilus;
+					confederation_valid;
+				}
+				objective
+				{
+					type HAVE_AT_LEAST_X_OF_A_POOLED_RESOURCE;
+					pooled_resource emp_progress;
+					total 100;
+				}
+				objective
+                {
+					override_text mission_text_text_mis_activity_archaon_spawned;
+                    type SCRIPTED;
+                    script_key archaon_spawned;
+                }
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_dlc13_emp_the_huntmarshals_expedition;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_dlc13_emp_the_huntmarshals_expedition;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}

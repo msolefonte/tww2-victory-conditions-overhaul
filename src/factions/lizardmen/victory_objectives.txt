@@ -1,0 +1,1276 @@
+    // # RACE Lizardmen
+
+    // ## FACTION Hexoatl
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh2_main_lzd_hexoatl;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Lustria
+					total 14;
+//					override_text mission_text_text_wh2_main_objective_override_mazdamundi_control;
+					province wh2_main_isthmus_of_lustria;
+					province wh2_main_northern_jungle_of_pahualaxa;
+					province wh2_main_southern_jungle_of_pahualaxa;
+					province wh2_main_jungles_of_green_mists;
+					province wh2_main_the_creeping_jungle;
+					province wh2_main_northern_great_jungle;
+					province wh2_main_huahuan_desert;
+					province wh2_main_southern_great_jungle;
+					province wh2_main_vampire_coast;
+					province wh2_main_volcanic_islands;
+					province wh2_main_headhunters_jungle;
+				}
+
+				objective																		// Construct special building
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_main_lzd_hexoatl;
+					total 3;
+					building_level wh2_main_lzd_slann_1;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Mazdamundi Short - Destroy SKROLK, MORATHI and CYLOSTRA
+					faction wh2_main_def_cult_of_pleasure;
+					faction wh2_main_skv_clan_pestilens;
+					faction wh2_dlc11_cst_the_drowned;
+					confederation_valid;
+				}
+				objective
+                {
+					override_text mission_text_text_mis_activity_archaon_spawned;
+                    type SCRIPTED;
+                    script_key archaon_spawned;
+                }
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Lustria
+					total 14;
+//					override_text mission_text_text_wh2_main_objective_override_mazdamundi_control;
+					province wh2_main_isthmus_of_lustria;
+					province wh2_main_northern_jungle_of_pahualaxa;
+					province wh2_main_southern_jungle_of_pahualaxa;
+					province wh2_main_jungles_of_green_mists;
+					province wh2_main_the_creeping_jungle;
+					province wh2_main_northern_great_jungle;
+					province wh2_main_huahuan_desert;
+					province wh2_main_southern_great_jungle;
+					province wh2_main_vampire_coast;
+					province wh2_main_volcanic_islands;
+					province wh2_main_headhunters_jungle;
+				}
+
+				objective																		// Construct special building
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_main_lzd_hexoatl;
+					total 5;
+					building_level wh2_main_lzd_slann_1;
+				}
+				objective																		// Construct special building
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_main_lzd_hexoatl;
+					total 1;
+					building_level wh2_main_special_hexoatl_stellar_pyramids;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Mazdamundi Long - Destroy SKROLK, MORATHI, CYLOSTRA, HARKON, LOKHIR and NOCTILUS
+					faction wh2_main_def_cult_of_pleasure;
+					faction wh2_main_skv_clan_pestilens;
+					faction wh2_dlc11_cst_the_drowned;
+					faction wh2_dlc11_cst_vampire_coast;
+					faction wh2_dlc11_def_the_blessed_dread;
+					faction wh2_dlc11_cst_noctilus;
+					confederation_valid;
+				}
+				objective
+                {
+					override_text mission_text_text_mis_activity_archaon_spawned;
+                    type SCRIPTED;
+                    script_key archaon_spawned;
+                }
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_main_lzd_hexoatl;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_main_lzd_hexoatl;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Last Defenders
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh2_main_lzd_last_defenders;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Lustria
+					total 14;
+//					override_text mission_text_text_wh2_main_objective_override_kroq_gar_control;
+					province wh2_main_southlands_jungle;
+					province wh2_main_kingdom_of_beasts;
+					province wh2_main_crater_of_the_walking_dead;
+					province wh2_main_heart_of_the_jungle;
+					province wh2_main_shifting_sands;
+					province wh2_main_ash_river;
+					province wh2_main_land_of_the_dervishes;
+					province wh2_main_great_desert_of_araby;
+					province wh2_main_land_of_assassins;
+					province wh2_main_great_mortis_delta;
+				}
+				objective																		// Construct special building
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_main_lzd_last_defenders;
+					total 3;
+					building_level wh2_main_lzd_slann_1;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Kroq-Gar Short - Destroy QUEEK, KHALIDA, SETTRA and ARKHAN
+					faction wh2_main_skv_clan_mors;
+					faction wh2_dlc09_tmb_lybaras;
+					faction wh2_dlc09_tmb_khemri;
+					faction wh2_dlc09_tmb_followers_of_nagash;
+					confederation_valid;
+				}
+				objective
+                {
+					override_text mission_text_text_mis_activity_archaon_spawned;
+                    type SCRIPTED;
+                    script_key archaon_spawned;
+                }
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Lustria
+					total 14;
+//					override_text mission_text_text_wh2_main_objective_override_kroq_gar_control;
+					province wh2_main_southlands_jungle;
+					province wh2_main_kingdom_of_beasts;
+					province wh2_main_crater_of_the_walking_dead;
+					province wh2_main_heart_of_the_jungle;
+					province wh2_main_shifting_sands;
+					province wh2_main_ash_river;
+					province wh2_main_land_of_the_dervishes;
+					province wh2_main_great_desert_of_araby;
+					province wh2_main_land_of_assassins;
+					province wh2_main_great_mortis_delta;
+				}
+
+				objective																		// Construct special building
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_main_lzd_last_defenders;
+					total 5;
+					building_level wh2_main_lzd_slann_1;
+				}
+				objective																		// Construct special building
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_main_lzd_last_defenders;
+					total 3;
+					building_level wh2_main_lzd_energy_5;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Kroq-Gar Long - Destroy QUEEK, KHALIDA, SETTRA, ARKHAN, ARANESSA, HARKON and LOKHIR
+					faction wh2_main_skv_clan_mors;
+					faction wh2_dlc09_tmb_lybaras;
+					faction wh2_dlc09_tmb_khemri;
+					faction wh2_dlc09_tmb_followers_of_nagash;
+					faction wh2_dlc11_cst_pirates_of_sartosa;
+					faction wh2_dlc11_cst_vampire_coast;
+					faction wh2_dlc11_def_the_blessed_dread;
+					confederation_valid;
+				}
+				objective
+                {
+					override_text mission_text_text_mis_activity_archaon_spawned;
+                    type SCRIPTED;
+                    script_key archaon_spawned;
+                }
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_main_lzd_last_defenders;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_main_lzd_last_defenders;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Tlaqua
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh2_main_lzd_tlaqua;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Lustria
+					total 14;
+//					override_text mission_text_text_wh2_main_objective_override_kroq_gar_control;
+					province wh2_main_land_of_assassins;
+					province wh2_main_land_of_the_dervishes;
+					province wh2_main_great_desert_of_araby;
+					province wh2_main_land_of_the_dead;
+					province wh2_main_great_mortis_delta;
+					province wh2_main_southlands_jungle;
+					province wh2_main_kingdom_of_beasts;
+					province wh_main_southern_badlands;
+					province wh2_main_sartosa;
+					province wh2_main_skavenblight;
+
+
+				}
+				objective																		// Construct special building
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_main_lzd_tlaqua;
+					total 3;
+					building_level wh2_main_lzd_slann_1;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Tiktaq'to Short - Destroy QUEEK, NOCTILUS, ARANESSA and ARKHAN
+					faction wh2_main_skv_clan_mors;
+					faction wh_main_grn_orcs_of_the_bloody_hand;
+					faction wh2_dlc11_cst_pirates_of_sartosa;
+					faction wh2_dlc09_tmb_followers_of_nagash;
+					confederation_valid;
+				}
+				objective
+                {
+					override_text mission_text_text_mis_activity_archaon_spawned;
+                    type SCRIPTED;
+                    script_key archaon_spawned;
+                }
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Lustria
+					total 14;
+//					override_text mission_text_text_wh2_main_objective_override_kroq_gar_control;
+					province wh2_main_land_of_assassins;
+					province wh2_main_land_of_the_dervishes;
+					province wh2_main_great_desert_of_araby;
+					province wh2_main_land_of_the_dead;
+					province wh2_main_great_mortis_delta;
+					province wh2_main_southlands_jungle;
+					province wh2_main_kingdom_of_beasts;
+					province wh_main_southern_badlands;
+					province wh2_main_sartosa;
+					province wh2_main_skavenblight;
+				}
+
+				objective																		// Construct special building
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_main_lzd_tlaqua;
+					total 5;
+					building_level wh2_main_lzd_slann_1;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Tiktaq'to Long - Destroy QUEEK, IKIT CLAW, NOCTILUS, ARANESSA, ARKHAN, SETTRA, MANNFRED, GRIMGOR
+					faction wh2_main_skv_clan_mors;
+					faction wh2_main_skv_clan_skyre;
+					faction wh_main_grn_orcs_of_the_bloody_hand;
+					faction wh2_dlc11_cst_pirates_of_sartosa;
+					faction wh2_dlc09_tmb_followers_of_nagash;
+					faction wh2_dlc09_tmb_khemri;
+					faction wh_main_vmp_vampire_counts;
+					faction wh_main_grn_greenskins;
+					confederation_valid;
+				}
+				objective
+                {
+					override_text mission_text_text_mis_activity_archaon_spawned;
+                    type SCRIPTED;
+                    script_key archaon_spawned;
+                }
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_main_lzd_tlaqua;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_main_lzd_tlaqua;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Cult of Sotek
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh2_dlc12_lzd_cult_of_sotek;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Lustria
+					total 14;
+//					override_text mission_text_text_wh2_main_objective_override_mazdamundi_control;
+					province wh2_main_vampire_coast;
+					province wh2_main_volcanic_islands;
+					province wh2_main_spine_of_sotek;
+					province wh2_main_southern_great_jungle;
+					province wh2_main_northern_great_jungle;
+					province wh2_main_jungles_of_green_mists;
+					province wh2_main_huahuan_desert;
+					province wh2_main_the_creeping_jungle;
+					province wh2_main_headhunters_jungle;
+					province wh2_main_southern_jungle_of_pahualaxa;
+				}
+
+				objective																		// Construct special building
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_dlc12_lzd_cult_of_sotek;
+					total 3;
+					building_level wh2_main_lzd_worship_sotek_3;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Tehenhauin Short - Destroy HARKON, SKROLK, IKIT CLAW and NOCTILUS
+					faction wh2_main_skv_clan_pestilens;
+					faction wh2_main_skv_clan_skyre;
+					faction wh2_dlc11_cst_vampire_coast;
+					faction wh2_dlc11_cst_noctilus;
+					faction wh2_dlc11_def_the_blessed_dread;
+					confederation_valid;
+				}
+				objective
+                {
+					override_text mission_text_text_mis_activity_archaon_spawned;
+                    type SCRIPTED;
+                    script_key archaon_spawned;
+                }
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Lustria
+					total 14;
+//					override_text mission_text_text_wh2_main_objective_override_mazdamundi_control;
+					province wh2_main_vampire_coast;
+					province wh2_main_volcanic_islands;
+					province wh2_main_spine_of_sotek;
+					province wh2_main_southern_great_jungle;
+					province wh2_main_northern_great_jungle;
+					province wh2_main_jungles_of_green_mists;
+					province wh2_main_huahuan_desert;
+					province wh2_main_the_creeping_jungle;
+					province wh2_main_headhunters_jungle;
+					province wh2_main_southern_jungle_of_pahualaxa;
+				}
+
+				objective																		// Construct special building
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_dlc12_lzd_cult_of_sotek;
+					total 5;
+					building_level wh2_main_lzd_worship_sotek_3;
+				}
+				objective																		// Construct special building
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_dlc12_lzd_cult_of_sotek;
+					total 1;
+					building_level wh2_dlc12_special_sotek_snake_pit_1;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Tehenhauin Long - Destroy SKROLK, IKIT CLAW, HARKON, NOCTILUS, LOKHIR, and ARKHAN
+					faction wh2_main_skv_clan_pestilens;
+					faction wh2_main_skv_clan_skyre;
+					faction wh2_dlc11_cst_vampire_coast;
+					faction wh2_dlc11_cst_noctilus;
+					faction wh2_dlc11_def_the_blessed_dread;
+					faction wh2_dlc09_tmb_followers_of_nagash;
+					confederation_valid;
+				}
+				objective
+                {
+					override_text mission_text_text_mis_activity_archaon_spawned;
+                    type SCRIPTED;
+                    script_key archaon_spawned;
+                }
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_dlc12_lzd_cult_of_sotek;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_dlc12_lzd_cult_of_sotek;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Itza
+
+    //** SINGLE PLAYER **
+	victory_objective
+	{
+		faction wh2_main_lzd_itza;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of the Empire
+					total 10;
+//					override_text mission_text_text_wh2_main_objective_override_kroq_gar_control;
+					province wh2_main_the_creeping_jungle;
+					province wh2_main_northern_great_jungle;
+					province wh2_main_southern_great_jungle;
+					province wh2_main_vampire_coast;
+					province wh2_main_jungles_of_green_mists;
+					province wh2_main_headhunters_jungle;
+					province wh2_main_volcanic_islands;
+					province wh2_main_huahuan_desert;
+					province wh2_main_southern_jungle_of_pahualaxa;
+					province wh2_main_northern_jungle_of_pahualaxa;
+				}
+				objective
+				{
+					type DESTROY_FACTION;
+					faction wh2_dlc11_def_the_blessed_dread;
+					faction wh2_main_hef_order_of_loremasters;
+					faction wh2_main_skv_clan_pestilens;
+					faction wh2_dlc13_emp_the_huntmarshals_expedition;
+					faction wh2_dlc11_cst_vampire_coast;
+					confederation_valid;
+				}
+				objective
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_main_lzd_itza;
+					total 3;
+					building_level wh2_main_lzd_slann_1;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of the Empire
+					total 10;
+//					override_text mission_text_text_wh2_main_objective_override_kroq_gar_control;
+					province wh2_main_the_creeping_jungle;
+					province wh2_main_northern_great_jungle;
+					province wh2_main_southern_great_jungle;
+					province wh2_main_vampire_coast;
+					province wh2_main_jungles_of_green_mists;
+					province wh2_main_headhunters_jungle;
+					province wh2_main_volcanic_islands;
+					province wh2_main_huahuan_desert;
+					province wh2_main_southern_jungle_of_pahualaxa;
+					province wh2_main_northern_jungle_of_pahualaxa;
+				}
+				objective
+				{
+					type DESTROY_FACTION;
+					faction wh2_dlc11_def_the_blessed_dread;
+					faction wh2_main_hef_order_of_loremasters;
+					faction wh2_main_skv_clan_pestilens;
+					faction wh2_dlc13_emp_the_huntmarshals_expedition;
+					faction wh2_dlc11_cst_vampire_coast;
+					faction wh2_dlc11_cst_the_drowned;
+					faction wh2_main_def_cult_of_pleasure;
+					faction wh2_main_def_naggarond;
+					faction wh2_dlc11_def_the_blessed_dread;
+					confederation_valid;
+				}
+				objective
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_main_lzd_itza;
+					total 5;
+					building_level wh2_main_lzd_slann_1;
+				}
+				objective
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_main_lzd_itza;
+					total 1;
+					building_level wh2_main_special_itza_vaults_of_the_old_ones;
+				}
+				objective
+                {
+					override_text mission_text_text_mis_activity_archaon_spawned;
+                    type SCRIPTED;
+                    script_key archaon_spawned;
+                }
+				objective
+				{
+					type LIMIT_FACTION_TO_REGIONS;												// Defeat the Chaos Invasion
+					faction wh_main_chs_chaos;
+					faction wh_dlc03_bst_beastmen_chaos;
+					region wh_main_chaos_wastes;
+				}
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_main_lzd_itza;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_main_lzd_itza;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Spirit of the Jungle
+
+    //** SINGLE PLAYER **
+	victory_objective
+	{
+		faction wh2_dlc13_lzd_spirits_of_the_jungle;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+                {
+					type VASSALS_OWN_BUILDINGS;
+                    faction wh2_dlc13_lzd_spirits_of_the_jungle;
+					building_level wh2_dlc13_lzd_nakai_itzl;
+                    building_level wh2_dlc13_lzd_nakai_quetzl;
+                    building_level wh2_dlc13_lzd_nakai_xholankha;
+                    building_level wh2_dlc13_lzd_port_nakai_itzl;
+                    building_level wh2_dlc13_lzd_port_nakai_quetzl;
+                    building_level wh2_dlc13_lzd_port_nakai_xholankha;
+					total 40;
+
+                }
+				objective
+				{
+					type DESTROY_FACTION;
+					faction wh_dlc08_nor_norsca;
+					faction wh2_main_skv_clan_moulder;
+					faction wh_main_vmp_vampire_counts;
+					faction wh_main_grn_greenskins;
+					confederation_valid;
+				}
+				objective
+				{
+					type HAVE_AT_LEAST_X_OF_A_POOLED_RESOURCE;
+					pooled_resource lzd_old_ones_favour;
+					total 1000;
+				}
+				objective
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_dlc13_lzd_spirits_of_the_jungle;
+					total 1;
+					building_level wh2_dlc13_horde_lizardmen_slann_3;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+                {
+					type VASSALS_OWN_BUILDINGS;
+                    faction wh2_dlc13_lzd_spirits_of_the_jungle;
+					building_level wh2_dlc13_lzd_nakai_itzl;
+                    building_level wh2_dlc13_lzd_nakai_quetzl;
+                    building_level wh2_dlc13_lzd_nakai_xholankha;
+                    building_level wh2_dlc13_lzd_port_nakai_itzl;
+                    building_level wh2_dlc13_lzd_port_nakai_quetzl;
+                    building_level wh2_dlc13_lzd_port_nakai_xholankha;
+					total 70;
+
+                }
+				objective
+				{
+					type DESTROY_FACTION;
+					faction wh_dlc08_nor_norsca;
+					faction wh2_main_skv_clan_moulder;
+					faction wh_main_vmp_vampire_counts;
+					faction wh_main_grn_greenskins;
+					faction wh2_main_def_naggarond;
+					faction wh2_main_skv_clan_mors;
+					faction wh2_main_skv_clan_skyre;
+					faction wh2_dlc13_emp_the_huntmarshals_expedition;
+					confederation_valid;
+				}
+				objective
+				{
+					type HAVE_AT_LEAST_X_OF_A_POOLED_RESOURCE;
+					pooled_resource lzd_old_ones_favour;
+					total 3000;
+				}
+				objective
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_dlc13_lzd_spirits_of_the_jungle;
+					total 1;
+					building_level wh2_dlc13_horde_lizardmen_slann_3;
+				}
+				objective
+				{
+					type LIMIT_FACTION_TO_REGIONS;												// Defeat the Chaos Invasion
+					faction wh_main_chs_chaos;
+					faction wh_dlc03_bst_beastmen_chaos;
+					region wh_main_chaos_wastes;
+				}
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_dlc13_lzd_spirits_of_the_jungle;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+                {
+					type VASSALS_OWN_BUILDINGS;
+                    faction wh2_dlc13_lzd_spirits_of_the_jungle;
+					building_level wh2_dlc13_lzd_nakai_itzl;
+                    building_level wh2_dlc13_lzd_nakai_quetzl;
+                    building_level wh2_dlc13_lzd_nakai_xholankha;
+                    building_level wh2_dlc13_lzd_port_nakai_itzl;
+                    building_level wh2_dlc13_lzd_port_nakai_quetzl;
+                    building_level wh2_dlc13_lzd_port_nakai_xholankha;
+					total 100;
+
+                }
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_dlc13_lzd_spirits_of_the_jungle;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 40;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}

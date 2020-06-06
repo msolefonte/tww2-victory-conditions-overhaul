@@ -1,0 +1,160 @@
+    // # RACE Warriors of Chaos
+
+    // ## FACTION Warriors of Chaos
+
+    //** SINGLE PLAYER **
+	victory_objective
+	{
+		faction wh_main_chs_chaos;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_SACK_N_DIFFERENT_SETTLEMENTS_INCLUDING;		// Raze or sack 50 regions
+					total 50;
+				}
+				// objective
+				// {
+				// 	type RAZE_OR_SACK_N_DIFFERENT_SETTLEMENTS_INCLUDING;
+				// 	total 4;
+				// 	settlement wh2_main_isthmus_of_lustria_fallen_gates;
+				// 	settlement wh_main_middenland_middenheim;
+				// 	settlement wh2_main_deadwood_the_frozen_city;
+				// 	settlement wh2_main_vor_eataine_shrine_of_asuryan;
+				// }
+				objective
+				{
+					type DESTROY_FACTION;									// Destroy the Empire, Bretonnia, Dwarfs and High Elf main factions
+					faction wh_main_emp_empire;
+					faction wh_main_brt_bretonnia;
+					faction wh_main_dwf_dwarfs;
+					faction wh2_main_hef_eataine;
+					confederation_valid;
+				}
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_SACK_N_DIFFERENT_SETTLEMENTS_INCLUDING;	// Raze or sack 80 regions
+					total 80;
+				}
+				// objective
+				// {
+				// 	type RAZE_OR_SACK_N_DIFFERENT_SETTLEMENTS_INCLUDING;
+				// 	total 4;
+				// 	settlement wh2_main_isthmus_of_lustria_fallen_gates;
+				// 	settlement wh_main_middenland_middenheim;
+				// 	settlement wh2_main_deadwood_the_frozen_city;
+				// 	settlement wh2_main_vor_eataine_shrine_of_asuryan;
+				// }
+				objective
+				{
+					type DESTROY_FACTION;									// Destroy the Empire, Bretonnia, Dwarfs and High Elf main factions
+					faction wh_main_emp_empire;
+					faction wh_main_brt_bretonnia;
+					faction wh_main_dwf_dwarfs;
+					faction wh2_main_hef_eataine;
+					confederation_valid;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh_main_chs_chaos;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh_main_chs_chaos;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 60;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}

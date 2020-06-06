@@ -1,0 +1,1233 @@
+    // # RACE High Elves
+
+    // ## FACTION Lothern
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh2_main_hef_eataine;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Ulthuan
+					total 14;
+					override_text mission_text_text_wh2_main_objective_override_tyrion_control;
+					province wh2_main_eataine;
+					province wh2_main_yvresse;
+					province wh2_main_saphery;
+					province wh2_main_cothique;
+					province wh2_main_avelorn;
+					province wh2_main_chrace;
+					province wh2_main_nagarythe;
+					province wh2_main_ellyrion;
+					province wh2_main_tiranoc;
+					province wh2_main_caledor;
+					province wh2_main_eagle_gate;
+					province wh2_main_griffon_gate;
+					province wh2_main_unicorn_gate;
+					province wh2_main_phoenix_gate;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Tyrion Short - Destroy the MALEKITH and MORATHI factions
+					faction wh2_main_def_naggarond;
+					faction wh2_main_def_cult_of_pleasure;
+					confederation_valid;
+				}
+				objective																		// Construct some special buildings
+				{
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					faction wh2_main_hef_eataine;
+					total 2;
+					building_level wh2_main_special_shrine_of_asuryan_1_hef;
+					building_level wh2_main_special_lothern_port_3;
+				}
+				objective
+                {
+					override_text mission_text_text_mis_activity_archaon_spawned;
+                    type SCRIPTED;
+                    script_key archaon_spawned;
+                }
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Ulthuan
+					total 14;
+					override_text mission_text_text_wh2_main_objective_override_tyrion_control;
+					province wh2_main_eataine;
+					province wh2_main_yvresse;
+					province wh2_main_saphery;
+					province wh2_main_cothique;
+					province wh2_main_avelorn;
+					province wh2_main_chrace;
+					province wh2_main_nagarythe;
+					province wh2_main_ellyrion;
+					province wh2_main_tiranoc;
+					province wh2_main_caledor;
+					province wh2_main_eagle_gate;
+					province wh2_main_griffon_gate;
+					province wh2_main_unicorn_gate;
+					province wh2_main_phoenix_gate;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Tyrion Long - Destroy the MALEKITH, MORATHI, HELLEBRON and LOKHIR factions
+					faction wh2_main_def_naggarond;
+					faction wh2_main_def_cult_of_pleasure;
+					faction wh2_main_def_har_ganeth;
+					faction wh2_dlc11_def_the_blessed_dread;
+					confederation_valid;
+				}
+				objective																		// Construct some special buildings
+				{
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					faction wh2_main_hef_eataine;
+					total 2;
+					building_level wh2_main_special_shrine_of_asuryan_1_hef;
+					building_level wh2_main_special_lothern_port_3;
+				}
+				objective
+                {
+					override_text mission_text_text_mis_activity_archaon_spawned;
+                    type SCRIPTED;
+                    script_key archaon_spawned;
+                }
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_main_hef_eataine;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_main_hef_eataine;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Order of Loremasters
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh2_main_hef_order_of_loremasters;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_REGIONS_INCLUDING;											// Hold 12 settlements
+					total 12;
+				}
+
+				objective																		// Construct special building
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_main_hef_order_of_loremasters;
+					total 1;
+					building_level wh2_main_hef_mages_3;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Teclis Short - Destroy HARKON and LOKHIR
+					faction wh2_dlc11_cst_vampire_coast;
+					faction wh2_dlc11_def_the_blessed_dread;
+					confederation_valid;
+				}
+				objective
+                {
+					override_text mission_text_text_mis_activity_archaon_spawned;
+                    type SCRIPTED;
+                    script_key archaon_spawned;
+                }
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_REGIONS_INCLUDING;											// Hold 20 settlements
+					total 20;
+				}
+				objective																		// Construct some special buildings
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_main_hef_order_of_loremasters;
+					total 3;
+					building_level wh2_main_hef_mages_3;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Teclis Long - Destroy HARKON, LOKHIR, ARKHAN and NOCTILUS
+					faction wh2_dlc11_cst_vampire_coast;
+					faction wh2_dlc11_def_the_blessed_dread;
+					faction wh2_dlc09_tmb_followers_of_nagash;
+					faction wh2_dlc11_cst_noctilus;
+					confederation_valid;
+				}
+				objective
+                {
+					override_text mission_text_text_mis_activity_archaon_spawned;
+                    type SCRIPTED;
+                    script_key archaon_spawned;
+                }
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_main_hef_order_of_loremasters;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_main_hef_order_of_loremasters;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Nagarythe
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh2_main_hef_nagarythe;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer provinces
+					total 2;
+					province wh2_main_nagarythe;
+					province wh2_main_iron_mountains;
+					province wh2_main_titan_peaks;
+					province wh2_main_the_road_of_skulls;
+					province wh2_main_doom_glades;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Destroy the MALEKITH and MORATHI factions
+					faction wh2_main_def_cult_of_pleasure;
+					faction wh2_main_def_bleak_holds;
+					faction wh2_main_def_clar_karond;
+					confederation_valid;
+				}
+				objective																		// Construct some special buildings
+				{
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					faction wh2_main_hef_nagarythe;
+					total 1;
+					building_level wh2_main_special_anlec_citadel_hef;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 2;
+					unit wh2_main_hef_mon_moon_dragon;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer the Dark Elves
+					total 4;
+					province wh2_main_nagarythe;
+					province wh2_main_iron_mountains;
+					province wh2_main_titan_peaks;
+					province wh2_main_the_road_of_skulls;
+					province wh2_main_doom_glades;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Destroy the Dark Elves
+					faction wh2_main_def_naggarond;
+					faction wh2_main_def_cult_of_pleasure;
+					faction wh2_main_def_har_ganeth;
+					faction wh2_main_def_bleak_holds;
+					faction wh2_main_def_clar_karond;
+					confederation_valid;
+				}
+				objective																		// Construct some special buildings
+				{
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					faction wh2_main_hef_nagarythe;
+					total 1;
+					building_level wh2_main_special_anlec_citadel_hef;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 3;
+					unit wh2_main_hef_mon_moon_dragon;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_main_hef_nagarythe;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_main_hef_nagarythe;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Avelorn
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh2_main_hef_avelorn;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Ulthuan
+					total 14;
+					province wh2_main_eataine;
+					province wh2_main_yvresse;
+					province wh2_main_saphery;
+					province wh2_main_cothique;
+					province wh2_main_avelorn;
+					province wh2_main_chrace;
+					province wh2_main_nagarythe;
+					province wh2_main_ellyrion;
+					province wh2_main_tiranoc;
+					province wh2_main_caledor;
+					province wh2_main_eagle_gate;
+					province wh2_main_griffon_gate;
+					province wh2_main_unicorn_gate;
+					province wh2_main_phoenix_gate;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Destroy Dark Elves
+					faction wh2_main_def_har_ganeth;
+					faction wh2_main_def_scourge_of_khaine;
+					confederation_valid;
+				}
+				objective																		// Construct some special buildings
+				{
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					faction wh2_main_hef_avelorn;
+					total 1;
+					building_level wh2_main_special_everqueen_court_hef;
+				}
+				objective
+                {
+					override_text mission_text_text_mis_activity_archaon_spawned;
+                    type SCRIPTED;
+                    script_key archaon_spawned;
+                }
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Ulthuan
+					total 14;
+					province wh2_main_eataine;
+					province wh2_main_yvresse;
+					province wh2_main_saphery;
+					province wh2_main_cothique;
+					province wh2_main_avelorn;
+					province wh2_main_chrace;
+					province wh2_main_nagarythe;
+					province wh2_main_ellyrion;
+					province wh2_main_tiranoc;
+					province wh2_main_caledor;
+					province wh2_main_eagle_gate;
+					province wh2_main_griffon_gate;
+					province wh2_main_unicorn_gate;
+					province wh2_main_phoenix_gate;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Destroy Dark Elves & Norsca
+					faction wh2_main_def_har_ganeth;
+					faction wh2_main_def_scourge_of_khaine;
+					faction wh_dlc08_nor_norsca;
+					faction wh_dlc08_nor_wintertooth;
+					confederation_valid;
+				}
+				objective																		// Construct some special buildings
+				{
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					faction wh2_main_hef_avelorn;
+					total 1;
+					building_level wh2_main_special_everqueen_court_hef;
+				}
+				objective
+                {
+					override_text mission_text_text_mis_activity_archaon_spawned;
+                    type SCRIPTED;
+                    script_key archaon_spawned;
+                }
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_main_hef_avelorn;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_main_hef_avelorn;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Knights of Caledor
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh2_dlc15_hef_imrik;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+
+				objective
+				{
+					type COMPLETE_N_MISSIONS_OF_CATEGORY;
+					total 3;
+					event_category Objective;
+				}
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;
+					total 5;
+					province wh_main_western_badlands;
+					province wh2_main_gnoblar_country;
+					province wh2_main_dragon_isles;
+					province wh2_main_the_wolf_lands;
+					province wh2_main_caledor;
+				}
+				objective
+				{
+					type DESTROY_FACTION;
+					faction wh2_main_skv_clan_eshin;
+					faction wh_main_grn_greenskins;
+					faction wh2_main_def_hag_graef;
+					confederation_valid;
+				}
+				objective
+				{
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					total 3;
+					building_level wh2_main_hef_mages_3;
+					building_level wh2_main_hef_worship_3;
+					building_level wh2_main_hef_dragons_2;
+					building_level wh2_main_hef_smith_2;
+					building_level wh2_dlc10_hef_handmaidens;
+					building_level wh2_main_hef_defence_major_3;
+					building_level wh2_main_hef_order_5;
+					building_level wh2_main_hef_port_3;
+					faction wh2_main_hef_caledor;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 5;
+					additive;
+					unit wh2_main_hef_mon_sun_dragon;
+					unit wh2_dlc10_hef_inf_the_silverpelts_ror_0;
+					unit wh2_main_hef_inf_phoenix_guard;
+					unit wh2_main_hef_cav_dragon_princes;
+					unit wh2_main_hef_mon_star_dragon;
+					unit wh2_dlc10_hef_cav_the_fireborn_ror_0;
+					unit wh2_dlc10_hef_inf_keepers_of_the_flame_ror_0;
+					unit wh2_dlc10_hef_inf_sisters_of_avelorn_0;
+					unit wh2_dlc10_hef_inf_everqueens_court_guards_ror_0;
+					unit wh2_main_hef_inf_white_lions_of_chrace_0;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+
+				objective
+				{
+					type COMPLETE_N_MISSIONS_OF_CATEGORY;
+					total 5;
+					event_category Objective;
+				}
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Ulthuan
+					total 18;
+					province wh2_main_eataine;
+					province wh2_main_yvresse;
+					province wh2_main_saphery;
+					province wh2_main_cothique;
+					province wh2_main_avelorn;
+					province wh2_main_chrace;
+					province wh2_main_nagarythe;
+					province wh2_main_ellyrion;
+					province wh2_main_tiranoc;
+					province wh2_main_caledor;
+					province wh2_main_eagle_gate;
+					province wh2_main_griffon_gate;
+					province wh2_main_unicorn_gate;
+					province wh2_main_phoenix_gate;
+					province wh_main_western_badlands;
+					province wh2_main_gnoblar_country;
+					province wh2_main_dragon_isles;
+					province wh2_main_the_wolf_lands;
+				}
+				objective
+				{
+					type DESTROY_FACTION;
+					faction wh2_main_skv_clan_eshin;
+					faction wh_main_grn_greenskins;
+					faction wh2_main_def_hag_graef;
+					faction wh2_main_skv_clan_mors;
+					confederation_valid;
+				}
+				objective
+				{
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					total 8;
+					building_level wh2_main_hef_mages_3;
+					building_level wh2_main_hef_worship_3;
+					building_level wh2_main_hef_dragons_2;
+					building_level wh2_main_hef_smith_2;
+					building_level wh2_dlc10_hef_handmaidens;
+					building_level wh2_main_hef_defence_major_3;
+					building_level wh2_main_hef_order_5;
+					building_level wh2_main_hef_port_3;
+					faction wh2_main_hef_caledor;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 15;
+					additive;
+					unit wh2_main_hef_mon_sun_dragon;
+					unit wh2_dlc10_hef_inf_the_silverpelts_ror_0;
+					unit wh2_main_hef_inf_phoenix_guard;
+					unit wh2_main_hef_cav_dragon_princes;
+					unit wh2_main_hef_mon_star_dragon;
+					unit wh2_dlc10_hef_cav_the_fireborn_ror_0;
+					unit wh2_dlc10_hef_inf_keepers_of_the_flame_ror_0;
+					unit wh2_dlc10_hef_inf_sisters_of_avelorn_0;
+					unit wh2_dlc10_hef_inf_everqueens_court_guards_ror_0;
+					unit wh2_main_hef_inf_white_lions_of_chrace_0;
+				}
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;
+					total 18;
+				}
+				//
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_dlc15_hef_imrik;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_main_hef_caledor;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Yvresse
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh2_main_hef_yvresse;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+
+				objective
+				{
+					type COMPLETE_N_MISSIONS_OF_CATEGORY;
+					total 3;
+					event_category Objective;
+				}
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;
+					total 6;
+					province wh2_main_yvresse;
+					province wh2_main_cothique;
+					province wh2_main_chrace;
+					province wh_main_southern_badlands;
+					province wh_main_western_badlands;
+					province wh2_main_marshes_of_madness;
+				}
+				objective
+				{
+					type DESTROY_FACTION;
+					faction wh2_dlc15_grn_broken_axe;
+					confederation_valid;
+				}
+				objective
+				{
+					type HAVE_AT_LEAST_X_OF_A_POOLED_RESOURCE;
+					pooled_resource yvresse_defence;
+					total 100;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 3;
+					additive;
+					unit wh2_dlc15_hef_inf_mistwalkers_faithbearers_0;
+					unit wh2_dlc15_hef_inf_mistwalkers_griffon_knights_0;
+					unit wh2_dlc15_hef_inf_mistwalkers_sentinels_0;
+					unit wh2_dlc15_hef_inf_mistwalkers_skyhawks_0;
+					unit wh2_dlc15_hef_inf_mistwalkers_spireguard_0;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+
+				objective
+				{
+					type COMPLETE_N_MISSIONS_OF_CATEGORY;
+					total 5;
+					event_category Objective;
+				}
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Ulthuan
+					total 17;
+					province wh2_main_eataine;
+					province wh2_main_yvresse;
+					province wh2_main_saphery;
+					province wh2_main_cothique;
+					province wh2_main_avelorn;
+					province wh2_main_chrace;
+					province wh2_main_nagarythe;
+					province wh2_main_ellyrion;
+					province wh2_main_tiranoc;
+					province wh2_main_caledor;
+					province wh2_main_eagle_gate;
+					province wh2_main_griffon_gate;
+					province wh2_main_unicorn_gate;
+					province wh2_main_phoenix_gate;
+					province wh_main_southern_badlands;
+					province wh_main_western_badlands;
+					province wh2_main_marshes_of_madness;
+				}
+				objective
+				{
+					type DESTROY_FACTION;
+					faction wh2_dlc15_grn_broken_axe;
+					faction wh2_main_def_naggarond;
+					faction wh_main_grn_greenskins;
+					confederation_valid;
+				}
+				objective
+				{
+					type HAVE_AT_LEAST_X_OF_A_POOLED_RESOURCE;
+					pooled_resource yvresse_defence;
+					total 100;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 5;
+					additive;
+					unit wh2_dlc15_hef_inf_mistwalkers_faithbearers_0;
+					unit wh2_dlc15_hef_inf_mistwalkers_griffon_knights_0;
+					unit wh2_dlc15_hef_inf_mistwalkers_sentinels_0;
+					unit wh2_dlc15_hef_inf_mistwalkers_skyhawks_0;
+					unit wh2_dlc15_hef_inf_mistwalkers_spireguard_0;
+				}
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;
+					total 18;
+				}
+				//
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_main_hef_yvresse;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_main_hef_yvresse;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}

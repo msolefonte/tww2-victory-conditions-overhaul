@@ -1,0 +1,1079 @@
+    // # RACE Dark Elves
+
+    // ## FACTION Naggarond
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh2_main_def_naggarond;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate provinces in Naggaroth
+					total 10;
+					override_text mission_text_text_wh2_main_objective_override_malekith_control;
+					province wh2_main_ironfrost_glacier;
+					province wh2_main_the_chill_road;
+					province wh2_main_the_road_of_skulls;
+					province wh2_main_the_black_flood;
+					province wh2_main_deadwood;
+					province wh2_main_aghol_wastelands;
+					province wh2_main_the_broken_land;
+					province wh2_main_the_clawed_coast;
+					province wh2_main_iron_mountains;
+					province wh2_main_obsidian_peaks;
+					province wh2_main_blackspine_mountains;
+					province wh2_main_doom_glades;
+					province wh2_main_the_black_coast;
+					province wh2_main_titan_peaks;
+				}
+
+				objective																		// Construct special building
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_main_def_naggarond;
+					total 1;
+					building_level wh2_main_special_naggarond_witch_king_def;
+				}
+				objective
+				{
+					type HAVE_N_AGENTS_OF_TYPE;
+					total 3;
+					agent_subtype wh2_main_def_black_ark;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Malekith Short - Destroy ALITH ANAR and ALARIELLE
+					faction wh2_main_hef_avelorn;
+					faction wh2_main_hef_nagarythe;
+					confederation_valid;
+				}
+				objective																		// Capture 10,000 battle captives
+				{
+					type CAPTURE_X_BATTLE_CAPTIVES;
+					total 10000;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate provinces in Naggaroth
+					total 10;
+					override_text mission_text_text_wh2_main_objective_override_malekith_control;
+					province wh2_main_ironfrost_glacier;
+					province wh2_main_the_chill_road;
+					province wh2_main_the_road_of_skulls;
+					province wh2_main_the_black_flood;
+					province wh2_main_deadwood;
+					province wh2_main_aghol_wastelands;
+					province wh2_main_the_broken_land;
+					province wh2_main_the_clawed_coast;
+					province wh2_main_iron_mountains;
+					province wh2_main_obsidian_peaks;
+					province wh2_main_blackspine_mountains;
+					province wh2_main_doom_glades;
+					province wh2_main_the_black_coast;
+					province wh2_main_titan_peaks;
+				}
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Ulthuan
+					total 14;
+					override_text mission_text_text_wh2_main_objective_override_malekith_control;
+					province wh2_main_eataine;
+					province wh2_main_yvresse;
+					province wh2_main_saphery;
+					province wh2_main_cothique;
+					province wh2_main_avelorn;
+					province wh2_main_chrace;
+					province wh2_main_nagarythe;
+					province wh2_main_ellyrion;
+					province wh2_main_tiranoc;
+					province wh2_main_caledor;
+					province wh2_main_eagle_gate;
+					province wh2_main_griffon_gate;
+					province wh2_main_unicorn_gate;
+					province wh2_main_phoenix_gate;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Malekith Long - Destroy ALITH ANAR, ALARIELLE, TYRION and TECLIS
+					faction wh2_main_hef_avelorn;
+					faction wh2_main_hef_nagarythe;
+					faction wh2_main_hef_eataine;
+					faction wh2_main_hef_order_of_loremasters;
+					confederation_valid;
+				}
+				objective
+				{																				// Own 5 Blarks
+					type HAVE_N_AGENTS_OF_TYPE;
+					total 5;
+					agent_subtype wh2_main_def_black_ark;
+				}
+				objective																		// Capture 25,000 battle captives
+				{
+					type CAPTURE_X_BATTLE_CAPTIVES;
+					total 25000;
+				}
+				objective																		// Construct some special buildings
+				{
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					faction wh2_main_def_naggarond;
+					total 2;
+					building_level wh2_main_special_naggarond_witch_king_def;
+					building_level wh2_main_special_anlec_citadel_def;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_main_def_naggarond;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_main_def_naggarond;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Cult of Pleasure
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh2_main_def_cult_of_pleasure;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Ulthuan
+					total 6;
+					override_text mission_text_text_wh2_main_objective_override_morathi_control;
+					province wh2_main_eataine;
+					province wh2_main_yvresse;
+					province wh2_main_saphery;
+					province wh2_main_cothique;
+					province wh2_main_avelorn;
+					province wh2_main_chrace;
+					province wh2_main_nagarythe;
+					province wh2_main_ellyrion;
+					province wh2_main_tiranoc;
+					province wh2_main_caledor;
+					province wh2_main_eagle_gate;
+					province wh2_main_griffon_gate;
+					province wh2_main_unicorn_gate;
+					province wh2_main_phoenix_gate;
+				}
+
+				objective																		// Construct special building
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_main_def_cult_of_pleasure;
+					total 1;
+					building_level wh2_main_special_ghrond_convent_of_sorcery_2;
+				}
+				objective
+				{
+					type HAVE_N_AGENTS_OF_TYPE;
+					total 3;
+					agent_subtype wh2_main_def_black_ark;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Morathi Short - Destroy ALAITH ANAR, ALARIELLE, KHATEP and TRETCH
+					faction wh2_main_hef_nagarythe;
+					faction wh2_main_hef_avelorn;
+					faction wh2_dlc09_tmb_exiles_of_nehek;
+					faction wh2_dlc09_skv_clan_rictus;
+					confederation_valid;
+				}
+				objective																		// Capture 10,000 battle captives
+				{
+					type CAPTURE_X_BATTLE_CAPTIVES;
+					total 10000;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Ulthuan
+					total 14;
+					override_text mission_text_text_wh2_main_objective_override_morathi_control;
+					province wh2_main_eataine;
+					province wh2_main_yvresse;
+					province wh2_main_saphery;
+					province wh2_main_cothique;
+					province wh2_main_avelorn;
+					province wh2_main_chrace;
+					province wh2_main_nagarythe;
+					province wh2_main_ellyrion;
+					province wh2_main_tiranoc;
+					province wh2_main_caledor;
+					province wh2_main_eagle_gate;
+					province wh2_main_griffon_gate;
+					province wh2_main_unicorn_gate;
+					province wh2_main_phoenix_gate;
+				}
+				objective
+				{																				// Own 5 Blarks
+					type HAVE_N_AGENTS_OF_TYPE;
+					total 5;
+					agent_subtype wh2_main_def_black_ark;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Morathi Long - Destroy ALAITH ANAR, ALARIELLE, KHATEP, TRETCH, CYLOSTRA, TYRION, HELLEBRON and MAZDAMUDI
+					faction wh2_main_hef_nagarythe;
+					faction wh2_main_hef_avelorn;
+					faction wh2_dlc09_tmb_exiles_of_nehek;
+					faction wh2_dlc09_skv_clan_rictus;
+					faction wh2_main_lzd_hexoatl;
+					faction wh2_dlc11_cst_the_drowned;
+					faction wh2_main_hef_eataine;
+					faction wh2_main_def_har_ganeth;
+					confederation_valid;
+				}
+				objective																		// Capture 25,000 battle captives
+				{
+					type CAPTURE_X_BATTLE_CAPTIVES;
+					total 25000;
+				}
+				objective																		// Construct some special buildings
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_main_def_cult_of_pleasure;
+					total 1;
+					building_level wh2_main_special_ghrond_convent_of_sorcery_2;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_main_def_cult_of_pleasure;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_main_def_cult_of_pleasure;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION The Blessed Dread
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh2_dlc11_def_the_blessed_dread;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 12 provinces
+					total 12;
+				}
+				objective
+				{
+					type DESTROY_FACTION;
+					faction wh2_dlc11_cst_vampire_coast;
+					faction wh2_main_hef_order_of_loremasters;
+					faction wh2_main_skv_clan_pestilens;
+					confederation_valid;
+				}
+				objective																		// Construct some special buildings
+				{
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					faction wh2_dlc11_def_the_blessed_dread;
+					total 2;
+					building_level wh2_main_special_har_ganeth_temple_of_khaine_1;
+					building_level wh2_main_special_karond_kar_slavers;
+					building_level wh2_main_special_naggarond_witch_king_def;
+					building_level wh2_main_special_everqueen_court_def;
+					building_level wh2_dlc11_special_settlement_galleons_graveyard_5;
+					building_level wh2_main_special_quintex_2;
+					building_level wh2_main_special_shrine_of_khaine_def_1;
+
+				}
+				objective																		// Capture 10,000 battle captives
+				{
+					type CAPTURE_X_BATTLE_CAPTIVES;
+					total 10000;
+				}
+				objective
+				{
+					type HAVE_N_AGENTS_OF_TYPE;
+					total 3;
+					agent_subtype wh2_main_def_black_ark;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 20;
+					unit wh2_main_def_inf_black_ark_corsairs_0;
+					unit wh2_main_def_inf_black_ark_corsairs_1;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 25 provinces
+					total 25;
+				}
+				objective
+				{
+					type DESTROY_FACTION;
+					faction wh2_dlc11_cst_vampire_coast;
+					faction wh2_main_hef_order_of_loremasters;
+					faction wh2_main_skv_clan_pestilens;
+					faction wh2_main_hef_eataine;
+					faction wh2_main_hef_avelorn;
+					faction wh2_dlc11_cst_noctilus;
+					faction wh2_main_hef_nagarythe;
+					confederation_valid;
+				}
+				objective																		// Construct some special buildings
+				{
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					faction wh2_dlc11_def_the_blessed_dread;
+					total 5;
+					building_level wh2_main_special_har_ganeth_temple_of_khaine_1;
+					building_level wh2_main_special_karond_kar_slavers;
+					building_level wh2_main_special_naggarond_witch_king_def;
+					building_level wh2_main_special_everqueen_court_def;
+					building_level wh2_dlc11_special_settlement_galleons_graveyard_5;
+					building_level wh2_main_special_quintex_2;
+					building_level wh2_main_special_shrine_of_khaine_def_1;
+
+				}
+				objective																		// Capture 25,000 battle captives
+				{
+					type CAPTURE_X_BATTLE_CAPTIVES;
+					total 25000;
+				}
+				objective																		// Construct 3 Tier 5 Black Arks
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_dlc11_def_the_blessed_dread;
+					total 3;
+					building_level wh2_main_horde_def_settlement_5;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 30;
+					unit wh2_main_def_inf_black_ark_corsairs_0;
+					unit wh2_main_def_inf_black_ark_corsairs_1;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_dlc11_def_the_blessed_dread;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_dlc11_def_the_blessed_dread;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Har Ganeth
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh2_main_def_har_ganeth;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;
+					total 14;
+					province wh2_main_the_chill_road;
+					province wh2_main_the_road_of_skulls;
+					province wh2_main_iron_mountains;
+					province wh2_main_deadwood;
+					province wh2_main_aghol_wastelands;
+					province wh2_main_the_broken_land;
+					province wh2_main_the_clawed_coast;
+					province wh2_main_the_black_coast;
+					province wh2_main_titan_peaks;
+					province wh2_main_avelorn;
+					province wh2_main_nagarythe;
+					province wh2_main_doom_glades;
+					province wh2_main_unicorn_gate;
+					province wh2_main_phoenix_gate;
+				}
+				objective
+				{
+					type DESTROY_FACTION;
+					faction wh2_main_hef_nagarythe;
+					faction wh2_main_hef_avelorn;
+					faction wh2_main_def_ghrond;
+					confederation_valid;
+				}
+				objective																		// Construct some special buildings
+				{
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					faction wh2_main_def_har_ganeth;
+					total 2;
+					building_level wh2_main_special_har_ganeth_hellebron_palace;
+					building_level wh2_main_special_har_ganeth_temple_of_khaine_1;
+					building_level wh2_main_special_shrine_of_khaine_def_1;
+					building_level wh2_main_special_everqueen_court_def;
+				}
+				objective																		// Capture 10,000 battle captives
+				{
+					type CAPTURE_X_BATTLE_CAPTIVES;
+					total 10000;
+				}
+				objective
+				{
+					type HAVE_N_AGENTS_OF_TYPE;
+					total 3;
+					agent_subtype wh2_main_def_death_hag;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 10;
+					unit wh2_main_def_inf_witch_elves_0;
+					unit wh2_dlc10_def_inf_sisters_of_slaughter;
+					unit wh2_main_def_inf_har_ganeth_executioners_0;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;
+					total 14;
+					province wh2_main_the_chill_road;
+					province wh2_main_the_road_of_skulls;
+					province wh2_main_iron_mountains;
+					province wh2_main_deadwood;
+					province wh2_main_aghol_wastelands;
+					province wh2_main_the_broken_land;
+					province wh2_main_the_clawed_coast;
+					province wh2_main_the_black_coast;
+					province wh2_main_titan_peaks;
+					province wh2_main_avelorn;
+					province wh2_main_nagarythe;
+					province wh2_main_doom_glades;
+					province wh2_main_unicorn_gate;
+					province wh2_main_phoenix_gate;
+				}
+				objective
+				{
+					type DESTROY_FACTION;
+					faction wh2_main_hef_nagarythe;
+					faction wh2_main_hef_avelorn;
+					faction wh2_main_def_ghrond;
+					faction wh2_main_def_cult_of_pleasure;
+					faction wh_main_brt_bretonnia;
+					faction wh_dlc08_nor_norsca;
+					confederation_valid;
+				}
+				objective																		// Construct some special buildings
+				{
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					faction wh2_main_def_har_ganeth;
+					total 4;
+					building_level wh2_main_special_har_ganeth_hellebron_palace;
+					building_level wh2_main_special_har_ganeth_temple_of_khaine_1;
+					building_level wh2_main_special_shrine_of_khaine_def_1;
+					building_level wh2_main_special_everqueen_court_def;
+				}
+				objective																		// Capture 10,000 battle captives
+				{
+					type CAPTURE_X_BATTLE_CAPTIVES;
+					total 25000;
+				}
+				objective
+				{
+					type HAVE_N_AGENTS_OF_TYPE;
+					total 5;
+					agent_subtype wh2_main_def_death_hag;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 20;
+					unit wh2_main_def_inf_witch_elves_0;
+					unit wh2_dlc10_def_inf_sisters_of_slaughter;
+					unit wh2_main_def_inf_har_ganeth_executioners_0;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_main_def_har_ganeth;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_main_def_har_ganeth;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Hag Graef
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh2_main_def_hag_graef;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+
+				objective
+				{
+					type COMPLETE_N_MISSIONS_OF_CATEGORY;
+					total 3;
+					event_category Objective;
+				}
+				objective
+				{
+					type CAPTURE_X_BATTLE_CAPTIVES;
+					total 15000;
+					additive;
+				}
+				objective
+				{
+					type DESTROY_FACTION;
+					faction wh2_main_skv_clan_eshin;
+					faction wh_main_grn_greenskins;
+					faction wh_main_dwf_karak_azul;
+					faction wh_main_dwf_dwarfs;
+					confederation_valid;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 15;
+					additive;
+					unit wh2_main_def_inf_har_ganeth_executioners_0;
+					unit wh2_main_def_mon_black_dragon;
+					unit wh2_main_def_cav_cold_one_knights_1;
+					unit wh2_dlc14_def_veh_bloodwrack_shrine_0;
+					unit wh2_main_def_mon_war_hydra;
+					unit wh2_dlc10_def_mon_chill_of_sontar_ror_0;
+					unit wh2_dlc14_def_mon_bloodwrack_medusa_ror_0;
+					unit wh2_dlc10_def_inf_blades_of_the_blood_queen_ror_0;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+
+				objective
+				{
+					type COMPLETE_N_MISSIONS_OF_CATEGORY;
+					total 5;
+					event_category Objective;
+				}
+				objective
+				{
+					type CAPTURE_X_BATTLE_CAPTIVES;
+					total 30000;
+					additive;
+				}
+				objective
+				{
+					type DESTROY_FACTION;
+					faction wh2_main_skv_clan_eshin;
+					faction wh_main_grn_greenskins;
+					faction wh_main_dwf_karak_azul;
+					faction wh2_main_lzd_last_defenders;
+					faction wh_main_emp_empire;
+					faction wh2_main_skv_clan_pestilens;
+					faction wh_main_dwf_dwarfs;
+					faction wh2_main_hef_eataine;
+					faction wh2_main_lzd_hexoatl;
+					confederation_valid;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 30;
+					additive;
+					unit wh2_main_def_inf_har_ganeth_executioners_0;
+					unit wh2_main_def_mon_black_dragon;
+					unit wh2_main_def_cav_cold_one_knights_1;
+					unit wh2_dlc14_def_veh_bloodwrack_shrine_0;
+					unit wh2_main_def_mon_war_hydra;
+					unit wh2_dlc10_def_mon_chill_of_sontar_ror_0;
+					unit wh2_dlc14_def_mon_bloodwrack_medusa_ror_0;
+					unit wh2_dlc10_def_inf_blades_of_the_blood_queen_ror_0;
+				}
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;
+					total 18;
+				}
+				//
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_main_def_hag_graef;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_main_def_hag_graef;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+    }

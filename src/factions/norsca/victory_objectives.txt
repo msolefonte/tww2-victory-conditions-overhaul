@@ -1,0 +1,371 @@
+    // # RACE Norsca
+
+    // ## FACTION World Walkers
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh_dlc08_nor_norsca;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				// Attain maximum favour with one Chaos god
+				objective
+				{
+					override_text mission_text_text_mis_activity_attain_chaos_god_favour;
+                    type SCRIPTED;
+                    script_key attain_chaos_god_favour;
+				}
+
+				// Defeat all of the Chaos Gods challengers
+				objective
+				{
+					override_text mission_text_text_mis_activity_defeat_chaos_gods_challengers;
+                    type SCRIPTED;
+                    script_key defeat_chaos_gods_challengers;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Destroy factions
+					faction wh_dlc08_nor_wintertooth;
+					confederation_valid;
+				}
+				objective													// Earn 10000 from raiding
+				{
+					type EARN_X_AMOUNT_FROM_RAIDING;
+					total 10000;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 7;
+					unit wh_dlc08_nor_mon_skinwolves_0;
+					unit wh_dlc08_nor_mon_skinwolves_1;
+					unit wh_dlc08_nor_mon_war_mammoth_0;
+					unit wh_dlc08_nor_mon_war_mammoth_1;
+					unit wh_dlc08_nor_mon_war_mammoth_2;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 40;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				// Attain maximum favour with one Chaos god
+				objective
+				{
+					override_text mission_text_text_mis_activity_attain_chaos_god_favour;
+                    type SCRIPTED;
+                    script_key attain_chaos_god_favour;
+				}
+
+				// Defeat all of the Chaos Gods challengers
+				objective
+				{
+					override_text mission_text_text_mis_activity_defeat_chaos_gods_challengers;
+                    type SCRIPTED;
+                    script_key defeat_chaos_gods_challengers;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Destroy factions
+					faction wh_dlc08_nor_wintertooth;
+					faction wh_main_emp_empire;
+					faction wh_main_brt_bretonnia;
+					confederation_valid;
+				}
+				objective													// Earn 20000 from raiding
+				{
+					type EARN_X_AMOUNT_FROM_RAIDING;
+					total 20000;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 12;
+					unit wh_dlc08_nor_mon_skinwolves_0;
+					unit wh_dlc08_nor_mon_skinwolves_1;
+					unit wh_dlc08_nor_mon_war_mammoth_0;
+					unit wh_dlc08_nor_mon_war_mammoth_1;
+					unit wh_dlc08_nor_mon_war_mammoth_2;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 60;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh_dlc08_nor_norsca;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh_dlc08_nor_norsca;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 60;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Wintertooth
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh_dlc08_nor_wintertooth;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				// Attain maximum favour with one Chaos god
+				objective
+				{
+					override_text mission_text_text_mis_activity_attain_chaos_god_favour;
+                    type SCRIPTED;
+                    script_key attain_chaos_god_favour;
+				}
+
+				// Defeat all of the Chaos Gods challengers
+				objective
+				{
+					override_text mission_text_text_mis_activity_defeat_chaos_gods_challengers;
+                    type SCRIPTED;
+                    script_key defeat_chaos_gods_challengers;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Destroy factions
+					faction wh_dlc08_nor_norsca;
+					confederation_valid;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 7;
+					unit wh_main_nor_mon_chaos_trolls;
+					unit wh_dlc08_nor_mon_norscan_ice_trolls_0;
+					unit wh_dlc08_nor_mon_fimir_0;
+					unit wh_dlc08_nor_mon_fimir_1;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 40;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				// Attain maximum favour with one Chaos god
+				objective
+				{
+					override_text mission_text_text_mis_activity_attain_chaos_god_favour;
+                    type SCRIPTED;
+                    script_key attain_chaos_god_favour;
+				}
+
+				// Defeat all of the Chaos Gods challengers
+				objective
+				{
+					override_text mission_text_text_mis_activity_defeat_chaos_gods_challengers;
+                    type SCRIPTED;
+                    script_key defeat_chaos_gods_challengers;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Destroy factions
+					faction wh_dlc08_nor_norsca;
+					faction wh_main_emp_empire;
+					faction wh_main_dwf_dwarfs;
+					confederation_valid;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 12;
+					unit wh_main_nor_mon_chaos_trolls;
+					unit wh_dlc08_nor_mon_norscan_ice_trolls_0;
+					unit wh_dlc08_nor_mon_fimir_0;
+					unit wh_dlc08_nor_mon_fimir_1;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 60;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh_dlc08_nor_wintertooth;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh_dlc08_nor_wintertooth;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 60;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}

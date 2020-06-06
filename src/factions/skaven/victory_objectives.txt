@@ -1,0 +1,974 @@
+    // # RACE Skaven
+
+    // ## FACTION Clan Mors
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh2_main_skv_clan_mors;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type OWN_N_REGIONS_INCLUDING;
+					total 1;
+					override_text mission_text_text_wh_dlc06_objective_override_greenskins_skarsnik;
+
+					region wh_main_eastern_badlands_karak_eight_peaks;
+				}
+				objective
+				{
+					type AT_LEAST_X_RELIGION_IN_ALL_PROVINCES;									// At least 50% SKV corruption in all owned provinces
+					total 50;
+					religion wh2_main_religion_skaven;
+				}
+				objective																		// At least 50% SKV corruption in named provinces
+				{
+					type AT_LEAST_X_RELIGION_IN_PROVINCES;
+					province wh_main_peak_pass;
+					province wh_main_eastern_badlands;
+					province wh_main_the_silver_road;
+					total 50;
+					religion wh2_main_religion_skaven;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Queek Short - Destroy GRIMGOR, THORGRIM, KROQ-GAR, MUTINOUS GITS
+					faction wh_main_grn_greenskins;
+					faction wh_main_dwf_dwarfs;
+					faction wh2_main_lzd_last_defenders;
+					faction wh_main_grn_necksnappers;
+					confederation_valid;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 60;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type OWN_N_REGIONS_INCLUDING;
+					total 1;
+					override_text mission_text_text_wh_dlc06_objective_override_greenskins_skarsnik;
+
+					region wh_main_eastern_badlands_karak_eight_peaks;
+				}
+				objective
+				{
+					type AT_LEAST_X_RELIGION_IN_ALL_PROVINCES;											// At least 50% SKV corruption in all owned provinces
+					total 50;
+					religion wh2_main_religion_skaven;
+				}
+				objective																		// At least 50% SKV corruption in named provinces
+				{
+					type AT_LEAST_X_RELIGION_IN_PROVINCES;
+					province wh_main_peak_pass;
+					province wh_main_eastern_badlands;
+					province wh_main_the_silver_road;
+					total 50;
+					religion wh2_main_religion_skaven;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Queek Long - Destroy GRIMGOR, THORGRIM, KROQ-GAR, MUTINOUS GITS, SKARSNIK, WURRZAG, BELEGAR, UNGRIM and SETTRA
+					faction wh_main_grn_greenskins;
+					faction wh_main_dwf_dwarfs;
+					faction wh2_main_lzd_last_defenders;
+					faction wh_main_grn_necksnappers;
+					faction wh_main_grn_crooked_moon;
+					faction wh_main_grn_orcs_of_the_bloody_hand;
+					faction wh_main_dwf_karak_kadrin;
+					faction wh_main_dwf_karak_izor;
+					faction wh2_dlc09_tmb_khemri;
+					confederation_valid;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_main_skv_clan_mors;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_main_skv_clan_mors;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Clan Pestilens
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh2_main_skv_clan_pestilens;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type AT_LEAST_X_RELIGION_IN_ALL_PROVINCES;									// At least 50% SKV corruption in all owned provinces
+					total 50;
+					religion wh2_main_religion_skaven;
+				}
+				objective																		// At least 50% SKV corruption in named provinces
+				{
+					type AT_LEAST_X_RELIGION_IN_PROVINCES;
+					province wh2_main_isthmus_of_lustria;
+					province wh2_main_northern_great_jungle;
+					province wh2_main_southern_great_jungle;
+					total 50;
+					religion wh2_main_religion_skaven;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Skrolk Short - Destroy TECLIS, LOKHIR and HARKON
+					faction wh2_main_hef_order_of_loremasters;
+					faction wh2_dlc11_def_the_blessed_dread;
+					faction wh2_dlc11_cst_vampire_coast;
+					confederation_valid;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 60;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type AT_LEAST_X_RELIGION_IN_ALL_PROVINCES;									// At least 50% SKV corruption in all owned provinces
+					total 50;
+					religion wh2_main_religion_skaven;
+				}
+				objective																		// At least 50% SKV corruption in named provinces
+				{
+					type AT_LEAST_X_RELIGION_IN_PROVINCES;
+					province wh2_main_isthmus_of_lustria;
+					province wh2_main_northern_jungle_of_pahualaxa;
+					province wh2_main_southern_jungle_of_pahualaxa;
+					province wh2_main_jungles_of_green_mists;
+					province wh2_main_the_creeping_jungle;
+					province wh2_main_northern_great_jungle;
+					province wh2_main_huahuan_desert;
+					province wh2_main_southern_great_jungle;
+					province wh2_main_vampire_coast;
+					province wh2_main_volcanic_islands;
+					province wh2_main_headhunters_jungle;
+					total 50;
+					religion wh2_main_religion_skaven;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Skrolk Long - Destroy TECLIS, LOKHIR, HARKON, CYLOSTRA and MAZDAMUNDI
+					faction wh2_main_hef_order_of_loremasters;
+					faction wh2_dlc11_def_the_blessed_dread;
+					faction wh2_dlc11_cst_vampire_coast;
+					faction wh2_dlc11_cst_the_drowned;
+					faction wh2_main_lzd_hexoatl;
+					confederation_valid;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_main_skv_clan_pestilens;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_main_skv_clan_pestilens;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Clan Rictus
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh2_dlc09_skv_clan_rictus;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+
+				objective																		// At least 50% SKV corruption in named provinces
+				{
+					type AT_LEAST_X_RELIGION_IN_PROVINCES;
+					province wh2_main_the_clawed_coast;
+					province wh2_main_iron_mountains;
+					province wh2_main_isthmus_of_lustria;
+					total 50;
+					religion wh2_main_religion_skaven;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Destroy MAZDAMUNDI and TYRION's factions
+					faction wh2_main_lzd_hexoatl;
+					faction wh2_main_hef_eataine;
+					confederation_valid;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 60;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+
+				objective																		// At least 50% SKV corruption in named provinces
+				{
+					type AT_LEAST_X_RELIGION_IN_PROVINCES;
+					province wh2_main_the_clawed_coast;
+					province wh2_main_iron_mountains;
+					province wh2_main_isthmus_of_lustria;
+					province wh_main_reikland;
+					province wh_main_the_silver_road;
+					province wh_main_eastern_badlands;
+					province wh_main_couronne_et_languille;
+					province wh2_main_eataine;
+					total 50;
+					religion wh2_main_religion_skaven;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Destroy MAZDAMUNDI and TYRION's factions
+					faction wh2_main_lzd_hexoatl;
+					faction wh2_main_hef_eataine;
+					faction wh_main_emp_empire;
+					faction wh_main_dwf_dwarfs;
+					confederation_valid;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_dlc09_skv_clan_rictus;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_dlc09_skv_clan_rictus;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 80;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Clan Skryre
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh2_main_skv_clan_skyre;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type AT_LEAST_X_RELIGION_IN_ALL_PROVINCES;									// At least 50% SKV corruption in all owned provinces
+					total 50;
+					religion wh2_main_religion_skaven;
+				}
+				objective																		// At least 50% SKV corruption in named provinces
+				{
+					type AT_LEAST_X_RELIGION_IN_PROVINCES;
+					province wh_main_talsyn;
+					province wh_main_yn_edri_eternos;
+					province wh_main_wydrioth;
+					province wh_main_argwylon;
+					province wh_main_carcassone_et_brionne;
+					province wh_main_bordeleaux_et_aquitaine;
+					total 50;
+					religion wh2_main_religion_skaven;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Queek Short - Destroy GRIMGOR, THORGRIM, KROQ-GAR, MUTINOUS GITS
+					faction wh_dlc05_wef_wood_elves;
+					faction wh_main_brt_carcassonne;
+					faction wh_main_brt_bordeleaux;
+					faction wh2_dlc11_cst_pirates_of_sartosa;
+					confederation_valid;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 60;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type AT_LEAST_X_RELIGION_IN_ALL_PROVINCES;											// At least 50% SKV corruption in all owned provinces
+					total 50;
+					religion wh2_main_religion_skaven;
+				}
+				objective																		// At least 50% SKV corruption in named provinces
+				{
+					type AT_LEAST_X_RELIGION_IN_PROVINCES;
+					province wh_main_talsyn;
+					province wh_main_yn_edri_eternos;
+					province wh_main_wydrioth;
+					province wh_main_argwylon;
+					province wh_main_carcassone_et_brionne;
+					province wh_main_bordeleaux_et_aquitaine;
+					province wh_main_couronne_et_languille;
+					province wh_main_reikland;
+					province wh_main_zhufbar;
+					province wh_main_the_silver_road;
+					province wh_main_blood_river_valley;
+					province wh_main_western_sylvania;
+					province wh_main_eastern_sylvania;
+					total 50;
+					religion wh2_main_religion_skaven;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Queek Long - Destroy GRIMGOR, THORGRIM, KROQ-GAR, MUTINOUS GITS, SKARSNIK, WURRZAG, BELEGAR, UNGRIM and SETTRA
+					faction wh_dlc05_wef_wood_elves;
+					faction wh_main_brt_carcassonne;
+					faction wh_main_brt_bordeleaux;
+					faction wh2_dlc11_cst_pirates_of_sartosa;
+					faction wh_main_emp_empire;
+					faction wh_main_brt_bretonnia;
+					faction wh_main_dwf_karak_izor;
+					faction wh_main_vmp_vampire_counts;
+					confederation_valid;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_main_skv_clan_skyre;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_main_skv_clan_skyre;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Clan Eshin
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh2_main_skv_clan_eshin;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+
+				objective
+				{
+					type PERFORM_RITUAL;
+					ritual_category ESHIN_VORTEX_RITUAL;
+					total 4;
+				}
+				objective
+				{
+					type COMPLETE_N_MISSIONS_OF_CATEGORY;
+					total 3;
+					event_category Objective;
+				}
+				objective
+				{
+					type PERFORM_RITUAL;
+					ritual_category ESHIN_RITUAL_DELAYED;
+					total 2;
+				}
+				objective
+				{
+					type PERFORM_RITUAL;
+					ritual_category ESHIN_RITUAL;
+					total 15;
+				}
+				objective
+				{
+					type DESTROY_FACTION;
+					faction wh_main_grn_greenskins;
+					faction wh_main_dwf_dwarfs;
+					faction wh2_main_def_hag_graef;
+					faction wh2_main_lzd_last_defenders;
+					confederation_valid;
+				}
+				objective
+				{
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					total 4;
+					building_level wh2_main_skv_monsters_2;
+					building_level wh2_main_skv_plagues_3;
+					building_level wh2_main_skv_engineers_3;
+					building_level wh2_main_skv_temple_1;
+					building_level wh2_main_skv_energy_5;
+					faction wh2_main_skv_clan_eshin;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 15;
+					additive;
+					unit wh2_main_skv_mon_hell_pit_abomination;
+					unit wh2_main_skv_inf_plague_monk_censer_bearer;
+					unit wh2_dlc12_skv_inf_plague_monk_censer_bearer_ror_0;
+					unit wh2_main_skv_veh_doomwheel;
+					unit wh2_dlc12_skv_veh_doomwheel_ror_0;
+					unit wh2_main_skv_art_warp_lightning_cannon;
+					unit wh2_dlc12_skv_art_warp_lightning_cannon_ror_0;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+
+				objective
+				{
+					type PERFORM_RITUAL;
+					ritual_category ESHIN_VORTEX_RITUAL;
+					total 4;
+				}
+				objective
+				{
+					type COMPLETE_N_MISSIONS_OF_CATEGORY;
+					total 5;
+					event_category Objective;
+				}
+				objective
+				{
+					type PERFORM_RITUAL;
+					ritual_category ESHIN_RITUAL_DELAYED;
+					total 4;
+				}
+				objective
+				{
+					type PERFORM_RITUAL;
+					ritual_category ESHIN_RITUAL;
+					total 30;
+				}
+				objective
+				{
+					type DESTROY_FACTION;														// Queek Long - Destroy GRIMGOR, THORGRIM, KROQ-GAR, MUTINOUS GITS, SKARSNIK, WURRZAG, BELEGAR, UNGRIM and SETTRA
+					faction wh_main_grn_greenskins;
+					faction wh_main_dwf_dwarfs;
+					faction wh2_main_def_hag_graef;
+					faction wh2_main_lzd_last_defenders;
+					faction wh_main_emp_empire;
+					faction wh2_dlc09_tmb_khemri;
+					faction wh_main_brt_bretonnia;
+					faction wh2_main_hef_eataine;
+					faction wh2_main_lzd_hexoatl;
+					confederation_valid;
+				}
+				objective
+				{
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					total 7;
+					building_level wh2_main_skv_monsters_2;
+					building_level wh2_main_skv_plagues_3;
+					building_level wh2_main_skv_engineers_3;
+					building_level wh2_main_skv_temple_1;
+					building_level wh2_main_skv_energy_5;
+					building_level wh2_main_skv_defence_major_3;
+					building_level wh2_main_skv_weaponteams_2;
+					faction wh2_main_skv_clan_eshin;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 30;
+					additive;
+					unit wh2_main_skv_mon_hell_pit_abomination;
+					unit wh2_main_skv_inf_plague_monk_censer_bearer;
+					unit wh2_dlc12_skv_inf_plague_monk_censer_bearer_ror_0;
+					unit wh2_main_skv_veh_doomwheel;
+					unit wh2_dlc12_skv_veh_doomwheel_ror_0;
+					unit wh2_main_skv_art_warp_lightning_cannon;
+					unit wh2_dlc12_skv_art_warp_lightning_cannon_ror_0;
+				}
+				objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;
+					total 18;
+				}
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_main_skv_clan_eshin;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_main_skv_clan_eshin;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}

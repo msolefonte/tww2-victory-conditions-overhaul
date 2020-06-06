@@ -1,0 +1,757 @@
+    // # RACE Tomb Kings
+
+    // ## FACTION Khemri
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh2_dlc09_tmb_khemri;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type DESTROY_FACTION;									// Destroy ARKHANS's factions
+					faction wh2_dlc09_tmb_followers_of_nagash;
+					confederation_valid;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 3;
+					unit wh2_dlc09_tmb_veh_khemrian_warsphinx_0;
+				}
+				objective
+				{
+					type OWN_N_REGIONS_INCLUDING;							// Capture the Black Pyramid of Nagash region
+					total 1;
+					region wh2_main_great_mortis_delta_black_pyramid_of_nagash;
+				}
+				objective													// Construct the 5 of the landmark pyramid buildings
+				{
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					faction wh2_dlc09_tmb_khemri;
+					total 5;
+					building_level wh2_dlc09_special_pyramid_alcadizaar;
+					building_level wh2_dlc09_special_pyramid_amenemhetum;
+					building_level wh2_dlc09_special_pyramid_khatep;
+					building_level wh2_dlc09_special_pyramid_phar;
+					building_level wh2_dlc09_special_pyramid_settra;
+					building_level wh2_dlc09_special_pyramid_tutankhanut;
+					building_level wh2_main_special_pyramid_of_nagash_other;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type DESTROY_FACTION;									// Destroy ARKHANS's factions
+					faction wh2_dlc09_tmb_followers_of_nagash;
+					confederation_valid;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 10;
+					unit wh2_dlc09_tmb_veh_khemrian_warsphinx_0;
+					unit wh2_dlc09_tmb_mon_heirotitan_0;
+					unit wh2_dlc09_tmb_mon_necrosphinx_0;
+				}
+				objective
+				{
+					type OWN_N_REGIONS_INCLUDING;							// Capture the Black Pyramid of Nagash region
+					total 1;
+					region wh2_main_great_mortis_delta_black_pyramid_of_nagash;
+				}
+				objective													// Construct the 7 landmark pyramid buildings
+				{
+					type CONSTRUCT_N_BUILDINGS_INCLUDING;
+					faction wh2_dlc09_tmb_khemri;
+					total 7;
+					building_level wh2_dlc09_special_pyramid_alcadizaar;
+					building_level wh2_dlc09_special_pyramid_amenemhetum;
+					building_level wh2_dlc09_special_pyramid_khatep;
+					building_level wh2_dlc09_special_pyramid_phar;
+					building_level wh2_dlc09_special_pyramid_settra;
+					building_level wh2_dlc09_special_pyramid_tutankhanut;
+					building_level wh2_main_special_pyramid_of_nagash_other;
+				}
+				objective
+				{
+					type CONTROL_N_REGIONS_FROM;
+					total 8;
+					region wh2_main_land_of_the_dead_khemri;
+					region wh2_main_land_of_assassins_palace_of_the_wizard_caliph;
+					region wh2_main_great_desert_of_araby_black_tower_of_arkhan;
+					region wh2_main_coast_of_araby_al_haikk;
+					region wh2_main_ash_river_numas;
+					region wh2_main_shifting_sands_ka-sabar;
+					region wh_main_southern_badlands_galbaraz;
+					region wh2_main_charnel_valley_karag_orrud;
+					region wh2_main_devils_backbone_lahmia;
+					region wh2_main_crater_of_the_walking_dead_rasetra;
+				}
+				//
+
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_dlc09_tmb_khemri;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_dlc09_tmb_khemri;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Court of Lybaras
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh2_dlc09_tmb_lybaras;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type DESTROY_FACTION;									// Destroy Vampire Counts factions
+					faction wh2_main_vmp_necrarch_brotherhood;
+					faction wh2_main_vmp_strygos_empire;
+					faction wh2_main_vmp_the_silver_host;
+					confederation_valid;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 7;
+					unit wh2_dlc09_tmb_cav_necropolis_knights_0;
+					unit wh2_dlc09_tmb_cav_necropolis_knights_1;
+					unit wh2_dlc09_tmb_mon_sepulchral_stalkers_0;
+				}
+				objective
+				{
+					type OWN_N_REGIONS_INCLUDING;							// Capture the Black Pyramid of Nagash region
+					total 1;
+					region wh2_main_great_mortis_delta_black_pyramid_of_nagash;
+				}
+				objective													// Construct the 5 of the landmark pyramid buildings
+				{
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					faction wh2_dlc09_tmb_lybaras;
+					total 5;
+					building_level wh2_dlc09_special_pyramid_alcadizaar;
+					building_level wh2_dlc09_special_pyramid_amenemhetum;
+					building_level wh2_dlc09_special_pyramid_khatep;
+					building_level wh2_dlc09_special_pyramid_phar;
+					building_level wh2_dlc09_special_pyramid_settra;
+					building_level wh2_dlc09_special_pyramid_tutankhanut;
+					building_level wh2_main_special_pyramid_of_nagash_other;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type DESTROY_FACTION;									// Destroy all Vampire Count factions
+					faction wh2_main_vmp_necrarch_brotherhood;
+					faction wh2_main_vmp_strygos_empire;
+					faction wh2_main_vmp_the_silver_host;
+					faction wh_main_vmp_vampire_counts;
+					faction wh_main_vmp_schwartzhafen;
+					faction wh2_dlc11_cst_the_drowned;
+					faction wh2_dlc11_cst_pirates_of_sartosa;
+					faction wh2_dlc11_cst_vampire_coast;
+					faction wh2_dlc11_cst_noctilus;
+					faction wh2_dlc11_vmp_the_barrow_legion;
+					faction wh_main_vmp_mousillon;
+					faction wh_main_vmp_rival_sylvanian_vamps;
+					confederation_valid;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 15;
+					unit wh2_dlc09_tmb_cav_necropolis_knights_0;
+					unit wh2_dlc09_tmb_cav_necropolis_knights_1;
+					unit wh2_dlc09_tmb_mon_sepulchral_stalkers_0;
+				}
+				objective
+				{
+					type OWN_N_REGIONS_INCLUDING;							// Capture the Black Pyramid of Nagash region
+					total 1;
+					region wh2_main_great_mortis_delta_black_pyramid_of_nagash;
+				}
+				objective													// Construct the 7 landmark pyramid buildings
+				{
+					type CONSTRUCT_N_BUILDINGS_INCLUDING;
+					faction wh2_dlc09_tmb_lybaras;
+					total 7;
+					building_level wh2_dlc09_special_pyramid_alcadizaar;
+					building_level wh2_dlc09_special_pyramid_amenemhetum;
+					building_level wh2_dlc09_special_pyramid_khatep;
+					building_level wh2_dlc09_special_pyramid_phar;
+					building_level wh2_dlc09_special_pyramid_settra;
+					building_level wh2_dlc09_special_pyramid_tutankhanut;
+					building_level wh2_main_special_pyramid_of_nagash_other;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_dlc09_tmb_lybaras;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_dlc09_tmb_lybaras;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Exiles of Nehek
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh2_dlc09_tmb_exiles_of_nehek;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+
+				objective
+				{
+					type DESTROY_FACTION;									// Destroy local Dark Elf factions
+					faction wh2_main_def_clar_karond;
+					faction wh2_main_def_ssildra_tor;
+					faction wh2_main_def_bleak_holds;
+					faction wh2_main_def_cult_of_pleasure;
+					confederation_valid;
+				}
+				objective													// Gain Crafting Resources
+				{
+					type HAVE_RESOURCES;
+					resource res_obsidian;
+					resource res_animals;
+					resource res_rom_furs;
+					resource res_rom_iron;
+					resource res_rom_marble;
+					resource res_rom_lead;
+					resource res_rom_timber;
+				}
+				objective													// Mortuary Cult Crafting Objective
+				{
+					type PERFORM_RITUAL;
+					ritual_category CRAFTING_RITUAL;
+					total 10;
+				}
+				objective
+				{
+					type OWN_N_REGIONS_INCLUDING;							// Capture the Black Pyramid of Nagash region
+					total 1;
+					region wh2_main_great_mortis_delta_black_pyramid_of_nagash;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type DESTROY_FACTION;									// Destroy local Dark Elf factions
+					faction wh2_main_def_clar_karond;
+					faction wh2_main_def_ssildra_tor;
+					faction wh2_main_def_bleak_holds;
+					faction wh2_main_def_cult_of_pleasure;
+					confederation_valid;
+				}
+				objective													// Gain Crafting Resources
+				{
+					type HAVE_RESOURCES;
+					resource res_obsidian;
+					resource res_dyes;
+					resource res_animals;
+					resource res_rom_furs;
+					resource res_gems;
+					resource res_gold_idols;
+					resource res_rom_iron;
+					resource res_rom_marble;
+					resource res_medicine;
+					resource res_rom_textiles;
+					resource res_rom_lead;
+					resource res_spices;
+					resource res_rom_timber;
+					resource res_rom_wine;
+				}
+				objective													// Mortuary Cult Crafting Objective
+				{
+					type PERFORM_RITUAL;
+					ritual_category CRAFTING_RITUAL;
+					total 20;
+				}
+				objective
+				{
+					type OWN_N_REGIONS_INCLUDING;							// Capture the Black Pyramid of Nagash region
+					total 1;
+					region wh2_main_great_mortis_delta_black_pyramid_of_nagash;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_dlc09_tmb_exiles_of_nehek;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_dlc09_tmb_exiles_of_nehek;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+    // ## FACTION Followers of Nagash
+
+    //**** SINGLE PLAYER ****//
+	victory_objective
+	{
+		faction wh2_dlc09_tmb_followers_of_nagash;
+		campaign_type sp_normal;
+
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type DESTROY_FACTION;									// Destroy SETTRA's factions
+					faction wh2_dlc09_tmb_khemri;
+					confederation_valid;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 5;
+					unit wh2_dlc09_tmb_cav_hexwraiths;
+				}
+				objective
+				{
+					type OWN_N_REGIONS_INCLUDING;							// Capture the Black Pyramid of Nagash region
+					total 2;
+					region wh2_main_great_mortis_delta_black_pyramid_of_nagash;
+					region wh2_main_great_desert_of_araby_black_tower_of_arkhan;
+				}
+				objective													// Construct the 5 of the landmark pyramid buildings
+				{
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					faction wh2_dlc09_tmb_followers_of_nagash;
+					total 5;
+					building_level wh2_dlc09_special_pyramid_alcadizaar;
+					building_level wh2_dlc09_special_pyramid_amenemhetum;
+					building_level wh2_dlc09_special_pyramid_khatep;
+					building_level wh2_dlc09_special_pyramid_phar;
+					building_level wh2_dlc09_special_pyramid_settra;
+					building_level wh2_dlc09_special_pyramid_tutankhanut;
+					building_level wh2_main_special_pyramid_of_nagash_other;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type DESTROY_FACTION;									// Destroy Tomb King Major factions
+					faction wh2_dlc09_tmb_khemri;
+					faction wh2_dlc09_tmb_lybaras;
+					faction wh2_dlc09_tmb_exiles_of_nehek;
+					confederation_valid;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 5;
+					unit wh2_dlc09_tmb_cav_hexwraiths;
+				}
+				objective
+				{
+					type OWN_N_REGIONS_INCLUDING;							// Capture the Black Pyramid of Nagash region
+					total 2;
+					region wh2_main_great_mortis_delta_black_pyramid_of_nagash;
+					region wh2_main_great_desert_of_araby_black_tower_of_arkhan;
+				}
+				objective													// Construct the 7 landmark pyramid buildings
+				{
+					type CONSTRUCT_N_BUILDINGS_INCLUDING;
+					faction wh2_dlc09_tmb_followers_of_nagash;
+					total 7;
+					building_level wh2_dlc09_special_pyramid_alcadizaar;
+					building_level wh2_dlc09_special_pyramid_amenemhetum;
+					building_level wh2_dlc09_special_pyramid_khatep;
+					building_level wh2_dlc09_special_pyramid_phar;
+					building_level wh2_dlc09_special_pyramid_settra;
+					building_level wh2_dlc09_special_pyramid_tutankhanut;
+					building_level wh2_main_special_pyramid_of_nagash_other;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER HEAD-TO-HEAD VERSUS **
+	victory_objective
+	{
+		faction wh2_dlc09_tmb_followers_of_nagash;
+		campaign_type mp_vs_normal;
+		mission
+		{
+			victory_type wh_main_victory_type_mp_versus;
+			key wh_main_mp_versus_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type RAZE_OR_OWN_X_SETTLEMENTS;
+					total 100;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
+
+	//** MULTIPLAYER CO-OP **
+	victory_objective
+	{
+		faction wh2_dlc09_tmb_followers_of_nagash;
+		campaign_type mp_co_op_normal;
+
+		mission
+		{
+			victory_type wh_main_victory_type_mp_coop;
+			key wh_main_mp_coop_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					type ALL_PLAYERS_RAZE_OR_OWN_X_SETTLEMENTS;
+					total 140;
+				}
+				objective
+				{
+					type OWN_N_UNITS;
+					total 100;
+				}
+				objective
+				{
+					type RESEARCH_N_TECHS_OF_TYPE_X;
+					override_text mission_text_text_mis_activity_research_n_techs_of_type_x_coop;
+					total 12;
+					technology_category rom_roman_civ_top;
+					technology_category rom_roman_mil_top;
+				}
+
+				//
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+	}
