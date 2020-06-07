@@ -19,23 +19,21 @@ see this is an absolute loreful project. Fun has been my main priority.
 
 ## Where can I check the changes?
 
-The list of changes is available in [my personal GitHub](https://github.com/msolefonte/), where you can also take a look 
-to the code to use it as an inspiration for your own projects. The list of factions is available 
-[here](https://github.com/msolefonte/tww2-victory-conditions-overhaul/src/factions). 
+The list of changes is available here at GitHub, where you can also take a look to the code to use it as an inspiration 
+for your own projects. The list of factions is available at [src/factions](src/factions). 
 
 Note that each faction contains two files: `README.md` and `victory_conditions.txt`. The first one is a human friendly 
 text that reflex what is on the second one, but it is `victory_conditions.txt` what is finally truth and what is loaded 
 by the script that generates the mod.
 
-Also, you have a changelog available 
-[at GitHub](https://github.com/msolefonte/tww2-victory-conditions-overhaul/CHANGELOG.md). 
+Also, you have a changelog available [here](CHANGELOG.md).
 
 ## Where can I report a bug?
 
 This mod should be compatible with anything that does not modify victory conditions and start positions. If, even 
 knowing that, you are unable to make it work or you found that something is not working as it should, feel free to 
-contact me at [the mod page at Steam Workshop]() or to open 
-[an issue at GitHub](https://github.com/msolefonte/tww2-victory-conditions-overhaul/issues).
+contact me at [the mod page at Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2122621615) or to 
+open [an issue here](https://github.com/msolefonte/tww2-victory-conditions-overhaul/issues).
 
 ## Can I propose a change?
 

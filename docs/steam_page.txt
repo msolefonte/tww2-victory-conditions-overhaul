@@ -1,0 +1,31 @@
+[img]https://i.imgur.com/fVVaDCS.gif[/img]
+
+[h2]Introduction[/h2]
+
+Are you tired of the boring victory conditions of Total War: Warhammer II? Are you still trying to understand why do you need to have control of Naggaroth as Karak Azul? Do you feel that, after some turns, the game starts to feel like a painting game, where you just have to pass turns till you have control of all the map? Me too.
+
+It is easy to hear that Mortal Empires campaigns are not finished: they are abandoned. Some people do not see a problem in this, as victory conditions are just a suggestion, proclaiming that "The game is a sandbox!" and you can "End it just when you get bored!". However, I like to keep my things done. This is why I did this mod.
+
+Nowadays, as per version 1.9.0 of TW: Warhammer II, there are [b]54 playable factions[/b] along the multiple races. [b]This mod revisits them all[/b] (Yeah, it took its time). Stupid objectives like conquering capitals or destroy factions just for the sake of it have been removed. In their place, more loreful objectives have been added. However, do not try to see this is an absolute loreful project. Fun has been my main priority.
+
+[h2]Where can I check the changes?[/h2]
+
+The list of changes is available in [url=https://github.com/msolefonte/tww2-victory-conditions-overhaul/]my personal GitHub[/url], where you can also take a look to the code to use it as an inspiration for your own projects. The list of factions is available [url=https://github.com/msolefonte/tww2-victory-conditions-overhaul/tree/master/src/factions]here[/url].
+
+Note that each faction contains two files: [i]README.md[/i] and  [i]victory_conditions.txt[/i]. The first one is a human friendly text that reflex what is on the second one, but it is  [i]victory_conditions.txt[/i] what is finally truth and what is loaded by the script that generates the mod.
+
+Also, you have a changelog available [url=https://github.com/msolefonte/tww2-victory-conditions-overhaul/blob/master/CHANGELOG.md]at GitHub[/url].
+
+[h2]Where can I report a bug?[/h2]
+
+This mod should be compatible with anything that does not modify victory conditions and start positions. If, even knowing that, you are unable to make it work or you found that something is not working as it should, feel free to contact me at the mod page or to open [url=https://github.com/msolefonte/tww2-victory-conditions-overhaul/issues]an issue at GitHub[/url].
+
+[h2]Can I propose a change?[/h2]
+
+Of course! It is really hard to balance and keep fun 54 factions. I myself have not played them all, so any help is welcome and any suggestion will be heard. Some things are not possible, or are too complex to do and maintain, but do not be scared of reporting any think that you would like to see.
+
+[h2]How can I help?[/h2]
+
+You can like the mod and share it with your friends. The bigger the community, the faster this mod is going to grow and the more interest I am going to place into maintaining it. You can also, of course, create Pull Request at GitHub or contact me directly to introduce new features.
+
+Finally, if you want to support economically my job, feel free to donate via [url=https://paypal.me/echaravolar]PayPal[/url].
