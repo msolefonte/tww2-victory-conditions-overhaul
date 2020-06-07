@@ -2,7 +2,7 @@
 
 ## Introduction
 
-[Steam Workshop Mod Link]()
+[Steam Workshop Mod Link](https://steamcommunity.com/sharedfiles/filedetails/?id=2122621615)
 
 Are you tired of the boring victory conditions of Total War: Warhammer II? Are you still trying to understand why do you
 need to have control of Naggaroth as Karak Azul? Do you feel that, after some turns, the game starts to feel like a 
