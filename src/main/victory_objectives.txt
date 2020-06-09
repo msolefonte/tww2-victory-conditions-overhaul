@@ -755,6 +755,7 @@ victory_objectives
 				{
 					type DESTROY_FACTION;														// Malekith Short - Destroy ALITH ANAR and ALARIELLE
 					faction wh2_main_hef_avelorn;
+					faction wh2_main_hef_eataine;
 					faction wh2_main_hef_nagarythe;
 					confederation_valid;
 				}
@@ -4149,18 +4150,6 @@ victory_objectives
 					building_level wh2_main_special_shrine_of_asuryan_1_hef;
 					building_level wh2_main_special_lothern_port_3;
 				}
-				objective
-                {
-					override_text mission_text_text_mis_activity_archaon_spawned;
-                    type SCRIPTED;
-                    script_key archaon_spawned;
-                }
-				objective
-				{
-					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
-					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
-					start_pos_character 2140782858;
-				}
 
 				//
 
@@ -4344,18 +4333,6 @@ victory_objectives
 					faction wh2_dlc11_cst_vampire_coast;
 					faction wh2_dlc11_def_the_blessed_dread;
 					confederation_valid;
-				}
-				objective
-                {
-					override_text mission_text_text_mis_activity_archaon_spawned;
-                    type SCRIPTED;
-                    script_key archaon_spawned;
-                }
-				objective
-				{
-					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
-					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
-					start_pos_character 2140782858;
 				}
 
 				//
@@ -4717,12 +4694,6 @@ victory_objectives
 					total 1;
 					building_level wh2_main_special_everqueen_court_hef;
 				}
-				objective
-                {
-					override_text mission_text_text_mis_activity_archaon_spawned;
-                    type SCRIPTED;
-                    script_key archaon_spawned;
-                }
 				objective
 				{
 					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
@@ -5382,18 +5353,6 @@ victory_objectives
 					faction wh2_dlc11_cst_the_drowned;
 					confederation_valid;
 				}
-				objective
-                {
-					override_text mission_text_text_mis_activity_archaon_spawned;
-                    type SCRIPTED;
-                    script_key archaon_spawned;
-                }
-				objective
-				{
-					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
-					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
-					start_pos_character 2140782858;
-				}
 
 				//
 
@@ -5595,18 +5554,6 @@ victory_objectives
 					faction wh2_dlc09_tmb_khemri;
 					faction wh2_dlc09_tmb_followers_of_nagash;
 					confederation_valid;
-				}
-				objective
-                {
-					override_text mission_text_text_mis_activity_archaon_spawned;
-                    type SCRIPTED;
-                    script_key archaon_spawned;
-                }
-				objective
-				{
-					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
-					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
-					start_pos_character 2140782858;
 				}
 
 				//
@@ -5812,18 +5759,6 @@ victory_objectives
 					faction wh2_dlc09_tmb_followers_of_nagash;
 					confederation_valid;
 				}
-				objective
-                {
-					override_text mission_text_text_mis_activity_archaon_spawned;
-                    type SCRIPTED;
-                    script_key archaon_spawned;
-                }
-				objective
-				{
-					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
-					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
-					start_pos_character 2140782858;
-				}
 
 				//
 
@@ -6021,18 +5956,6 @@ victory_objectives
 					faction wh2_dlc11_cst_noctilus;
 					faction wh2_dlc11_def_the_blessed_dread;
 					confederation_valid;
-				}
-				objective
-                {
-					override_text mission_text_text_mis_activity_archaon_spawned;
-                    type SCRIPTED;
-                    script_key archaon_spawned;
-                }
-				objective
-				{
-					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
-					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
-					start_pos_character 2140782858;
 				}
 
 				//
@@ -7996,16 +7919,10 @@ victory_objectives
 				}
 				objective													// Construct the 5 of the landmark pyramid buildings
 				{
-					type CONSTRUCT_N_BUILDINGS_FROM;
+					type CONSTRUCT_N_BUILDINGS_INCLUDING;
 					faction wh2_dlc09_tmb_khemri;
-					total 5;
-					building_level wh2_dlc09_special_pyramid_alcadizaar;
-					building_level wh2_dlc09_special_pyramid_amenemhetum;
-					building_level wh2_dlc09_special_pyramid_khatep;
-					building_level wh2_dlc09_special_pyramid_phar;
+					total 1;
 					building_level wh2_dlc09_special_pyramid_settra;
-					building_level wh2_dlc09_special_pyramid_tutankhanut;
-					building_level wh2_main_special_pyramid_of_nagash_other;
 				}
 
 				//
@@ -8196,7 +8113,7 @@ victory_objectives
 				{
 					type CONSTRUCT_N_BUILDINGS_FROM;
 					faction wh2_dlc09_tmb_lybaras;
-					total 5;
+					total 1;
 					building_level wh2_dlc09_special_pyramid_alcadizaar;
 					building_level wh2_dlc09_special_pyramid_amenemhetum;
 					building_level wh2_dlc09_special_pyramid_khatep;
@@ -8574,7 +8491,7 @@ victory_objectives
 				{
 					type CONSTRUCT_N_BUILDINGS_FROM;
 					faction wh2_dlc09_tmb_followers_of_nagash;
-					total 5;
+					total 1;
 					building_level wh2_dlc09_special_pyramid_alcadizaar;
 					building_level wh2_dlc09_special_pyramid_amenemhetum;
 					building_level wh2_dlc09_special_pyramid_khatep;
@@ -9607,18 +9524,6 @@ victory_objectives
 					faction wh_main_chs_chaos;
 					faction wh_dlc03_bst_beastmen_chaos;
 					region wh_main_chaos_wastes;
-				}
-				objective
-                {
-					override_text mission_text_text_mis_activity_archaon_spawned;
-                    type SCRIPTED;
-                    script_key archaon_spawned;
-                }
-				objective
-				{
-					type HAVE_CHARACTER_WOUNDED;								// Defeat Archaon
-					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
-					start_pos_character 2140782858;
 				}
 
 				//

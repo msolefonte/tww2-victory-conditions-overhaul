@@ -7,7 +7,6 @@
 	* Construct 3 Star Chambers
 	* Destroy factions
 	    * Cult of Pleasure, Clan Pestilens, The Drowned
-	* Defeat Archaon
 * **Long Victory Conditions**:
 	* Conquer, ally with or assimilate all provinces of Lustria
 	* Construct 5 Star Chambers
@@ -24,7 +23,6 @@
 	* Construct 3 Star Chambers
 	* Destroy factions
 	    * Clan Mors, Lybaras, Khemri, Followers of Nagash
-	* Defeat Archaon
 * **Long Victory Conditions**:
 	* Conquer, ally with or assimilate provinces:
 	    * Southlands Jungle, Kingdom of Beasts, Crater of The Walking Dead, Heart of the Jungle, Shifting Sands, Ash
@@ -43,7 +41,6 @@
 	* Construct 3 Star Chambers
 	* Destroy factions
 	    * Clan Mors, The Bloody Hand, Pirates of Sartosa, Followers of Nagash
-	* Defeat Archaon
 * **Long Victory Conditions**:
 	* Conquer, ally with or assimilate provinces:
 	    * Land of Assasins, Land of the Dervishes, Great Desert of Araby, Land of the Dead, Great Mortis Delta, 
@@ -61,7 +58,6 @@
 	* Construct 3 Crimson Pyramids of Sotek
 	* Destroy factions
 	    * Clan Pestiles, Clan Skyre, Vampire Coast, Noctilus, The Blessed Dread
-	* Defeat Archaon
 * **Long Victory Conditions**:
 	* Conquer, ally with or assimilate all provinces of Lustria
 	* Construct 5 Crimson Pyramids of Sotek

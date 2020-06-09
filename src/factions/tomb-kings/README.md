@@ -7,7 +7,7 @@
 	* Own al least 3 of the following units:
 	    * Khemrian Warsphinxs
 	* Capture the Black Pyramid of Nagash
-	* Construct at least 5 pyramids
+	* Construct the Great Pyramid of Settra
 * **Long Victory Conditions**:
 	* Destroy Arkhan's factions
 	* Own al least 10 of the following units:
@@ -26,7 +26,7 @@
 	* Own al least 7 of the following units:
 	    * Necropolis Knights, Sepulchral Stalkers
 	* Capture the Black Pyramid of Nagash
-	* Construct at least 5 pyramids
+	* Construct at least 1 pyramid
 * **Long Victory Conditions**:
 	* Destroy all Vampire factions
 	    * Necrarch Brotherhood, Strygos Empire ,The Silver Host, Sylvannia, Von Carstein, The Drowned, Pirated of 
@@ -61,7 +61,7 @@
 	* Own al least 5 of the following units:
 	    * Hexwraiths
 	* Capture the Black Pyramid of Nagash
-	* Construct at least 5 pyramids
+	* Construct at least 1 pyramid
 * **Long Victory Conditions**:
 	* Destroy Tomb King Major factions:
 	    * Khemri, Lybaras, Exiles of Nehek

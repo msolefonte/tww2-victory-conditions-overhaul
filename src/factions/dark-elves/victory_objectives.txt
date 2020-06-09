@@ -54,6 +54,7 @@
 				{
 					type DESTROY_FACTION;														// Malekith Short - Destroy ALITH ANAR and ALARIELLE
 					faction wh2_main_hef_avelorn;
+					faction wh2_main_hef_eataine;
 					faction wh2_main_hef_nagarythe;
 					confederation_valid;
 				}

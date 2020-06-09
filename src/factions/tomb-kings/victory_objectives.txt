@@ -36,16 +36,10 @@
 				}
 				objective													// Construct the 5 of the landmark pyramid buildings
 				{
-					type CONSTRUCT_N_BUILDINGS_FROM;
+					type CONSTRUCT_N_BUILDINGS_INCLUDING;
 					faction wh2_dlc09_tmb_khemri;
-					total 5;
-					building_level wh2_dlc09_special_pyramid_alcadizaar;
-					building_level wh2_dlc09_special_pyramid_amenemhetum;
-					building_level wh2_dlc09_special_pyramid_khatep;
-					building_level wh2_dlc09_special_pyramid_phar;
+					total 1;
 					building_level wh2_dlc09_special_pyramid_settra;
-					building_level wh2_dlc09_special_pyramid_tutankhanut;
-					building_level wh2_main_special_pyramid_of_nagash_other;
 				}
 
 				//
@@ -236,7 +230,7 @@
 				{
 					type CONSTRUCT_N_BUILDINGS_FROM;
 					faction wh2_dlc09_tmb_lybaras;
-					total 5;
+					total 1;
 					building_level wh2_dlc09_special_pyramid_alcadizaar;
 					building_level wh2_dlc09_special_pyramid_amenemhetum;
 					building_level wh2_dlc09_special_pyramid_khatep;
@@ -614,7 +608,7 @@
 				{
 					type CONSTRUCT_N_BUILDINGS_FROM;
 					faction wh2_dlc09_tmb_followers_of_nagash;
-					total 5;
+					total 1;
 					building_level wh2_dlc09_special_pyramid_alcadizaar;
 					building_level wh2_dlc09_special_pyramid_amenemhetum;
 					building_level wh2_dlc09_special_pyramid_khatep;

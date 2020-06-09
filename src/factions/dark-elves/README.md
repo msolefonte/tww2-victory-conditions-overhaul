@@ -10,7 +10,7 @@
 	* Construct The Black Tower of Malekith
 	* Own 3 Black Arks
 	* Destroy factions:
-	    * Averlorn, Nagarythe
+	    * Averlorn, Eataine, Nagarythe
 	* Capture 10,000 battle captives
 * **Long Victory Conditions**:
 	* Conquer, ally with or assimilate provinces in Naggaroth:

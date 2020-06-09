@@ -49,18 +49,6 @@
 					faction wh2_dlc11_cst_the_drowned;
 					confederation_valid;
 				}
-				objective
-                {
-					override_text mission_text_text_mis_activity_archaon_spawned;
-                    type SCRIPTED;
-                    script_key archaon_spawned;
-                }
-				objective
-				{
-					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
-					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
-					start_pos_character 2140782858;
-				}
 
 				//
 
@@ -262,18 +250,6 @@
 					faction wh2_dlc09_tmb_khemri;
 					faction wh2_dlc09_tmb_followers_of_nagash;
 					confederation_valid;
-				}
-				objective
-                {
-					override_text mission_text_text_mis_activity_archaon_spawned;
-                    type SCRIPTED;
-                    script_key archaon_spawned;
-                }
-				objective
-				{
-					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
-					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
-					start_pos_character 2140782858;
 				}
 
 				//
@@ -479,18 +455,6 @@
 					faction wh2_dlc09_tmb_followers_of_nagash;
 					confederation_valid;
 				}
-				objective
-                {
-					override_text mission_text_text_mis_activity_archaon_spawned;
-                    type SCRIPTED;
-                    script_key archaon_spawned;
-                }
-				objective
-				{
-					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
-					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
-					start_pos_character 2140782858;
-				}
 
 				//
 
@@ -688,18 +652,6 @@
 					faction wh2_dlc11_cst_noctilus;
 					faction wh2_dlc11_def_the_blessed_dread;
 					confederation_valid;
-				}
-				objective
-                {
-					override_text mission_text_text_mis_activity_archaon_spawned;
-                    type SCRIPTED;
-                    script_key archaon_spawned;
-                }
-				objective
-				{
-					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
-					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
-					start_pos_character 2140782858;
 				}
 
 				//

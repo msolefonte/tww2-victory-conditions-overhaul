@@ -7,7 +7,6 @@
 	* Destroy factions:
 	    * Cult of Pleasure, Naggarond
 	* Construct the Sacred Flame of Asuryan and the Gates of Lothern
-	* Defeat Archaon
 * **Long Victory Conditions**:
 	* Conquer, ally with or assimilate all provinces of Ulthuan
 	* Destroy factions:
@@ -22,7 +21,6 @@
 	* Construct a Tower of Mages
 	* Destroy factions:
 	    * The Blessed Dread, Vampire Coast
-	* Defeat Archaon
 * **Long Victory Conditions**:
 	* Hold 20 settlements
 	* Construct 3 Tower of Mages
@@ -54,7 +52,6 @@
 	* Destroy factions:
 	    * Har Ganeth, Scourge of Khaine
 	* Construct the Avelorn Landmark
-	* Defeat Archaon
 * **Long Victory Conditions**:
 	* Conquer, ally with or assimilate all provinces of Ulthuan
 	* Destroy factions:

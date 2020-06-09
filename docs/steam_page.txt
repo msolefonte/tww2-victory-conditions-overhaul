@@ -1,12 +1,10 @@
 [img]https://i.imgur.com/fVVaDCS.gif[/img]
 
-[h2]Introduction[/h2]
-
 Are you tired of the boring victory conditions of Total War: Warhammer II? Are you still trying to understand why do you need to have control of Naggaroth as Karak Azul? Do you feel that, after some turns, the game starts to feel like a painting game, where you just have to pass turns till you have control of all the map? Me too.
 
 It is easy to hear that Mortal Empires campaigns are not finished: they are abandoned. Some people do not see a problem in this, as victory conditions are just a suggestion, proclaiming that "The game is a sandbox!" and you can "End it just when you get bored!". However, I like to keep my things done. This is why I did this mod.
 
-Nowadays, as per version 1.9.0 of TW: Warhammer II, there are [b]54 playable factions[/b] along the multiple races. [b]This mod revisits them all[/b] (Yeah, it took its time). Stupid objectives like conquering capitals or destroy factions just for the sake of it have been removed. In their place, more loreful objectives have been added. However, do not try to see this is an absolute loreful project. Fun has been my main priority.
+Nowadays, as per version 1.9.1 of TW: Warhammer II, there are [b]54 playable factions[/b] along the multiple races. [b]This mod revisits them all[/b] (Yeah, it took its time). Stupid objectives like conquering capitals or destroy factions just for the sake of it have been removed. In their place, more loreful objectives have been added. However, do not try to see this is an absolute loreful project. Fun has been my main priority.
 
 [h2]Where can I check the changes?[/h2]
 
