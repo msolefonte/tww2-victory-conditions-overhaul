@@ -429,7 +429,7 @@
                 {
                     type CONTROL_N_PROVINCES_INCLUDING;							// Unify Badlands
                     total 3;
-                    province wh2_main_vor_southern_badlands;
+                    province wh_main_southern_badlands;
                     province wh_main_western_badlands;
                     province wh_main_eastern_badlands;
                 }
@@ -476,7 +476,7 @@
                     province wh_main_blood_river_valley;
                     province wh_main_death_pass;
                     province wh_main_eastern_badlands;
-                    province wh2_main_vor_southern_badlands;
+                    province wh_main_southern_badlands;
                     province wh_main_western_badlands;
                 }
 				objective													// Occupy/loot/raze/sack at least 50 different settlements

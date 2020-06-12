@@ -28,7 +28,7 @@
 				// 	settlement wh2_main_isthmus_of_lustria_fallen_gates;
 				// 	settlement wh_main_middenland_middenheim;
 				// 	settlement wh2_main_deadwood_the_frozen_city;
-				// 	settlement wh2_main_vor_eataine_shrine_of_asuryan;
+				// 	settlement wh2_main_eataine_shrine_of_asuryan;
 				// }
 				objective
 				{
@@ -67,7 +67,7 @@
 				// 	settlement wh2_main_isthmus_of_lustria_fallen_gates;
 				// 	settlement wh_main_middenland_middenheim;
 				// 	settlement wh2_main_deadwood_the_frozen_city;
-				// 	settlement wh2_main_vor_eataine_shrine_of_asuryan;
+				// 	settlement wh2_main_eataine_shrine_of_asuryan;
 				// }
 				objective
 				{

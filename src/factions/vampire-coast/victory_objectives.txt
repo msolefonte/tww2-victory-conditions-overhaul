@@ -16,37 +16,44 @@
 			issuer CLAN_ELDERS;
 			primary_objectives_and_payload
 			{
-				objective																		//Earn 12,000 infamy
+				objective
 				{
 					type HAVE_AT_LEAST_X_OF_A_POOLED_RESOURCE;
 					pooled_resource cst_infamy;
-					total 6000;
+					total 15000;
 					additive;
 				}
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 16 provinces
-					total 12;
-					province wh2_main_vampire_coast;
-					province wh2_main_northern_great_jungle;
-					province wh2_main_southern_great_jungle;
-					province wh2_main_headhunters_jungle;
-					province wh2_main_the_creeping_jungle;
-					province wh2_main_jungles_of_green_mists;
-					province wh2_main_volcanic_islands;
+					type CONTROL_N_REGIONS_INCLUDING;
+					total 8;
+
+					region wh2_main_vampire_coast_the_awakening;
+					region wh2_main_vampire_coast_pox_marsh;
+					region wh2_main_vampire_coast_the_blood_swamps;
+					region wh2_main_volcanic_islands_the_star_tower;
+					region wh2_main_volcanic_islands_fuming_serpent;
+					region wh2_main_northern_great_jungle_temple_of_tlencan;
+					region wh2_main_headhunters_jungle_chupayotl;
+					region wh2_main_headhunters_jungle_mangrove_coast;
+					region wh2_main_the_creeping_jungle_temple_of_kara;
+					region wh2_main_southern_jungle_of_pahualaxa_the_high_sentinel;
+					region wh2_main_southern_jungle_of_pahualaxa_monument_of_the_moon;
+					region wh2_main_northern_jungle_of_pahualaxa_swamp_town;
+					region wh2_main_northern_jungle_of_pahualaxa_port_reaver;
+					region wh2_main_isthmus_of_lustria_skeggi;
+					region wh2_main_isthmus_of_lustria_ziggurat_of_dawn;
 				}
 				objective
 				{
 					type DESTROY_FACTION;
-					faction wh2_main_hef_order_of_loremasters;
-					faction wh2_dlc11_def_the_blessed_dread;
-					faction wh2_main_skv_clan_pestilens;
 					faction wh2_main_lzd_itza;
 					faction wh2_main_lzd_tlaxtlan;
 					faction wh2_dlc12_lzd_cult_of_sotek;
+					faction wh2_main_lzd_hexoatl;
 					confederation_valid;
 				}
-				objective																		// Construct some special buildings
+				objective
 				{
 					type CONSTRUCT_N_BUILDINGS_FROM;
 					faction wh2_dlc11_cst_vampire_coast;
@@ -54,19 +61,17 @@
 					building_level wh2_dlc11_special_ancient_vault_2;
 					building_level wh2_dlc11_special_ship_harkon_1;
 				}
-				objective																		//Have 80 units
+				objective
 				{
 					type OWN_N_UNITS;
-					total 80;
+					total 60;
 				}
-				objective																	// Repair Harkons mind
+				objective
 				{
 					override_text mission_text_text_mis_activity_restore_harkons_mind;
                     type SCRIPTED;
                     script_key restore_harkon_mind;
 				}
-
-				//
 
 				payload
 				{
@@ -83,47 +88,52 @@
 			issuer CLAN_ELDERS;
 			primary_objectives_and_payload
 			{
-				objective																		//Earn 20,000 infamy
+				objective
 				{
 					type HAVE_AT_LEAST_X_OF_A_POOLED_RESOURCE;
 					pooled_resource cst_infamy;
-					total 10000;
+					total 25000;
 					additive;
 				}
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 30 provinces
-					total 25;
-					province wh2_main_vampire_coast;
-					province wh2_main_northern_great_jungle;
-					province wh2_main_southern_great_jungle;
-					province wh2_main_headhunters_jungle;
-					province wh2_main_the_creeping_jungle;
-					province wh2_main_jungles_of_green_mists;
-					province wh2_main_spine_of_sotek;
-					province wh2_main_huahuan_desert;
-					province wh2_main_northern_jungle_of_pahualaxa;
-					province wh2_main_southern_jungle_of_pahualaxa;
-					province wh2_main_isthmus_of_lustria;
-					province wh2_main_volcanic_islands;
+					type CONTROL_N_REGIONS_INCLUDING;
+					total 15;
+
+					region wh2_main_vampire_coast_the_awakening;
+					region wh2_main_vampire_coast_pox_marsh;
+					region wh2_main_vampire_coast_the_blood_swamps;
+					region wh2_main_volcanic_islands_the_star_tower;
+					region wh2_main_volcanic_islands_fuming_serpent;
+					region wh2_main_northern_great_jungle_temple_of_tlencan;
+					region wh2_main_headhunters_jungle_chupayotl;
+					region wh2_main_headhunters_jungle_mangrove_coast;
+					region wh2_main_the_creeping_jungle_temple_of_kara;
+					region wh2_main_southern_jungle_of_pahualaxa_the_high_sentinel;
+					region wh2_main_southern_jungle_of_pahualaxa_monument_of_the_moon;
+					region wh2_main_northern_jungle_of_pahualaxa_swamp_town;
+					region wh2_main_northern_jungle_of_pahualaxa_port_reaver;
+					region wh2_main_isthmus_of_lustria_skeggi;
+					region wh2_main_isthmus_of_lustria_ziggurat_of_dawn;
 				}
 				objective
 				{
 					type DESTROY_FACTION;
 					faction wh2_dlc11_cst_noctilus;
-					faction wh2_main_hef_order_of_loremasters;
-					faction wh2_dlc11_def_the_blessed_dread;
-					faction wh2_main_skv_clan_pestilens;
-					faction wh2_main_lzd_hexoatl;
+					faction wh2_dlc11_cst_the_drowned;
+					faction wh2_dlc11_cst_pirates_of_sartosa;
+
+
 					faction wh2_main_lzd_itza;
-					faction wh2_main_lzd_last_defenders;
-					faction wh2_main_lzd_sentinels_of_xeti;
-					faction wh2_main_lzd_teotiqua;
-					faction wh2_main_lzd_tlaxtlan;
 					faction wh2_dlc12_lzd_cult_of_sotek;
+					faction wh2_main_lzd_sentinels_of_xeti;
+					faction wh2_main_lzd_hexoatl;
+					faction wh2_main_lzd_tlaxtlan;
+					faction wh2_dlc13_lzd_spirits_of_the_jungle;
+					faction wh2_dlc13_lzd_spirits_of_the_jungle;
 					confederation_valid;
 				}
-				objective																		// Construct some special buildings
+				objective
 				{
 					type CONSTRUCT_N_BUILDINGS_FROM;
 					faction wh2_dlc11_cst_vampire_coast;
@@ -131,18 +141,17 @@
 					building_level wh2_dlc11_special_ancient_vault_2;
 					building_level wh2_dlc11_special_ship_harkon_1;
 				}
-				objective																		//Have 160 units
+				objective
 				{
 					type OWN_N_UNITS;
-					total 160;
+					total 100;
 				}
-				objective																	// Repair Harkons mind
+				objective
 				{
 					override_text mission_text_text_mis_activity_restore_harkons_mind;
                     type SCRIPTED;
                     script_key restore_harkon_mind;
 				}
-				//
 
 				payload
 				{
@@ -238,17 +247,20 @@
 			issuer CLAN_ELDERS;
 			primary_objectives_and_payload
 			{
-				objective																		//Earn 12,000 infamy
+				objective
 				{
 					type HAVE_AT_LEAST_X_OF_A_POOLED_RESOURCE;
 					pooled_resource cst_infamy;
-					total 6000;
+					total 15000;
 					additive;
 				}
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 12 provinces
-					total 12;
+					type CONTROL_N_PROVINCES_INCLUDING;
+					total 3;
+					province wh2_main_galleons_graveyard;
+					province wh2_main_vampire_coast;
+					province wh2_main_sartosa;
 				}
 				objective
 				{
@@ -257,9 +269,10 @@
 					faction wh2_dlc11_cst_pirates_of_sartosa;
 					faction wh2_dlc11_cst_vampire_coast;
 					faction wh2_dlc11_cst_the_drowned;
+					faction wh2_main_sartosa;
 					confederation_valid;
 				}
-				objective																		// Construct some special buildings
+				objective
 				{
 					type CONSTRUCT_N_BUILDINGS_FROM;
 					faction wh2_dlc11_cst_noctilus;
@@ -267,14 +280,12 @@
 					building_level wh2_dlc11_special_galleons_graveyard_wreck_1;
 					building_level wh2_dlc11_special_ship_noctilus_1;
 				}
-				objective																		//Own 10 Depth Guard
+				objective
 				{
 					type OWN_N_UNITS;
 					total 3;
 					unit wh2_dlc11_cst_mon_necrofex_colossus_0;
 				}
-
-				//
 
 				payload
 				{
@@ -291,19 +302,20 @@
 			issuer CLAN_ELDERS;
 			primary_objectives_and_payload
 			{
-				objective																		//Earn 20,000 infamy
+				objective
 				{
 					type HAVE_AT_LEAST_X_OF_A_POOLED_RESOURCE;
 					pooled_resource cst_infamy;
-					total 10000;
+					total 25000;
 					additive;
 				}
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;									// Capture at least 25 provinces
-					total 25;
-					province wh_main_eastern_sylvania;
-					province wh_main_western_sylvania;
+					type CONTROL_N_PROVINCES_INCLUDING;
+					total 3;
+					province wh2_main_galleons_graveyard;
+					province wh2_main_vampire_coast;
+					province wh2_main_sartosa;
 				}
 				objective
 				{
@@ -312,15 +324,14 @@
 					faction wh2_dlc11_cst_pirates_of_sartosa;
 					faction wh2_dlc11_cst_vampire_coast;
 					faction wh2_dlc11_cst_the_drowned;
-					faction wh_main_emp_empire;
 					faction wh_main_brt_bretonnia;
-					faction wh_main_vmp_vampire_counts;
-					faction wh_main_vmp_schwartzhafen;
+					faction wh_main_brt_bordeleaux;
 					faction wh2_dlc11_vmp_the_barrow_legion;
 					faction wh2_dlc09_tmb_followers_of_nagash;
+					faction wh_main_vmp_mousillon;
 					confederation_valid;
 				}
-				objective																		// Construct some special buildings
+				objective
 				{
 					type CONSTRUCT_N_BUILDINGS_FROM;
 					faction wh2_dlc11_cst_noctilus;
@@ -328,7 +339,7 @@
 					building_level wh2_dlc11_special_galleons_graveyard_wreck_1;
 					building_level wh2_dlc11_special_ship_noctilus_1;
 				}
-				objective																		//Own 6 Necrofex
+				objective
 				{
 					type OWN_N_UNITS;
 					total 6;
@@ -431,17 +442,12 @@
 			issuer CLAN_ELDERS;
 			primary_objectives_and_payload
 			{
-				objective																		//Earn 12,000 infamy
+				objective
 				{
 					type HAVE_AT_LEAST_X_OF_A_POOLED_RESOURCE;
 					pooled_resource cst_infamy;
-					total 6000;
+					total 15000;
 					additive;
-				}
-				objective
-				{
-					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 8 provinces
-					total 8;
 				}
 				objective
 				{
@@ -451,12 +457,12 @@
 					faction wh_dlc08_nor_norsca;
 					confederation_valid;
 				}
-				objective																		// Sack / loot 15 settlements
+				objective
 				{
 					type LOOT_OR_SACK_N_DIFFERENT_SETTLEMENTS_INCLUDING;
-					total 15;
+					total 25;
 				}
-				objective																		// Construct some special buildings
+				objective
 				{
 					type CONSTRUCT_N_BUILDINGS_FROM;
 					faction wh2_dlc11_cst_pirates_of_sartosa;
@@ -464,19 +470,19 @@
 					building_level wh2_dlc11_special_dragon_tooth_lighthouse_1;
 					building_level wh2_dlc11_special_ship_aranessa_1;
 				}
-				objective																		// Capture 8,000 battle captives
+				objective
 				{
 					type CAPTURE_X_BATTLE_CAPTIVES;
 					total 8000;
 				}
-				objective																		// Construct 3 tier 5 ports
+				objective
 				{
 					type CONSTRUCT_N_OF_A_BUILDING;
 					faction wh2_dlc11_cst_pirates_of_sartosa;
 					total 3;
 					building_level wh2_dlc11_vampirecoast_port_3;
 				}
-				objective																		//Earn 6,000 from raiding
+				objective
 				{
 					type EARN_X_AMOUNT_FROM_RAIDING;
 					total 6000;
@@ -499,17 +505,12 @@
 			issuer CLAN_ELDERS;
 			primary_objectives_and_payload
 			{
-				objective																		//Earn 20,000 infamy
+				objective
 				{
 					type HAVE_AT_LEAST_X_OF_A_POOLED_RESOURCE;
 					pooled_resource cst_infamy;
-					total 10000;
+					total 25000;
 					additive;
-				}
-				objective
-				{
-					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 16 provinces
-					total 16;
 				}
 				objective
 				{
@@ -522,40 +523,36 @@
 					faction wh2_dlc11_def_the_blessed_dread;
 					confederation_valid;
 				}
-				objective																		// Sack / loot 30 settlements
+				objective
 				{
 					type LOOT_OR_SACK_N_DIFFERENT_SETTLEMENTS_INCLUDING;
-					total 30;
+					total 40;
 				}
-				objective																		// Construct some special buildings
+				objective
 				{
 					type CONSTRUCT_N_BUILDINGS_FROM;
 					faction wh2_dlc11_cst_pirates_of_sartosa;
 					total 2;
 					building_level wh2_dlc11_special_dragon_tooth_lighthouse_1;
 					building_level wh2_dlc11_special_ship_aranessa_1;
-
-
 				}
-				objective																		// Capture 15,000 battle captives
+				objective
 				{
 					type CAPTURE_X_BATTLE_CAPTIVES;
 					total 15000;
 				}
-				objective																		// Construct 6 tier ports
+				objective
 				{
 					type CONSTRUCT_N_OF_A_BUILDING;
 					faction wh2_dlc11_cst_pirates_of_sartosa;
 					total 6;
 					building_level wh2_dlc11_vampirecoast_port_3;
 				}
-				objective																		//Earn 10,000 from raiding
+				objective
 				{
 					type EARN_X_AMOUNT_FROM_RAIDING;
 					total 10000;
 				}
-
-				//
 
 				payload
 				{
@@ -651,29 +648,37 @@
 			issuer CLAN_ELDERS;
 			primary_objectives_and_payload
 			{
-				objective																		//Earn 12,000 infamy
+				objective
 				{
 					type HAVE_AT_LEAST_X_OF_A_POOLED_RESOURCE;
 					pooled_resource cst_infamy;
-					total 6000;
+					total 15000;
 					additive;
 				}
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 12 provinces
-					total 12;
-					province wh2_main_caledor;
-					province wh2_main_eataine;
-					province wh2_main_tiranoc;
-					province wh2_main_ellyrion;
-					province wh2_main_avelorn;
-					province wh2_main_saphery;
+					type CONTROL_N_REGIONS_FROM;
+					total 5;
+					region wh2_main_eataine_lothern;
+					region wh2_main_yvresse_shrine_of_loec;
+					region wh2_main_eataine_angerrial;
+					region wh2_main_yvresse_elessaeli;
+					region wh2_main_northern_yvresse_tralinia;
+					region wh2_main_cothique_tor_koruali;
+					region wh2_main_cothique_mistnar;
+					region wh2_main_chrace_elisia;
+					region wh2_main_nagarythe_tor_anlec;
+					region wh2_main_tiranoc_tor_anroc;
+					region wh2_main_ellyrion_whitefire_tor;
+					region wh2_main_avelorn_evershale;
 				}
 				objective
 				{
 					type DESTROY_FACTION;
-					faction wh2_main_lzd_hexoatl;
 					faction wh2_main_hef_eataine;
+					faction wh2_main_hef_caledor;
+					faction wh2_main_hef_saphery;
+					faction wh2_main_hef_ellyrion;
 					confederation_valid;
 				}
 				objective																		// Construct some special buildings
@@ -698,8 +703,6 @@
 					agent_subtype wh2_dlc11_cst_mourngul;
 				}
 
-				//
-
 				payload
 				{
 					game_victory;
@@ -715,17 +718,17 @@
 			issuer CLAN_ELDERS;
 			primary_objectives_and_payload
 			{
-				objective																		//Earn 20,000 infamy
+				objective
 				{
 					type HAVE_AT_LEAST_X_OF_A_POOLED_RESOURCE;
 					pooled_resource cst_infamy;
-					total 10000;
+					total 25000;
 					additive;
 				}
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 20 provinces
-					total 20;
+					type CONTROL_N_PROVINCES_INCLUDING;
+					total 14;
 					province wh2_main_caledor;
 					province wh2_main_eataine;
 					province wh2_main_tiranoc;
@@ -745,9 +748,14 @@
 				{
 					type DESTROY_FACTION;
 					faction wh2_main_hef_eataine;
+					faction wh2_main_hef_caledor;
+					faction wh2_main_hef_saphery;
+					faction wh2_main_hef_yvresse;
 					faction wh2_main_hef_avelorn;
-					faction wh2_main_hef_nagarythe;
-					faction wh2_main_lzd_hexoatl;
+					faction wh2_main_hef_ellyrion;
+					faction wh2_main_hef_tiranoc;
+					faction wh2_main_hef_cothique;
+					faction wh2_main_hef_chrace;
 					confederation_valid;
 				}
 				objective																		// Construct some special buildings

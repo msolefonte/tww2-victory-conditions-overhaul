@@ -462,18 +462,13 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 12 provinces
-					total 12;
-				}
-				objective
-				{
 					type DESTROY_FACTION;
 					faction wh2_dlc11_cst_vampire_coast;
 					faction wh2_main_hef_order_of_loremasters;
 					faction wh2_main_skv_clan_pestilens;
 					confederation_valid;
 				}
-				objective																		// Construct some special buildings
+				objective
 				{
 					type CONSTRUCT_N_BUILDINGS_FROM;
 					faction wh2_dlc11_def_the_blessed_dread;
@@ -485,12 +480,11 @@
 					building_level wh2_dlc11_special_settlement_galleons_graveyard_5;
 					building_level wh2_main_special_quintex_2;
 					building_level wh2_main_special_shrine_of_khaine_def_1;
-
 				}
-				objective																		// Capture 10,000 battle captives
+				objective
 				{
 					type CAPTURE_X_BATTLE_CAPTIVES;
-					total 10000;
+					total 20000;
 				}
 				objective
 				{
@@ -505,8 +499,6 @@
 					unit wh2_main_def_inf_black_ark_corsairs_0;
 					unit wh2_main_def_inf_black_ark_corsairs_1;
 				}
-
-				//
 
 				payload
 				{
@@ -525,11 +517,6 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 25 provinces
-					total 25;
-				}
-				objective
-				{
 					type DESTROY_FACTION;
 					faction wh2_dlc11_cst_vampire_coast;
 					faction wh2_main_hef_order_of_loremasters;
@@ -540,7 +527,7 @@
 					faction wh2_main_hef_nagarythe;
 					confederation_valid;
 				}
-				objective																		// Construct some special buildings
+				objective
 				{
 					type CONSTRUCT_N_BUILDINGS_FROM;
 					faction wh2_dlc11_def_the_blessed_dread;
@@ -554,12 +541,12 @@
 					building_level wh2_main_special_shrine_of_khaine_def_1;
 
 				}
-				objective																		// Capture 25,000 battle captives
+				objective
 				{
 					type CAPTURE_X_BATTLE_CAPTIVES;
-					total 25000;
+					total 40000;
 				}
-				objective																		// Construct 3 Tier 5 Black Arks
+				objective
 				{
 					type CONSTRUCT_N_OF_A_BUILDING;
 					faction wh2_dlc11_def_the_blessed_dread;

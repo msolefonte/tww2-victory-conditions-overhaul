@@ -16,3 +16,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Now Khemri only need to construct 1 pyramid to achieve a Short Victory but it has to be the Great Pyramid of Settra
 - Now Followers of Nagash and Court of Lybaras only need to construct 1 pyramid to achieve a Short Victory
 - Now Sylvania does not need to defeat Archaon to achieve a Short Victory
+
+## [1.2.0] The Pirates Update - 2020.06.12
+
+- All "Hold X provinces" objectives have been deleted from the Vampire Coast factions
+- The infamy required for all the Vampire Coast Short Victories has been updated from 6000 to 15000
+- The infamy required for all the Vampire Coast Long Victories has been updated from 10000 to 25000
+- The Awakened now have to control at least 8 regions of the external coast of Lustria to achieve a Short Victory
+- The Awakened now have to control the external coast of Lustria to achieve a Long Victory
+- Now The Awakened have to destroy some of the Lizarmed starting at Lustria to achieve a Short Victory
+    - Itza, Cult of Sotek Hexoatl, Tlaxlan
+- Now The Awakened have to destroy more factions achieve a Long Victory
+    - Itza, Cult of Sotek, Sentinels of Xeti, Hexoatl, Tlaxlan, Nakai, The Drowned, Pirates of Sartosa, The Dreadfleet
+- The number of units required by The Awakened to achieve a Short Victory has been reduced to 60
+- The number of units required by The Awakened to achieve a Long Victory has been reduced to 100
+- Now The Drowned conquer at least five ports of Ulthuan to achieve a Short Victory
+- Now The Drowned conquer all Ulthuan to achieve a Long Victory
+- Now The Drowned have to destroy some of the Ulthuan starting factions to achieve a Short Victory
+    - Eataine, Caledor, Saphery, Ellyrion
+- Now The Drowned have to destroy all the Ulthuan starting factions to achieve a Long Victory
+    - Eataine, Caledor, Saphery, Yvresse, Avelorn, Ellyrion, Tiranoc, Cothique, Chrace
+- Now The Dreadfleet have to hold Galleon's Graveyard, Vampire Coast and Sartosa to achieve a victory
+- Now The Dreadfleet have to destroy Bordelaux to achieve a Short Victory
+- Now The Dreadfleet have no longer to destroy factions to achieve a Long Victory
+    - Vampire Counts, Von Carstein, The Empire
+- Now the Dreadfleet have to destroy new factions to achieve a Long Victory
+    - Bordelaux, Mousillon
+- Now Pirates of Sartosa is not required to hold any specific territory outside of Sartosa
+- The number of sacked/looted settlements of Pirates of Sartosa has been pushed from 15 to 25 for a Short Victory
+- The number of sacked/looted settlements of Pirates of Sartosa has been pushed from 30 to 40 for a Long Victory
+- The Blessed Dread Short Victory "Hold X provinces" objective has been removed
+- The number of captives required by the The Blessed Dread Short Victory has been pushed to 20k
+- The number of captives required by the The Blessed Dread Long Victory has been pushed to 40k
+- Minor fixes

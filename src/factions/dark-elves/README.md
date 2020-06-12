@@ -50,23 +50,21 @@
 ### The Blessed Dread
 
 * **Short Victory Conditions**:
-	* Capture at least 12 provinces
 	* Destroy factions:
 	    * Vampire Coast, Order of Loremasters, Clan Pestilenes
 	* Construct 2 of the following special buildings:
 	    * Fiery Pits of Sacrifice, Slave Traders' Palaces, The Black Tower of Malekith, Vandalised Court of the 
 	    Everqueen, The Maelstrom (Raging), Sanctum of Quintex, Shrine of Widowmaker
-    * Capture 10000 battle captives
+    * Capture 20000 battle captives
     * Own 3 Black Arks
     * Own 20 Black Ark Corsairs
 * **Long Victory Conditions**:
-	* Capture at least 25 provinces
 	* Destroy factions:
 	    * Vampire Coast, Order of Loremasters, Clan Pestilenes, Eataine, Avelorn, Noctilus, Nagarythe
 	* Construct 5 of the following special buildings:
 	    * Fiery Pits of Sacrifice, Slave Traders' Palaces, The Black Tower of Malekith, Vandalised Court of the 
 	    Everqueen, The Maelstrom (Raging), Sanctum of Quintex, Shrine of Widowmaker
-    * Capture 25000 battle captives
+    * Capture 40000 battle captives
     * Own 3 Gargantuan Black Arks
     * Own 30 Black Ark Corsairs
 
