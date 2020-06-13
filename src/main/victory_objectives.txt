@@ -8892,7 +8892,6 @@ victory_objectives
 					faction wh2_dlc11_cst_pirates_of_sartosa;
 					faction wh2_dlc11_cst_vampire_coast;
 					faction wh2_dlc11_cst_the_drowned;
-					faction wh2_main_sartosa;
 					confederation_valid;
 				}
 				objective
@@ -9286,7 +9285,7 @@ victory_objectives
 					region wh2_main_yvresse_shrine_of_loec;
 					region wh2_main_eataine_angerrial;
 					region wh2_main_yvresse_elessaeli;
-					region wh2_main_northern_yvresse_tralinia;
+					region wh2_main_yvresse_tralinia;
 					region wh2_main_cothique_tor_koruali;
 					region wh2_main_cothique_mistnar;
 					region wh2_main_chrace_elisia;
@@ -9513,13 +9512,6 @@ victory_objectives
 					faction wh_main_emp_empire;
 					confederation_valid;
 				}
-				objective
-				{
-					type LIMIT_FACTION_TO_REGIONS;								// Defeat the Chaos Invasion
-					faction wh_main_chs_chaos;
-					faction wh_dlc03_bst_beastmen_chaos;
-					region wh_main_chaos_wastes;
-				}
 
 				//
 
@@ -9542,6 +9534,12 @@ victory_objectives
 				{
 					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 12 provinces
 					total 20;
+				}
+				objective
+				{
+					type DESTROY_FACTION;										// Destroy the Empire faction
+					faction wh_main_emp_empire;
+					confederation_valid;
 				}
 				objective
 				{

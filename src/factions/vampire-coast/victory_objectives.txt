@@ -269,7 +269,6 @@
 					faction wh2_dlc11_cst_pirates_of_sartosa;
 					faction wh2_dlc11_cst_vampire_coast;
 					faction wh2_dlc11_cst_the_drowned;
-					faction wh2_main_sartosa;
 					confederation_valid;
 				}
 				objective
@@ -663,7 +662,7 @@
 					region wh2_main_yvresse_shrine_of_loec;
 					region wh2_main_eataine_angerrial;
 					region wh2_main_yvresse_elessaeli;
-					region wh2_main_northern_yvresse_tralinia;
+					region wh2_main_yvresse_tralinia;
 					region wh2_main_cothique_tor_koruali;
 					region wh2_main_cothique_mistnar;
 					region wh2_main_chrace_elisia;

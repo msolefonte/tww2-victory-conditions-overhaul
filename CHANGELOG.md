@@ -49,3 +49,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - The number of captives required by the The Blessed Dread Short Victory has been pushed to 20k
 - The number of captives required by the The Blessed Dread Long Victory has been pushed to 40k
 - Minor fixes
+
+## [1.2.1] Minor Fix - 2020.06.13
+
+- Fixed a bug where the Empire needed to conquer Ulthuan to achieve a Short Victory
+- Fixed a bug that caused that the Vampire Coast, Vampire Counts, Warriors of Chaos and Wood Elves Victory Conditions were invisible
+- Vampire Counts have no longer to stop the Chaos Invasion to achieve a Short Victory
+- Vampire Counts have now to defeat Empire to achieve a Long Victory

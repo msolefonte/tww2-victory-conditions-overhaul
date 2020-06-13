@@ -7,51 +7,48 @@ It is easy to hear that Mortal Empires campaigns are not finished: they are aban
 Nowadays, as per version 1.9.1 of TW: Warhammer II, there are [b]54 playable factions[/b] along the multiple races. [b]This mod revisits them all[/b] (Yeah, it took its time). Stupid objectives like conquering capitals or destroy factions just for the sake of it have been removed. In their place, more loreful objectives have been added. However, do not try to see this is an absolute loreful project. Fun has been my main priority.
 
 [h2]Frequently Asked Questions (F.A.Q.)[/h2]
-
 There goes a list of Frequently Asked Questions. They take me a lot of time to answer, so I am not going to answer in the chat anything that is already here.
 
-
-[h3]- Where can I check the changes?[/h3]
-
+[b]- Where can I check the changes?[/b]
 The list of changes is available in [url=https://github.com/msolefonte/tww2-victory-conditions-overhaul/]my personal GitHub[/url], where you can also take a look to the code to use it as an inspiration for your own projects. The list of factions is available [url=https://github.com/msolefonte/tww2-victory-conditions-overhaul/tree/master/src/factions]here[/url].
 
 Note that each faction contains two files: [i]README.md[/i] and  [i]victory_conditions.txt[/i]. The first one is a human friendly text that reflex what is on the second one, but it is  [i]victory_conditions.txt[/i] what is finally truth and what is loaded by the script that generates the mod.
 
 Also, you have a changelog available [url=https://github.com/msolefonte/tww2-victory-conditions-overhaul/blob/master/CHANGELOG.md]at GitHub[/url].
 
-[h3]- Where can I report a bug?[/h3]
-
+[b]- Where can I report a bug?[/b]
 This mod should be compatible with anything that does not modify victory conditions and start positions. If, even knowing that, you are unable to make it work or you found that something is not working as it should, feel free to contact me at the mod page or to open [url=https://github.com/msolefonte/tww2-victory-conditions-overhaul/issues]an issue at GitHub[/url].
 
-[h3]- Can I propose a change?[/h3]
-
+[b]- Can I propose a change?[/b]
 Of course! It is really hard to keep fun 54 factions. I myself have not played them all, so any help is welcome and any suggestion will be heard. Some things are not possible, or are too complex to do and maintain, but do not be scared of reporting any think that you would like to see.
 
 To propose a change, please create or join a discussion titled "[FACTION NAME] Victory Conditions [Main Discussion]"
 
-[h3]- Do Achievements still work?[/h3]
-
+[b]- Do Achievements still work?[/b]
 Yes, they do.
 
-[h3]- Does this also modify [INSERT VANILLA FACTION]?[/h3]
-
+[b]- Does this also modify [INSERT VANILLA FACTION]?[/b]
 This mod revisits all the Vanilla factions. Some are better, some still need some work, but every faction in the Vanilla game is included in the overhaul.
 
-[h3]- Does this mod also modifies Co-Op / Head To Head Victory Conditions?[/h3]
-
+[b]- Does this mod also modifies Co-Op / Head To Head Victory Conditions?[/b]
 Nope. They are kept the same than in vanilla. I know a lot of people will be happy with that addition, but I am not a player of them, so I am not going to spend weeks working in something I am not going to use.
 
-[h3]- Is this compatible with X mod?[/h3]
-
-[b]This is compatible with everything that does not modify Starting Positions, Adds Factions or Victory Conditions[/b]. As far as I know. Victory Conditions and Available Factions are stored in the same file, so one mod overrides the other. This is why I can not add new victory conditions to unlocked factions, as changes override themselves.
+[b]- Is this compatible with X mod?[/b]
+This is compatible with everything that does not modify Starting Positions, Adds Factions or Victory Conditions. As far as I know. Victory Conditions and Available Factions are stored in the same file, so one mod overrides the other. This is why I can not add new victory conditions to unlocked factions, as changes override themselves.
 
 I am going to work to add more compatibilities, but it is not a priority right now. I understand that everyone wants to use this together with Crynsos Faction Unlocker+ or Mixu's Unlocker, but that would require to update their mods and to have second versions that include this one, which is a pita for us the developers. I hope you understand it!
 
+[b]- Is this savegame compatible?[/b]
+As defined by CA, victory conditions are stored with the save, so any started campaign is going to keep the victory conditions it started with. This also works the same way if you start a modded campaign and then delete the mod.
+
+[h2]Special Thanks[/h2]
+Thanks to all the users that share they thoughts and do they best trying to improve the mod. Specially, thanks to [url=https://steamcommunity.com/profiles/76561198329779166]cybvep[/url] for the time inverted here. It has been amazingly useful.
+
+Thanks to all the modders that have helped me during the process. Special thanks to all the members of [b]C&C Modding Den[/b]. It is amazing to be part of a commutiny that loves the game and spends that much time trying to improve it.
+
 [quote]
-[h2]Support my work[/h2]
-
+[h2]Support My Work[/h2]
 [img]https://i.imgur.com/fVVaDCS.gif[/img]
-
 You can like the mod and share it with your friends. The bigger the community, the faster this mod is going to grow and the more interest I am going to place into maintaining it. You can also, of course, create Pull Request at GitHub or contact me directly to introduce new features.
 
 Finally, if you want to support economically my job, feel free to donate via [url=https://paypal.me/echaravolar]PayPal[/url].

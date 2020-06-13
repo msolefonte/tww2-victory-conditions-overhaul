@@ -5,9 +5,9 @@
 * **Short Victory Conditions**:
 	* Capture at least 12 provinces
 	* Destroy the Empire faction
-    * Defeat the Chaos Invasion
 * **Long Victory Conditions**:
 	* Capture at least 20 provinces
+	* Destroy the Empire faction
     * Defeat the Chaos Invasion
     * Defeat Archaon
 
