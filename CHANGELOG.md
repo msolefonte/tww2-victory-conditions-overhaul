@@ -56,3 +56,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fixed a bug that caused that the Vampire Coast, Vampire Counts, Warriors of Chaos and Wood Elves Victory Conditions were invisible
 - Vampire Counts have no longer to stop the Chaos Invasion to achieve a Short Victory
 - Vampire Counts have now to defeat Empire to achieve a Long Victory
+
+## [1.3.0] The Realms of Men Update - 2020.06.16
+
+- Now The Empire has to The Barrow Legion to achieve a Long Victory
+- Building the Great Temple of Ulric in Middenheim is now a requisite for The Empire
+- Introduced major redone of the Golden Order
+    - Gelt is now encouraged to go South
+    - Conquer all provinces of the Empire has been removed from the Short Victory conditions
+    - New factions to destroy (All victories):
+        - Black Venom, Crooked Moon, The Bloody Hand, Clan Skyre, Pirates of Sartosa
+    - New factions to destroy (Long Victory):
+        - Broken Nose, Gresnskins, Sylvannia, Von Carstein, Clan Kreepus
+    - Building the Nuln Gunnery School is now required
+- Introduced major redone of The Huntsmarshal's Expedition Short Victory conditions
+    - Only 80 Acclaim will be required
+    - Now they only need to conquer 6 provinces, including Itza
+    - Now they do not have destroy Hexoatl and The Dreadfleet
+- Now The Huntsmarshal's Expedition will have to defeat The Blessed Dread to achieve a Long Victory 
