@@ -73,4 +73,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Only 80 Acclaim will be required
     - Now they only need to conquer 6 provinces, including Itza
     - Now they do not have destroy Hexoatl and The Dreadfleet
-- Now The Huntsmarshal's Expedition will have to defeat The Blessed Dread to achieve a Long Victory 
+- Now The Huntsmarshal's Expedition will have to defeat The Blessed Dread to achieve a Long Victory
+
+## [1.4.0] The Dwarfs Update - 2020.06.18
+
+- Destroying High Elves is no longer a requisite to achieve a Karaz-A-Karak Long Victory
+- Introduced major redone of Karak Kadrin
+    - Now destroying Bonerattlaz is required to achieve a victory
+    - Now destroying The Barrow Legion, Von Carsteins and Sylvania is required to achieve a Long Victory
+    - Controlling some provinces is no longer required to achieve a Long Victory
+        - Iron Mountains, Obsidian Peaks, Titan Peaks, World's Edge Mountains, Charnel Valley, Atlan Mountains and Spinde of Sotek
+    - Destroying Durthu is no longer required to achieve a Long Victory
+- Introduced major redone of Clan Angrund
+    - Now controlling all the province of Eastern Badlands is required to achieve a victory
+    - Unite the Dwarfholds under their rule is not a requirement anymore to achieve a Short Victory
+    - The factions that have to be destroyed to achieve a Short Victory has been reduced to Crooken Moon and Clan Mors
+    - Destroying Clan Eshin, Clan Moulder and Clan Mordkin is no longer required to achieve a Long Victory
+    - Destroying Clan Spittel, Clan Ferrik, and Clan Kreepus is now required to achieve a Long Victory
+- Building the Imperial Palace in Altdorf is now a requisite for The Empire
+- The Huntsmarshal's Expedition has no longer to hold the Galleon's Graveyard to achieve a Long Victory
+- Minor Fixes

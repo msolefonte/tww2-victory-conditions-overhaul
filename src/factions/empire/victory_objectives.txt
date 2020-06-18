@@ -41,12 +41,13 @@
 					province wh_main_eastern_sylvania;
 					province wh_main_western_sylvania;
 				}
-                objective																		// Construct the Great Slayer Shrine in Karak Kadrin
+                objective
                 {
                     type CONSTRUCT_N_BUILDINGS_INCLUDING;
                     faction wh_main_emp_empire;
-                    total 1;
+                    total 2;
                     building_level wh_main_special_great_temple_of_ulric;
+                    building_level wh2_main_special_altdorf_imperial_palace;
                 }
 
 				payload
@@ -120,12 +121,13 @@
 
                     confederation_valid;
                 }
-                objective																		// Construct the Great Slayer Shrine in Karak Kadrin
+                objective
                 {
                     type CONSTRUCT_N_BUILDINGS_INCLUDING;
                     faction wh_main_emp_empire;
-                    total 1;
+                    total 2;
                     building_level wh_main_special_great_temple_of_ulric;
+                    building_level wh2_main_special_altdorf_imperial_palace;
                 }
 				objective
 				{
@@ -498,7 +500,6 @@
 					province wh2_main_huahuan_desert;
 					province wh2_main_southern_jungle_of_pahualaxa;
 					province wh2_main_northern_jungle_of_pahualaxa;
-					province wh2_main_galleons_graveyard;
 				}
 				objective
 				{
@@ -508,6 +509,7 @@
 					faction wh2_main_skv_clan_pestilens;
 					faction wh2_dlc11_cst_vampire_coast;
 					faction wh2_dlc11_cst_noctilus;
+					faction wh2_dlc11_def_the_blessed_dread;
 					confederation_valid;
 				}
 				objective
