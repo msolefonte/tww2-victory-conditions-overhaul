@@ -15,10 +15,9 @@
 	* Defeat all of the Chaos Gods challengers
 	* Destroy factions:
 	    * Wintertooth
-	    * Empire
-	    * Bretonnia
+	* Control at least 3 world capitals
 	* Earn 20000 from raiding
-	* Own at least 7 of the following units:
+	* Own at least 12 of the following units:
 	    * Skinwolves, War Mamooths
 	* Own at least 60 units
 
@@ -27,7 +26,10 @@
 * **Short Victory Conditions**:
 	* Attain maximum favour with one Chaos god
 	* Defeat all of the Chaos Gods challengers
-	* Destroy World Walkers
+	* Destroy factions:
+	    * Kislev, World Walkers
+	* Control regions:
+	    * Erengrad, Kislev
 	* Own at least 7 of the following units:
 	    * Chaos Trolls, Norscan Ice Trolls, Fimirs
 	* Own at least 40 units
@@ -35,9 +37,10 @@
 	* Attain maximum favour with one Chaos god
 	* Defeat all of the Chaos Gods challengers
 	* Destroy factions:
-	    * World Walkers
-	    * Empire
-	    * Dwarfs
-	* Own at least 7 of the following units:
+	    * World Walkers, Kislev, Karak Kadrin and Bonerattlaz
+	* Control regions:
+	    * Erengrad, Kislev
+	* Raze or sack 60 regions
+	* Own at least 12 of the following units:
 	    * Chaos Trolls, Norscan Ice Trolls, Fimirs
 	* Own at least 60 units

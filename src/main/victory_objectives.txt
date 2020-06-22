@@ -31,17 +31,14 @@ victory_objectives
                 objective
                 {
                     type DESTROY_FACTION;
-                    faction wh_main_emp_averland;
-                    faction wh_main_emp_empire;
-                    faction wh_main_emp_hochland;
                     faction wh_main_emp_middenland;
-                    faction wh_main_emp_nordland;
-                    faction wh_main_emp_ostland;
-                    faction wh_main_emp_ostermark;
-                    faction wh_main_emp_stirland;
-                    faction wh_main_emp_talabecland;
-                    faction wh2_dlc13_emp_golden_order;
-                    faction wh_main_emp_wissenland;
+
+                    faction wh2_dlc13_wef_laurelorn_forest;
+                    faction wh_dlc05_wef_wood_elves;
+                    faction wh_dlc05_wef_argwylon;
+                    faction wh_dlc05_wef_wydrioth;
+                    faction wh_dlc05_wef_torgovann;
+
                     confederation_valid;
                 }
                 objective
@@ -2509,6 +2506,7 @@ victory_objectives
 					province wh_main_averland;
 					province wh_main_wissenland;
 					province wh_main_the_wasteland;
+					province wh2_main_solland;
 				}
 				objective
 				{
@@ -2558,6 +2556,7 @@ victory_objectives
 					province wh_main_averland;
 					province wh_main_wissenland;
 					province wh_main_the_wasteland;
+					province wh2_main_solland;
 				}
 				objective
 				{
@@ -2779,6 +2778,7 @@ victory_objectives
 					province wh_main_averland;
 					province wh_main_wissenland;
 					province wh_main_the_wasteland;
+					province wh2_main_solland;
 				}
 				objective
 				{
@@ -6581,11 +6581,35 @@ victory_objectives
 				{
 					type DESTROY_FACTION;														// Destroy factions
 					faction wh_dlc08_nor_wintertooth;
-					faction wh_main_emp_empire;
-					faction wh_main_brt_bretonnia;
 					confederation_valid;
 				}
-				objective													// Earn 20000 from raiding
+				objective
+				{
+					type CONTROL_N_REGIONS_FROM;
+					total 3;
+					region wh_main_couronne_et_languille_couronne;
+					region wh_main_reikland_altdorf;
+					region wh_main_eastern_sylvania_castle_drakenhof;
+					region wh_main_yn_edri_eternos_the_oak_of_ages;
+					region wh_main_tilea_miragliano;
+					region wh2_main_skavenblight_skavenblight;
+					region wh_main_southern_oblast_kislev;
+					region wh2_main_hell_pit_hell_pit;
+					region wh_main_the_silver_road_karaz_a_karak;
+					region wh_main_eastern_badlands_karak_eight_peaks;
+					region wh_main_death_pass_karak_drazh;
+					region wh2_main_devils_backbone_lahmia;
+					region wh2_main_land_of_the_dead_khemri;
+					region wh2_main_southern_great_jungle_itza;
+					region wh2_main_isthmus_of_lustria_hexoatl;
+					region wh2_main_iron_mountains_naggarond;
+					region wh2_main_eataine_lothern;
+					region wh2_main_avelorn_gaean_vale;
+					region wh2_main_vampire_coast_the_awakening;
+					region wh2_main_the_galleons_graveyard;
+					region wh2_main_sartosa_sartosa;
+				}
+				objective
 				{
 					type EARN_X_AMOUNT_FROM_RAIDING;
 					total 20000;
@@ -6605,8 +6629,6 @@ victory_objectives
 					type OWN_N_UNITS;
 					total 60;
 				}
-
-				//
 
 				payload
 				{
@@ -6713,7 +6735,15 @@ victory_objectives
 				{
 					type DESTROY_FACTION;														// Destroy factions
 					faction wh_dlc08_nor_norsca;
+					faction wh_main_ksl_kislev;
 					confederation_valid;
+				}
+                objective
+				{
+					type CONTROL_N_REGIONS_FROM;
+					total 2;
+					region wh_main_southern_oblast_kislev;
+					region wh_main_troll_country_erengrad;
 				}
 				objective
 				{
@@ -6766,9 +6796,17 @@ victory_objectives
 				{
 					type DESTROY_FACTION;														// Destroy factions
 					faction wh_dlc08_nor_norsca;
-					faction wh_main_emp_empire;
-					faction wh_main_dwf_dwarfs;
+					faction wh_main_ksl_kislev;
+					faction wh_main_dwf_karak_kadrin;
+					faction wh2_dlc15_grn_bonerattlaz;
 					confederation_valid;
+				}
+                objective
+				{
+					type CONTROL_N_REGIONS_FROM;
+					total 2;
+					region wh_main_southern_oblast_kislev;
+					region wh_main_troll_country_erengrad;
 				}
 				objective
 				{
@@ -6778,6 +6816,11 @@ victory_objectives
 					unit wh_dlc08_nor_mon_norscan_ice_trolls_0;
 					unit wh_dlc08_nor_mon_fimir_0;
 					unit wh_dlc08_nor_mon_fimir_1;
+				}
+				objective
+				{
+					type RAZE_OR_SACK_N_DIFFERENT_SETTLEMENTS_INCLUDING;
+					total 60;
 				}
 				objective
 				{
@@ -9991,24 +10034,6 @@ victory_objectives
 					type RAZE_OR_SACK_N_DIFFERENT_SETTLEMENTS_INCLUDING;		// Raze or sack 50 regions
 					total 50;
 				}
-				// objective
-				// {
-				// 	type RAZE_OR_SACK_N_DIFFERENT_SETTLEMENTS_INCLUDING;
-				// 	total 4;
-				// 	settlement wh2_main_isthmus_of_lustria_fallen_gates;
-				// 	settlement wh_main_middenland_middenheim;
-				// 	settlement wh2_main_deadwood_the_frozen_city;
-				// 	settlement wh2_main_eataine_shrine_of_asuryan;
-				// }
-				objective
-				{
-					type DESTROY_FACTION;									// Destroy the Empire, Bretonnia, Dwarfs and High Elf main factions
-					faction wh_main_emp_empire;
-					faction wh_main_brt_bretonnia;
-					faction wh_main_dwf_dwarfs;
-					faction wh2_main_hef_eataine;
-					confederation_valid;
-				}
 
 				payload
 				{
@@ -10029,24 +10054,6 @@ victory_objectives
 				{
 					type RAZE_OR_SACK_N_DIFFERENT_SETTLEMENTS_INCLUDING;	// Raze or sack 80 regions
 					total 80;
-				}
-				// objective
-				// {
-				// 	type RAZE_OR_SACK_N_DIFFERENT_SETTLEMENTS_INCLUDING;
-				// 	total 4;
-				// 	settlement wh2_main_isthmus_of_lustria_fallen_gates;
-				// 	settlement wh_main_middenland_middenheim;
-				// 	settlement wh2_main_deadwood_the_frozen_city;
-				// 	settlement wh2_main_eataine_shrine_of_asuryan;
-				// }
-				objective
-				{
-					type DESTROY_FACTION;									// Destroy the Empire, Bretonnia, Dwarfs and High Elf main factions
-					faction wh_main_emp_empire;
-					faction wh_main_brt_bretonnia;
-					faction wh_main_dwf_dwarfs;
-					faction wh2_main_hef_eataine;
-					confederation_valid;
 				}
 
 				//

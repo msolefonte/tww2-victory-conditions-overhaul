@@ -21,24 +21,6 @@
 					type RAZE_OR_SACK_N_DIFFERENT_SETTLEMENTS_INCLUDING;		// Raze or sack 50 regions
 					total 50;
 				}
-				// objective
-				// {
-				// 	type RAZE_OR_SACK_N_DIFFERENT_SETTLEMENTS_INCLUDING;
-				// 	total 4;
-				// 	settlement wh2_main_isthmus_of_lustria_fallen_gates;
-				// 	settlement wh_main_middenland_middenheim;
-				// 	settlement wh2_main_deadwood_the_frozen_city;
-				// 	settlement wh2_main_eataine_shrine_of_asuryan;
-				// }
-				objective
-				{
-					type DESTROY_FACTION;									// Destroy the Empire, Bretonnia, Dwarfs and High Elf main factions
-					faction wh_main_emp_empire;
-					faction wh_main_brt_bretonnia;
-					faction wh_main_dwf_dwarfs;
-					faction wh2_main_hef_eataine;
-					confederation_valid;
-				}
 
 				payload
 				{
@@ -59,24 +41,6 @@
 				{
 					type RAZE_OR_SACK_N_DIFFERENT_SETTLEMENTS_INCLUDING;	// Raze or sack 80 regions
 					total 80;
-				}
-				// objective
-				// {
-				// 	type RAZE_OR_SACK_N_DIFFERENT_SETTLEMENTS_INCLUDING;
-				// 	total 4;
-				// 	settlement wh2_main_isthmus_of_lustria_fallen_gates;
-				// 	settlement wh_main_middenland_middenheim;
-				// 	settlement wh2_main_deadwood_the_frozen_city;
-				// 	settlement wh2_main_eataine_shrine_of_asuryan;
-				// }
-				objective
-				{
-					type DESTROY_FACTION;									// Destroy the Empire, Bretonnia, Dwarfs and High Elf main factions
-					faction wh_main_emp_empire;
-					faction wh_main_brt_bretonnia;
-					faction wh_main_dwf_dwarfs;
-					faction wh2_main_hef_eataine;
-					confederation_valid;
 				}
 
 				//

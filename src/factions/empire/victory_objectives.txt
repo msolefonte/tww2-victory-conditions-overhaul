@@ -32,6 +32,7 @@
 					province wh_main_averland;
 					province wh_main_wissenland;
 					province wh_main_the_wasteland;
+					province wh2_main_solland;
 				}
 				objective
 				{
@@ -81,6 +82,7 @@
 					province wh_main_averland;
 					province wh_main_wissenland;
 					province wh_main_the_wasteland;
+					province wh2_main_solland;
 				}
 				objective
 				{
@@ -302,6 +304,7 @@
 					province wh_main_averland;
 					province wh_main_wissenland;
 					province wh_main_the_wasteland;
+					province wh2_main_solland;
 				}
 				objective
 				{
