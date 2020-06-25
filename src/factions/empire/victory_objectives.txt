@@ -19,7 +19,7 @@
 				objective
 				{
 					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of the Empire
-					total 11;
+					total 12;
 					override_text mission_text_text_wh_main_objective_override_empire_control;
 					province wh_main_nordland;
 					province wh_main_ostland;
@@ -69,7 +69,7 @@
 				objective
 				{
 					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of the Empire
-					total 11;
+					total 12;
 					override_text mission_text_text_wh_main_objective_override_empire_control;
 					province wh_main_nordland;
 					province wh_main_ostland;
@@ -291,7 +291,7 @@
 				objective
 				{
 					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of the Empire
-					total 11;
+					total 12;
 					override_text mission_text_text_wh_main_objective_override_empire_control;
 					province wh_main_nordland;
 					province wh_main_ostland;

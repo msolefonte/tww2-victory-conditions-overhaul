@@ -203,15 +203,60 @@ victory_objectives
 		faction wh_main_brt_bretonnia;
 		campaign_type sp_normal;
 
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+                objective
+				{
+					override_text mission_text_text_mis_activity_attain_chivalry_1000;
+                    type SCRIPTED;
+                    script_key attain_chivalry_1000;
+				}
+				objective
+                {
+                    type CONTROL_N_PROVINCES_INCLUDING;
+                    total 7;
+                    province wh_main_bastonne_et_montfort;
+                    province wh_main_bordeleaux_et_aquitaine;
+                    province wh_main_carcassone_et_brionne;
+                    province wh_main_couronne_et_languille;
+                    province wh_main_forest_of_arden;
+                    province wh_main_lyonesse;
+                    province wh_main_parravon_et_quenelles;
+                }
+                objective
+				{
+					type DESTROY_FACTION;
+					faction wh_main_vmp_mousillon;
+					faction wh2_dlc11_vmp_the_barrow_legion;
+
+					faction wh_dlc08_nor_norsca;
+					faction wh_dlc08_nor_wintertooth;
+                    faction wh_dlc08_nor_vanaheimlings;
+					confederation_valid;
+				}
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
 		// LONG CAMPAIGN
  		mission
 		{
-			victory_type wh_dlc03_victory_type_ultimate;
+			victory_type wh_main_victory_type_long;
 			key wh_main_long_victory;
 			issuer CLAN_ELDERS;
 			primary_objectives_and_payload
 			{
-				objective // Attain Chivalrous Chivalry.
+				objective
 				{
 					override_text mission_text_text_mis_activity_attain_chivalry_1000;
                     type SCRIPTED;
@@ -219,7 +264,7 @@ victory_objectives
 				}
 				objective
                 {
-                    type CONTROL_N_PROVINCES_INCLUDING;							// Unify Bretonnia
+                    type CONTROL_N_PROVINCES_INCLUDING;
                     total 7;
                     province wh_main_bastonne_et_montfort;
                     province wh_main_bordeleaux_et_aquitaine;
@@ -236,16 +281,37 @@ victory_objectives
 					faction wh_main_vmp_schwartzhafen;
 					faction wh2_dlc11_vmp_the_barrow_legion;
 					faction wh_main_vmp_vampire_counts;
+
+					faction wh_dlc08_nor_norsca;
+					faction wh_dlc08_nor_wintertooth;
+                    faction wh_dlc08_nor_vanaheimlings;
 					confederation_valid;
 				}
-				objective // Complete the final Errantry War battle.
+				objective
 				{
 					override_text mission_text_text_mis_activity_win_errantry_war;
                     type SCRIPTED;
                     script_key win_errantry_war;
 				}
-
-				//
+				objective
+				{
+					type LIMIT_FACTION_TO_REGIONS;
+					faction wh_main_chs_chaos;
+					faction wh_dlc03_bst_beastmen_chaos;
+					region wh_main_chaos_wastes;
+				}
+				objective
+                {
+					override_text mission_text_text_mis_activity_archaon_spawned;
+                    type SCRIPTED;
+                    script_key archaon_spawned;
+                }
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
+				}
 
 				payload
 				{
@@ -333,15 +399,15 @@ victory_objectives
 		faction wh_main_brt_bordeleaux;
 		campaign_type sp_normal;
 
-		// LONG CAMPAIGN
- 		mission
+		// SHORT CAMPAIGN
+		mission
 		{
-			victory_type wh_dlc03_victory_type_ultimate;
-			key wh_main_long_victory;
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
 			issuer CLAN_ELDERS;
 			primary_objectives_and_payload
 			{
-				objective // Attain Chivalrous Chivalry.
+                objective
 				{
 					override_text mission_text_text_mis_activity_attain_chivalry_1000;
                     type SCRIPTED;
@@ -351,25 +417,96 @@ victory_objectives
 				{
 					type DESTROY_FACTION;
 					faction wh2_dlc11_cst_rogue_boyz_of_the_forbidden_coast;
-
 					faction wh2_dlc11_cst_rogue_freebooters_of_port_royale;
 
-					faction wh2_main_emp_pirates_of_sartosa;
-					faction wh2_main_vmp_vampire_coast;
+					faction wh2_dlc11_cst_vampire_coast;
 					faction wh2_dlc11_cst_noctilus;
 					faction wh2_dlc11_cst_the_drowned;
-					faction wh2_dlc11_cst_vampire_coast_rebels;
-					faction wh2_dlc11_def_the_blessed_dread;
+					faction wh2_dlc11_cst_pirates_of_sartosa;
+
+                    faction wh2_dlc11_cst_harpoon_the_sunken_land_corsairs;
+                    faction wh2_dlc11_cst_rogue_bleak_coast_buccaneers;
+                    faction wh2_dlc11_cst_rogue_boyz_of_the_forbidden_coast;
+                    faction wh2_dlc11_cst_rogue_freebooters_of_port_royale;
+                    faction wh2_dlc11_cst_rogue_grey_point_scuttlers;
+                    faction wh2_dlc11_cst_rogue_terrors_of_the_dark_straights;
+                    faction wh2_dlc11_cst_rogue_the_churning_gulf_raiders;
+                    faction wh2_dlc11_cst_rogue_tyrants_of_the_black_ocean;
+                    faction wh2_dlc11_cst_shanty_dragon_spine_privateers;
+					faction wh2_dlc11_cst_shanty_middle_sea_brigands;
+					faction wh2_dlc11_cst_shanty_shark_straight_seadogs;
 					confederation_valid;
 				}
-				objective // Complete the final Errantry War battle.
+
+				payload
+				{
+					game_victory;
+				}
+			}
+		}
+
+		// LONG CAMPAIGN
+ 		mission
+		{
+			victory_type wh_main_victory_type_long;
+			key wh_main_long_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+				objective
+				{
+					override_text mission_text_text_mis_activity_attain_chivalry_1000;
+                    type SCRIPTED;
+                    script_key attain_chivalry_1000;
+				}
+                objective
+				{
+					type DESTROY_FACTION;
+					faction wh2_dlc11_cst_vampire_coast;
+					faction wh2_dlc11_cst_noctilus;
+					faction wh2_dlc11_cst_the_drowned;
+					faction wh2_dlc11_cst_pirates_of_sartosa;
+
+					faction wh2_dlc11_def_the_blessed_dread;
+
+                    faction wh2_dlc11_cst_harpoon_the_sunken_land_corsairs;
+                    faction wh2_dlc11_cst_rogue_bleak_coast_buccaneers;
+                    faction wh2_dlc11_cst_rogue_boyz_of_the_forbidden_coast;
+                    faction wh2_dlc11_cst_rogue_freebooters_of_port_royale;
+                    faction wh2_dlc11_cst_rogue_grey_point_scuttlers;
+                    faction wh2_dlc11_cst_rogue_terrors_of_the_dark_straights;
+                    faction wh2_dlc11_cst_rogue_the_churning_gulf_raiders;
+                    faction wh2_dlc11_cst_rogue_tyrants_of_the_black_ocean;
+                    faction wh2_dlc11_cst_shanty_dragon_spine_privateers;
+					faction wh2_dlc11_cst_shanty_middle_sea_brigands;
+					faction wh2_dlc11_cst_shanty_shark_straight_seadogs;
+					confederation_valid;
+				}
+				objective
 				{
 					override_text mission_text_text_mis_activity_win_errantry_war;
                     type SCRIPTED;
                     script_key win_errantry_war;
 				}
-
-				//
+				objective
+				{
+					type LIMIT_FACTION_TO_REGIONS;
+					faction wh_main_chs_chaos;
+					faction wh_dlc03_bst_beastmen_chaos;
+					region wh_main_chaos_wastes;
+				}
+				objective
+                {
+					override_text mission_text_text_mis_activity_archaon_spawned;
+                    type SCRIPTED;
+                    script_key archaon_spawned;
+                }
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
+				}
 
 				payload
 				{
@@ -457,15 +594,57 @@ victory_objectives
 		faction wh_main_brt_carcassonne;
 		campaign_type sp_normal;
 
+		// SHORT CAMPAIGN
+		mission
+		{
+			victory_type wh_main_victory_type_short;
+			key wh_main_short_victory;
+			issuer CLAN_ELDERS;
+			primary_objectives_and_payload
+			{
+                objective
+				{
+					override_text mission_text_text_mis_activity_attain_chivalry_1000;
+                    type SCRIPTED;
+                    script_key attain_chivalry_1000;
+				}
+                objective
+				{
+					type ACHIEVE_CHARACTER_RANK;
+					total 1;
+					total2 20;
+					agent wizard;
+				}
+                objective
+				{
+					type DESTROY_FACTION;
+                    faction wh_main_grn_skullsmasherz;
+					faction wh_main_grn_crooked_moon;
+
+					faction wh_main_vmp_mousillon;
+					faction wh2_dlc11_vmp_the_barrow_legion;
+
+                    faction wh2_dlc12_skv_clan_fester;
+                    faction wh2_main_skv_clan_skyre;
+					confederation_valid;
+				}
+
+				payload
+				{
+					game_victory;
+				}
+			}
+        }
+
 		// LONG CAMPAIGN
  		mission
 		{
-			victory_type wh_dlc03_victory_type_ultimate;
+			victory_type wh_main_victory_type_long;
 			key wh_main_long_victory;
 			issuer CLAN_ELDERS;
 			primary_objectives_and_payload
 			{
-				objective // Attain Chivalrous Chivalry.
+				objective
 				{
 					override_text mission_text_text_mis_activity_attain_chivalry_1000;
                     type SCRIPTED;
@@ -478,14 +657,46 @@ victory_objectives
 					total2 20;
 					agent wizard;
 				}
-				objective // Complete the final Errantry War battle.
+				objective
 				{
 					override_text mission_text_text_mis_activity_win_errantry_war;
                     type SCRIPTED;
                     script_key win_errantry_war;
 				}
+                objective
+				{
+					type DESTROY_FACTION;
+					faction wh_main_grn_greenskins;
+                    faction wh_main_grn_skullsmasherz;
+					faction wh_main_grn_crooked_moon;
+					faction wh_main_grn_orcs_of_the_bloody_hand;
 
-				//
+					faction wh_main_vmp_mousillon;
+					faction wh2_dlc11_vmp_the_barrow_legion;
+
+                    faction wh2_dlc12_skv_clan_fester;
+                    faction wh2_main_skv_clan_skyre;
+					confederation_valid;
+				}
+				objective
+				{
+					type LIMIT_FACTION_TO_REGIONS;
+					faction wh_main_chs_chaos;
+					faction wh_dlc03_bst_beastmen_chaos;
+					region wh_main_chaos_wastes;
+				}
+				objective
+                {
+					override_text mission_text_text_mis_activity_archaon_spawned;
+                    type SCRIPTED;
+                    script_key archaon_spawned;
+                }
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
+				}
 
 				payload
 				{
@@ -2493,7 +2704,7 @@ victory_objectives
 				objective
 				{
 					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of the Empire
-					total 11;
+					total 12;
 					override_text mission_text_text_wh_main_objective_override_empire_control;
 					province wh_main_nordland;
 					province wh_main_ostland;
@@ -2543,7 +2754,7 @@ victory_objectives
 				objective
 				{
 					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of the Empire
-					total 11;
+					total 12;
 					override_text mission_text_text_wh_main_objective_override_empire_control;
 					province wh_main_nordland;
 					province wh_main_ostland;
@@ -2765,7 +2976,7 @@ victory_objectives
 				objective
 				{
 					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of the Empire
-					total 11;
+					total 12;
 					override_text mission_text_text_wh_main_objective_override_empire_control;
 					province wh_main_nordland;
 					province wh_main_ostland;
@@ -8657,7 +8868,7 @@ victory_objectives
 				}
 				objective
 				{
-					type CONTROL_N_REGIONS_INCLUDING;
+					type CONTROL_N_REGIONS_FROM;
 					total 8;
 
 					region wh2_main_vampire_coast_the_awakening;
@@ -8729,7 +8940,7 @@ victory_objectives
 				}
 				objective
 				{
-					type CONTROL_N_REGIONS_INCLUDING;
+					type CONTROL_N_REGIONS_FROM;
 					total 15;
 
 					region wh2_main_vampire_coast_the_awakening;
@@ -8761,7 +8972,6 @@ victory_objectives
 					faction wh2_main_lzd_sentinels_of_xeti;
 					faction wh2_main_lzd_hexoatl;
 					faction wh2_main_lzd_tlaxtlan;
-					faction wh2_dlc13_lzd_spirits_of_the_jungle;
 					faction wh2_dlc13_lzd_spirits_of_the_jungle;
 					confederation_valid;
 				}
@@ -9512,17 +9722,15 @@ victory_objectives
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 12 provinces
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 12;
 				}
 				objective
 				{
-					type DESTROY_FACTION;										// Destroy the Empire faction
-					faction wh_main_emp_empire;
+					type DESTROY_FACTION;
+					faction wh_main_vmp_schwartzhafen;
 					confederation_valid;
 				}
-
-				//
 
 				payload
 				{
@@ -9541,36 +9749,23 @@ victory_objectives
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 12 provinces
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 20;
 				}
 				objective
 				{
-					type DESTROY_FACTION;										// Destroy the Empire faction
-					faction wh_main_emp_empire;
+					type DESTROY_FACTION;
+					faction wh_main_vmp_schwartzhafen;
 					confederation_valid;
 				}
 				objective
 				{
-					type LIMIT_FACTION_TO_REGIONS;								// Defeat the Chaos Invasion
-					faction wh_main_chs_chaos;
-					faction wh_dlc03_bst_beastmen_chaos;
-					region wh_main_chaos_wastes;
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					faction wh_main_vmp_vampire_counts;
+					total 2;
+					building_level wh2_dlc09_special_settlement_pyramid_of_nagash_vmp_5;
+					building_level wh2_main_special_pyramid_of_nagash_vmp;
 				}
-				objective
-                {
-					override_text mission_text_text_mis_activity_archaon_spawned;
-                    type SCRIPTED;
-                    script_key archaon_spawned;
-                }
-				objective
-				{
-					type HAVE_CHARACTER_WOUNDED;								// Defeat Archaon
-					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
-					start_pos_character 2140782858;
-				}
-
-				//
 
 				payload
 				{
@@ -9668,23 +9863,38 @@ victory_objectives
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 15 provinces
-					total 15;
+					type CONTROL_N_PROVINCES_INCLUDING;
+					total 14;
+					province wh_main_nordland;
+					province wh_main_ostland;
+					province wh_main_hochland;
+					province wh_main_middenland;
+					province wh_main_talabecland;
+					province wh_main_ostermark;
+					province wh_main_reikland;
+					province wh_main_stirland;
+					province wh_main_averland;
+					province wh_main_wissenland;
+					province wh_main_the_wasteland;
+					province wh2_main_solland;
+					province wh_main_eastern_sylvania;
+					province wh_main_western_sylvania;
 				}
 				objective
 				{
-					type DESTROY_FACTION;										// Destroy the Empire faction
+					type DESTROY_FACTION;
 					faction wh_main_emp_empire;
+					faction wh_main_vmp_vampire_counts;
 					confederation_valid;
 				}
-				objective
+				objective																		// Construct some special buildings
 				{
-					type CONTROL_N_REGIONS_INCLUDING;							// Own Castle Drankenhof
-					total 1;
-					region wh_main_eastern_sylvania_castle_drakenhof;
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					faction wh_main_vmp_schwartzhafen;
+					total 2;
+					building_level wh2_main_special_altdorf_imperial_palace_vmp;
+					building_level wh2_main_special_drakenhof_court;
 				}
-
-				//
 
 				payload
 				{
@@ -9703,21 +9913,64 @@ victory_objectives
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 20 provinces
-					total 20;
+					type CONTROL_N_PROVINCES_INCLUDING;
+					total 14;
+					province wh_main_nordland;
+					province wh_main_ostland;
+					province wh_main_hochland;
+					province wh_main_middenland;
+					province wh_main_talabecland;
+					province wh_main_ostermark;
+					province wh_main_reikland;
+					province wh_main_stirland;
+					province wh_main_averland;
+					province wh_main_wissenland;
+					province wh_main_the_wasteland;
+					province wh2_main_solland;
+					province wh_main_eastern_sylvania;
+					province wh_main_western_sylvania;
+				}
+				objective
+				{
+					type CONTROL_N_REGIONS_INCLUDING;
+					total 1;
+					region wh_main_lyonesse_mousillon;
 				}
 				objective
 				{
 					type DESTROY_FACTION;										// Destroy the Empire faction
 					faction wh_main_emp_empire;
+					faction wh_main_vmp_vampire_counts;
+					faction wh_dlc08_nor_norsca;
+					faction wh_dlc08_nor_wintertooth;
 					confederation_valid;
+				}
+				objective																		// Construct some special buildings
+				{
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					faction wh_main_vmp_schwartzhafen;
+					total 2;
+					building_level wh2_main_special_altdorf_imperial_palace_vmp;
+					building_level wh2_main_special_drakenhof_court;
 				}
 				objective
 				{
-					type CONTROL_N_REGIONS_INCLUDING;							// Own Castle Drankenhof & Mousillon
-					total 2;
-					region wh_main_eastern_sylvania_castle_drakenhof;
-					region wh_main_lyonesse_mousillon;
+					type LIMIT_FACTION_TO_REGIONS;
+					faction wh_main_chs_chaos;
+					faction wh_dlc03_bst_beastmen_chaos;
+					region wh_main_chaos_wastes;
+				}
+				objective
+                {
+					override_text mission_text_text_mis_activity_archaon_spawned;
+                    type SCRIPTED;
+                    script_key archaon_spawned;
+                }
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
 				}
 
 				//
@@ -9816,32 +10069,34 @@ victory_objectives
 			issuer CLAN_ELDERS;
 			primary_objectives_and_payload
 			{
+			    objective
+				{
+					type CONTROL_N_REGIONS_INCLUDING;
+					total 4;
+					region wh_main_couronne_et_languille_couronne;
+					region wh_main_bordeleaux_et_aquitaine_bordeleaux;
+					region wh_main_lyonesse_mousillon;
+					region wh_main_carcassone_et_brionne_castle_carcassonne;
+			    }
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 12 provinces
-					total 12;
-				}
-				objective
-				{
-					type DESTROY_FACTION;										// Destroy factions
+					type DESTROY_FACTION;
 					faction wh_main_brt_bretonnia;
-					faction wh_main_brt_carcassonne;
-					faction wh_main_brt_bordeleaux;
 					confederation_valid;
 				}
-				objective																		//Have 80 units
+				objective
 				{
 					type OWN_N_UNITS;
-					total 80;
+					total 60;
 				}
-				objective																		// Construct 3 Necromancy towers
+				objective
 				{
 					type CONSTRUCT_N_OF_A_BUILDING;
 					faction wh2_dlc11_vmp_the_barrow_legion;
 					total 3;
 					building_level wh_main_vmp_necromancers_2;
 				}
-				objective																		// Construct some special buildings
+				objective
 				{
 					type CONSTRUCT_N_BUILDINGS_FROM;
 					faction wh2_dlc11_vmp_the_barrow_legion;
@@ -9852,15 +10107,15 @@ victory_objectives
 					building_level wh_main_special_settlement_couronne_5_vmp;
 					building_level wh2_main_special_pyramid_of_nagash_vmp;
 					building_level wh2_dlc11_special_settlement_galleons_graveyard_5;
-
+					building_level wh2_main_special_castle_drachenfels_2;
+					building_level wh2_main_special_pyramid_of_nagash_vmp;
 				}
-				objective																		//Have 3 Necromancers
+				objective
 				{
 					type HAVE_N_AGENTS_OF_TYPE;
 					total 3;
 					agent_subtype vmp_necromancer;
 				}
-				//
 
 				payload
 				{
@@ -9879,37 +10134,36 @@ victory_objectives
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;								// Capture at least 25 provinces
-					total 25;
-				}
+					type CONTROL_N_REGIONS_INCLUDING;
+					total 4;
+					region wh_main_couronne_et_languille_couronne;
+					region wh_main_bordeleaux_et_aquitaine_bordeleaux;
+					region wh_main_lyonesse_mousillon;
+					region wh_main_carcassone_et_brionne_castle_carcassonne;
+			    }
 				objective
 				{
-					type DESTROY_FACTION;											// Destroy factions
+					type DESTROY_FACTION;
 					faction wh_main_brt_bretonnia;
 					faction wh_main_brt_carcassonne;
 					faction wh_main_brt_bordeleaux;
-					faction wh_main_emp_empire;
-					faction wh2_dlc09_tmb_followers_of_nagash;
-					faction wh_main_vmp_vampire_counts;
-					faction wh_main_vmp_schwartzhafen;
 					faction wh_dlc05_wef_wood_elves;
 					faction wh_dlc05_wef_argwylon;
-					faction wh2_main_skv_clan_skyre;
 					confederation_valid;
 				}
-				objective																		//Have 160 units
+				objective
 				{
 					type OWN_N_UNITS;
-					total 160;
+					total 100;
 				}
-				objective																		// Construct 5 necromancy towers
+				objective
 				{
 					type CONSTRUCT_N_OF_A_BUILDING;
 					faction wh2_dlc11_vmp_the_barrow_legion;
 					total 5;
 					building_level wh_main_vmp_necromancers_2;
 				}
-				objective																		// Construct some special buildings
+				objective
 				{
 					type CONSTRUCT_N_BUILDINGS_FROM;
 					faction wh2_dlc11_vmp_the_barrow_legion;
@@ -9920,17 +10174,22 @@ victory_objectives
 					building_level wh_main_special_settlement_couronne_5_vmp;
 					building_level wh2_main_special_pyramid_of_nagash_vmp;
 					building_level wh2_dlc11_special_settlement_galleons_graveyard_5;
-
+					building_level wh2_main_special_castle_drachenfels_2;
+					building_level wh2_main_special_pyramid_of_nagash_vmp;
 				}
-				objective																		//Get 3 Necromancers to level 20
+				objective
+				{
+					type HAVE_N_AGENTS_OF_TYPE;
+					total 5;
+					agent_subtype vmp_necromancer;
+				}
+				objective
 				{
 					type ACHIEVE_CHARACTER_RANK;
 					total 3;
 					total2 20;
 					agent wizard;
 				}
-
-				//
 
 				payload
 				{

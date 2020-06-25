@@ -109,3 +109,73 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Warriors of Chaos victory conditions have been redefined to embrace their freedom
     - Now they do not have to destroy the Empire, Bretonnia, Dwarfs and High Elves to achieve a victory
 - Minor fixes
+
+## [1.6.0] The Lady and the Count - TBA
+
+- Added a Short Victory for Couronne
+	- Attain 2000 Chivalry
+	- Conquer provinces:
+	    - Bastonne, Borderlaux, Carcasone, Couronne, Forest of Arden, Lyonese, Parravon 
+	- Destroy factions: 
+	    - Mousillon, The Barrow Legion, World Walkers, Wintertooth, Vanaheimlings
+- Major redone of Couronne Long Victory conditions
+	- Attain 2000 Chivalry
+	- Conquer provinces:
+	    - Bastonne, Borderlaux, Carcasone, Couronne, Forest of Arden, Lyonese, Parravon 
+	- Destroy factions: 
+	    - Mousillon, Sylvannia, The Barrow Legion, Von Carstein, World Walkers, Wintertooth, Vanaheimlings
+	- Complete the final Errantry War battle
+    - Defeat the Chaos Invasion
+    - Defeat Archaon
+- Added a Short Victory for Bordelaux
+	- Attain 2000 Chivalry
+	- Destroy factions:
+	    - Pirates of Sartosa, The Awakened, The Dreadfleet, The Drowned, All Pirate Rogue Armies
+- Major redone of Bordelaux Long Victory conditions
+	- Attain 2000 Chivalry
+	- Destroy factions:
+	    - Pirates of Sartosa, The Awakened, The Dreadfleet, The Drowned, The Blessed Dread, All Pirate Rogue Armies
+	- Complete the final Errantry War battle
+    - Defeat the Chaos Invasion
+    - Defeat Archaon
+- Added a Short Victory for Carcossone
+	- Attain 2000 Chivalry
+    - Get a level 20 damsel
+	- Destroy factions:
+	    - Clan Skryre, Clan Fester, Skullmasherz, Crooked Moon, Mousillon, The Barrow Legion
+- Major redone of Carcossone Long Victory conditions
+	- Attain 2000 Chivalry
+	- Get 3 level 20 damsels
+	- Destroy factions:
+	    - Clan Skryre, Clan Fester, Crooked Moon, The Blooding Hand, Greenskins, Skullmasherz, Mousillon, The Barrow Legion
+	- Complete the final Errantry War battle
+    - Defeat the Chaos Invasion
+    - Defeat Archaon
+- Sylvania does not need to destroy Empire anymore to achieve a Victory. Now they have to destroy Von Carseins
+- Sylvania is now encouraged to go to the South to achieve a Long Victory
+    - They do not have to stop the Chaos anymore. This includes defeating Archaon
+    - Now they have to Build the Pyramid of Nagash (Dark Castle) and the Vault of Nagash
+- Major redone of Von Carsteins Short Victory Conditions, now they have to
+    - Conquer, ally with or assimilate all provinces of the Empire and Sylvannia
+	- Destroy The Empire and Sylvania
+	- Build the Altdorf Landmark and the Von Carstein Court Hall
+- Major redone of Von Carsteins Long Victory Conditions, now they have to
+    - Conquer, ally with or assimilate all provinces of the Empire and Sylvannia
+    - Control Mousillon
+	- Destroy factions:
+	    - The Empire, Sylvania, Wintertooth, World Walkers
+	- Build the Altdorf Landmark and the Von Carstein Court Hall
+    - Defeat the Chaos Invasion
+    - Defeat Archaon
+- Major redone of The Barrow Legion
+    - Now they have to control by any mean Coruonne, Bordelaux, Mousillon and Castle Carcassone to achieve a victory
+    - Now they do not have to control any specific number of provinces to achieve a victory
+    - The Castle Drachenfels' Library and the Vault of Nagash have been added to the required buildings list
+    - Destroying Carcassone and Bordelaux is no longer required to achieve a Short Victory
+    - The number of units required to achieve a Short Victory has been reduced to 60
+    - The number of units required to achieve a Long Victory has been reduced to 100
+    - Destroying Empire, Clan Skryre, Vampire Counts, Schwartzhafen and Followers of Nagash is no longer required
+- Major fixes
+    - Fixed a bug where Vampire Counts needed to conquer all the Lustria cost to Achieve a Short Victory
+    - Fixed a bug where some factions needed to destroy other factions twice
+- Minor fixes

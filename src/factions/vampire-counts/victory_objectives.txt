@@ -18,17 +18,15 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 12 provinces
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 12;
 				}
 				objective
 				{
-					type DESTROY_FACTION;										// Destroy the Empire faction
-					faction wh_main_emp_empire;
+					type DESTROY_FACTION;
+					faction wh_main_vmp_schwartzhafen;
 					confederation_valid;
 				}
-
-				//
 
 				payload
 				{
@@ -47,36 +45,23 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 12 provinces
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 20;
 				}
 				objective
 				{
-					type DESTROY_FACTION;										// Destroy the Empire faction
-					faction wh_main_emp_empire;
+					type DESTROY_FACTION;
+					faction wh_main_vmp_schwartzhafen;
 					confederation_valid;
 				}
 				objective
 				{
-					type LIMIT_FACTION_TO_REGIONS;								// Defeat the Chaos Invasion
-					faction wh_main_chs_chaos;
-					faction wh_dlc03_bst_beastmen_chaos;
-					region wh_main_chaos_wastes;
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					faction wh_main_vmp_vampire_counts;
+					total 2;
+					building_level wh2_dlc09_special_settlement_pyramid_of_nagash_vmp_5;
+					building_level wh2_main_special_pyramid_of_nagash_vmp;
 				}
-				objective
-                {
-					override_text mission_text_text_mis_activity_archaon_spawned;
-                    type SCRIPTED;
-                    script_key archaon_spawned;
-                }
-				objective
-				{
-					type HAVE_CHARACTER_WOUNDED;								// Defeat Archaon
-					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
-					start_pos_character 2140782858;
-				}
-
-				//
 
 				payload
 				{
@@ -174,23 +159,38 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 15 provinces
-					total 15;
+					type CONTROL_N_PROVINCES_INCLUDING;
+					total 14;
+					province wh_main_nordland;
+					province wh_main_ostland;
+					province wh_main_hochland;
+					province wh_main_middenland;
+					province wh_main_talabecland;
+					province wh_main_ostermark;
+					province wh_main_reikland;
+					province wh_main_stirland;
+					province wh_main_averland;
+					province wh_main_wissenland;
+					province wh_main_the_wasteland;
+					province wh2_main_solland;
+					province wh_main_eastern_sylvania;
+					province wh_main_western_sylvania;
 				}
 				objective
 				{
-					type DESTROY_FACTION;										// Destroy the Empire faction
+					type DESTROY_FACTION;
 					faction wh_main_emp_empire;
+					faction wh_main_vmp_vampire_counts;
 					confederation_valid;
 				}
-				objective
+				objective																		// Construct some special buildings
 				{
-					type CONTROL_N_REGIONS_INCLUDING;							// Own Castle Drankenhof
-					total 1;
-					region wh_main_eastern_sylvania_castle_drakenhof;
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					faction wh_main_vmp_schwartzhafen;
+					total 2;
+					building_level wh2_main_special_altdorf_imperial_palace_vmp;
+					building_level wh2_main_special_drakenhof_court;
 				}
-
-				//
 
 				payload
 				{
@@ -209,21 +209,64 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 20 provinces
-					total 20;
+					type CONTROL_N_PROVINCES_INCLUDING;
+					total 14;
+					province wh_main_nordland;
+					province wh_main_ostland;
+					province wh_main_hochland;
+					province wh_main_middenland;
+					province wh_main_talabecland;
+					province wh_main_ostermark;
+					province wh_main_reikland;
+					province wh_main_stirland;
+					province wh_main_averland;
+					province wh_main_wissenland;
+					province wh_main_the_wasteland;
+					province wh2_main_solland;
+					province wh_main_eastern_sylvania;
+					province wh_main_western_sylvania;
+				}
+				objective
+				{
+					type CONTROL_N_REGIONS_INCLUDING;
+					total 1;
+					region wh_main_lyonesse_mousillon;
 				}
 				objective
 				{
 					type DESTROY_FACTION;										// Destroy the Empire faction
 					faction wh_main_emp_empire;
+					faction wh_main_vmp_vampire_counts;
+					faction wh_dlc08_nor_norsca;
+					faction wh_dlc08_nor_wintertooth;
 					confederation_valid;
+				}
+				objective																		// Construct some special buildings
+				{
+					type CONSTRUCT_N_BUILDINGS_FROM;
+					faction wh_main_vmp_schwartzhafen;
+					total 2;
+					building_level wh2_main_special_altdorf_imperial_palace_vmp;
+					building_level wh2_main_special_drakenhof_court;
 				}
 				objective
 				{
-					type CONTROL_N_REGIONS_INCLUDING;							// Own Castle Drankenhof & Mousillon
-					total 2;
-					region wh_main_eastern_sylvania_castle_drakenhof;
-					region wh_main_lyonesse_mousillon;
+					type LIMIT_FACTION_TO_REGIONS;
+					faction wh_main_chs_chaos;
+					faction wh_dlc03_bst_beastmen_chaos;
+					region wh_main_chaos_wastes;
+				}
+				objective
+                {
+					override_text mission_text_text_mis_activity_archaon_spawned;
+                    type SCRIPTED;
+                    script_key archaon_spawned;
+                }
+				objective
+				{
+					type HAVE_CHARACTER_WOUNDED;
+					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
+					start_pos_character 2140782858;
 				}
 
 				//
@@ -322,32 +365,34 @@
 			issuer CLAN_ELDERS;
 			primary_objectives_and_payload
 			{
+			    objective
+				{
+					type CONTROL_N_REGIONS_INCLUDING;
+					total 4;
+					region wh_main_couronne_et_languille_couronne;
+					region wh_main_bordeleaux_et_aquitaine_bordeleaux;
+					region wh_main_lyonesse_mousillon;
+					region wh_main_carcassone_et_brionne_castle_carcassonne;
+			    }
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;							// Capture at least 12 provinces
-					total 12;
-				}
-				objective
-				{
-					type DESTROY_FACTION;										// Destroy factions
+					type DESTROY_FACTION;
 					faction wh_main_brt_bretonnia;
-					faction wh_main_brt_carcassonne;
-					faction wh_main_brt_bordeleaux;
 					confederation_valid;
 				}
-				objective																		//Have 80 units
+				objective
 				{
 					type OWN_N_UNITS;
-					total 80;
+					total 60;
 				}
-				objective																		// Construct 3 Necromancy towers
+				objective
 				{
 					type CONSTRUCT_N_OF_A_BUILDING;
 					faction wh2_dlc11_vmp_the_barrow_legion;
 					total 3;
 					building_level wh_main_vmp_necromancers_2;
 				}
-				objective																		// Construct some special buildings
+				objective
 				{
 					type CONSTRUCT_N_BUILDINGS_FROM;
 					faction wh2_dlc11_vmp_the_barrow_legion;
@@ -358,15 +403,15 @@
 					building_level wh_main_special_settlement_couronne_5_vmp;
 					building_level wh2_main_special_pyramid_of_nagash_vmp;
 					building_level wh2_dlc11_special_settlement_galleons_graveyard_5;
-
+					building_level wh2_main_special_castle_drachenfels_2;
+					building_level wh2_main_special_pyramid_of_nagash_vmp;
 				}
-				objective																		//Have 3 Necromancers
+				objective
 				{
 					type HAVE_N_AGENTS_OF_TYPE;
 					total 3;
 					agent_subtype vmp_necromancer;
 				}
-				//
 
 				payload
 				{
@@ -385,37 +430,36 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;								// Capture at least 25 provinces
-					total 25;
-				}
+					type CONTROL_N_REGIONS_INCLUDING;
+					total 4;
+					region wh_main_couronne_et_languille_couronne;
+					region wh_main_bordeleaux_et_aquitaine_bordeleaux;
+					region wh_main_lyonesse_mousillon;
+					region wh_main_carcassone_et_brionne_castle_carcassonne;
+			    }
 				objective
 				{
-					type DESTROY_FACTION;											// Destroy factions
+					type DESTROY_FACTION;
 					faction wh_main_brt_bretonnia;
 					faction wh_main_brt_carcassonne;
 					faction wh_main_brt_bordeleaux;
-					faction wh_main_emp_empire;
-					faction wh2_dlc09_tmb_followers_of_nagash;
-					faction wh_main_vmp_vampire_counts;
-					faction wh_main_vmp_schwartzhafen;
 					faction wh_dlc05_wef_wood_elves;
 					faction wh_dlc05_wef_argwylon;
-					faction wh2_main_skv_clan_skyre;
 					confederation_valid;
 				}
-				objective																		//Have 160 units
+				objective
 				{
 					type OWN_N_UNITS;
-					total 160;
+					total 100;
 				}
-				objective																		// Construct 5 necromancy towers
+				objective
 				{
 					type CONSTRUCT_N_OF_A_BUILDING;
 					faction wh2_dlc11_vmp_the_barrow_legion;
 					total 5;
 					building_level wh_main_vmp_necromancers_2;
 				}
-				objective																		// Construct some special buildings
+				objective
 				{
 					type CONSTRUCT_N_BUILDINGS_FROM;
 					faction wh2_dlc11_vmp_the_barrow_legion;
@@ -426,17 +470,22 @@
 					building_level wh_main_special_settlement_couronne_5_vmp;
 					building_level wh2_main_special_pyramid_of_nagash_vmp;
 					building_level wh2_dlc11_special_settlement_galleons_graveyard_5;
-
+					building_level wh2_main_special_castle_drachenfels_2;
+					building_level wh2_main_special_pyramid_of_nagash_vmp;
 				}
-				objective																		//Get 3 Necromancers to level 20
+				objective
+				{
+					type HAVE_N_AGENTS_OF_TYPE;
+					total 5;
+					agent_subtype vmp_necromancer;
+				}
+				objective
 				{
 					type ACHIEVE_CHARACTER_RANK;
 					total 3;
 					total2 20;
 					agent wizard;
 				}
-
-				//
 
 				payload
 				{

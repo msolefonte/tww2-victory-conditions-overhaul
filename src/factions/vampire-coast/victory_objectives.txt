@@ -25,7 +25,7 @@
 				}
 				objective
 				{
-					type CONTROL_N_REGIONS_INCLUDING;
+					type CONTROL_N_REGIONS_FROM;
 					total 8;
 
 					region wh2_main_vampire_coast_the_awakening;
@@ -97,7 +97,7 @@
 				}
 				objective
 				{
-					type CONTROL_N_REGIONS_INCLUDING;
+					type CONTROL_N_REGIONS_FROM;
 					total 15;
 
 					region wh2_main_vampire_coast_the_awakening;
@@ -129,7 +129,6 @@
 					faction wh2_main_lzd_sentinels_of_xeti;
 					faction wh2_main_lzd_hexoatl;
 					faction wh2_main_lzd_tlaxtlan;
-					faction wh2_dlc13_lzd_spirits_of_the_jungle;
 					faction wh2_dlc13_lzd_spirits_of_the_jungle;
 					confederation_valid;
 				}
