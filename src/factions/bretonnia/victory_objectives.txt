@@ -429,7 +429,7 @@
 					faction wh_main_vmp_mousillon;
 					faction wh2_dlc11_vmp_the_barrow_legion;
 
-                    faction wh2_dlc12_skv_clan_fester;
+                    faction wh2_main_skv_clan_spittel;
                     faction wh2_main_skv_clan_skyre;
 					confederation_valid;
 				}
@@ -479,7 +479,7 @@
 					faction wh_main_vmp_mousillon;
 					faction wh2_dlc11_vmp_the_barrow_legion;
 
-                    faction wh2_dlc12_skv_clan_fester;
+                    faction wh2_main_skv_clan_spittel;
                     faction wh2_main_skv_clan_skyre;
 					confederation_valid;
 				}

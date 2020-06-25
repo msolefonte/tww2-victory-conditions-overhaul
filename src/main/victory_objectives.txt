@@ -624,7 +624,7 @@ victory_objectives
 					faction wh_main_vmp_mousillon;
 					faction wh2_dlc11_vmp_the_barrow_legion;
 
-                    faction wh2_dlc12_skv_clan_fester;
+                    faction wh2_main_skv_clan_spittel;
                     faction wh2_main_skv_clan_skyre;
 					confederation_valid;
 				}
@@ -674,7 +674,7 @@ victory_objectives
 					faction wh_main_vmp_mousillon;
 					faction wh2_dlc11_vmp_the_barrow_legion;
 
-                    faction wh2_dlc12_skv_clan_fester;
+                    faction wh2_main_skv_clan_spittel;
                     faction wh2_main_skv_clan_skyre;
 					confederation_valid;
 				}
@@ -10145,8 +10145,7 @@ victory_objectives
 				{
 					type DESTROY_FACTION;
 					faction wh_main_brt_bretonnia;
-					faction wh_main_brt_carcassonne;
-					faction wh_main_brt_bordeleaux;
+					
 					faction wh_dlc05_wef_wood_elves;
 					faction wh_dlc05_wef_argwylon;
 					confederation_valid;

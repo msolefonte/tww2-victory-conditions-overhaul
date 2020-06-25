@@ -42,7 +42,7 @@
     * Control regions
         * Coruonne, Bordelaux, Mousillon, Castle Carcassone
 	* Destroy factions
-	    * Bretonnia, Carcassone, Bordeleaux, Wood Elves, Argwylon
+	    * Bretonnia, Wood Elves, Argwylon
     * Have 100 units
     * Construct 5 Necromancy towers
     * Construct 5 special buildings

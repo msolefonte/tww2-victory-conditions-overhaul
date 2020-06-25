@@ -179,3 +179,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Fixed a bug where Vampire Counts needed to conquer all the Lustria cost to Achieve a Short Victory
     - Fixed a bug where some factions needed to destroy other factions twice
 - Minor fixes
+
+## [1.6.1] The Lady and the Count Minor Fix - 2020.06.25
+
+- Now The Barrow Legion does not have to destroy Bordelaux and Carcasonne anymore
+- Now Carcasonne does not have to defeat Clan Fester but Clan Spittel

@@ -441,8 +441,7 @@
 				{
 					type DESTROY_FACTION;
 					faction wh_main_brt_bretonnia;
-					faction wh_main_brt_carcassonne;
-					faction wh_main_brt_bordeleaux;
+
 					faction wh_dlc05_wef_wood_elves;
 					faction wh_dlc05_wef_argwylon;
 					confederation_valid;

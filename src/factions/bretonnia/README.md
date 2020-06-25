@@ -38,12 +38,12 @@
 	* Attain 2000 Chivalry
     * Get a level 20 damsel
 	* Destroy factions:
-	    - Clan Skryre, Clan Fester, Skullmasherz, Crooked Moon, Mousillon, The Barrow Legion
+	    - Clan Skryre, Clan Spittel, Skullmasherz, Crooked Moon, Mousillon, The Barrow Legion
 * **Long Victory Conditions**:
 	* Attain 2000 Chivalry
 	* Get 3 level 20 damsels
 	* Destroy factions:
-	    - Clan Skryre, Clan Fester, Crooked Moon, The Blooding Hand, Greenskins, Skullmasherz, Mousillon, The Barrow 
+	    - Clan Skryre, Clan Spittel, Crooked Moon, The Blooding Hand, Greenskins, Skullmasherz, Mousillon, The Barrow 
 	    Legion
 	* Complete the final Errantry War battle
     * Defeat the Chaos Invasion
