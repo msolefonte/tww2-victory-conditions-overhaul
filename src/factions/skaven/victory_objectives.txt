@@ -26,11 +26,11 @@
 				}
 				objective
 				{
-					type AT_LEAST_X_RELIGION_IN_ALL_PROVINCES;									// At least 50% SKV corruption in all owned provinces
+					type AT_LEAST_X_RELIGION_IN_ALL_PROVINCES;
 					total 50;
 					religion wh2_main_religion_skaven;
 				}
-				objective																		// At least 50% SKV corruption in named provinces
+				objective
 				{
 					type AT_LEAST_X_RELIGION_IN_PROVINCES;
 					province wh_main_peak_pass;
@@ -41,11 +41,13 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Queek Short - Destroy GRIMGOR, THORGRIM, KROQ-GAR, MUTINOUS GITS
+					type DESTROY_FACTION;
 					faction wh_main_grn_greenskins;
-					faction wh_main_dwf_dwarfs;
-					faction wh2_main_lzd_last_defenders;
 					faction wh_main_grn_necksnappers;
+
+					faction wh_main_dwf_dwarfs;
+
+					faction wh2_main_lzd_last_defenders;
 					confederation_valid;
 				}
 				objective
@@ -53,8 +55,6 @@
 					type OWN_N_UNITS;
 					total 60;
 				}
-
-				//
 
 				payload
 				{
@@ -81,11 +81,11 @@
 				}
 				objective
 				{
-					type AT_LEAST_X_RELIGION_IN_ALL_PROVINCES;											// At least 50% SKV corruption in all owned provinces
+					type AT_LEAST_X_RELIGION_IN_ALL_PROVINCES;
 					total 50;
 					religion wh2_main_religion_skaven;
 				}
-				objective																		// At least 50% SKV corruption in named provinces
+				objective
 				{
 					type AT_LEAST_X_RELIGION_IN_PROVINCES;
 					province wh_main_peak_pass;
@@ -96,15 +96,18 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Queek Long - Destroy GRIMGOR, THORGRIM, KROQ-GAR, MUTINOUS GITS, SKARSNIK, WURRZAG, BELEGAR, UNGRIM and SETTRA
+					type DESTROY_FACTION;
 					faction wh_main_grn_greenskins;
-					faction wh_main_dwf_dwarfs;
-					faction wh2_main_lzd_last_defenders;
 					faction wh_main_grn_necksnappers;
 					faction wh_main_grn_crooked_moon;
 					faction wh_main_grn_orcs_of_the_bloody_hand;
+
+					faction wh_main_dwf_dwarfs;
 					faction wh_main_dwf_karak_kadrin;
 					faction wh_main_dwf_karak_izor;
+
+					faction wh2_main_lzd_last_defenders;
+
 					faction wh2_dlc09_tmb_khemri;
 					confederation_valid;
 				}
@@ -113,8 +116,6 @@
 					type OWN_N_UNITS;
 					total 100;
 				}
-
-				//
 
 				payload
 				{
@@ -141,8 +142,6 @@
 					type RAZE_OR_OWN_X_SETTLEMENTS;
 					total 100;
 				}
-
-				//
 
 				payload
 				{
@@ -183,8 +182,6 @@
 					technology_category rom_roman_civ_top;
 					technology_category rom_roman_mil_top;
 				}
-
-				//
 
 				payload
 				{
@@ -212,11 +209,11 @@
 			{
 				objective
 				{
-					type AT_LEAST_X_RELIGION_IN_ALL_PROVINCES;									// At least 50% SKV corruption in all owned provinces
+					type AT_LEAST_X_RELIGION_IN_ALL_PROVINCES;
 					total 50;
 					religion wh2_main_religion_skaven;
 				}
-				objective																		// At least 50% SKV corruption in named provinces
+				objective
 				{
 					type AT_LEAST_X_RELIGION_IN_PROVINCES;
 					province wh2_main_isthmus_of_lustria;
@@ -227,9 +224,11 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Skrolk Short - Destroy TECLIS, LOKHIR and HARKON
+					type DESTROY_FACTION;
 					faction wh2_main_hef_order_of_loremasters;
+
 					faction wh2_dlc11_def_the_blessed_dread;
+
 					faction wh2_dlc11_cst_vampire_coast;
 					confederation_valid;
 				}
@@ -238,8 +237,6 @@
 					type OWN_N_UNITS;
 					total 60;
 				}
-
-				//
 
 				payload
 				{
@@ -258,11 +255,11 @@
 			{
 				objective
 				{
-					type AT_LEAST_X_RELIGION_IN_ALL_PROVINCES;									// At least 50% SKV corruption in all owned provinces
+					type AT_LEAST_X_RELIGION_IN_ALL_PROVINCES;
 					total 50;
 					religion wh2_main_religion_skaven;
 				}
-				objective																		// At least 50% SKV corruption in named provinces
+				objective
 				{
 					type AT_LEAST_X_RELIGION_IN_PROVINCES;
 					province wh2_main_isthmus_of_lustria;
@@ -281,11 +278,14 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Skrolk Long - Destroy TECLIS, LOKHIR, HARKON, CYLOSTRA and MAZDAMUNDI
+					type DESTROY_FACTION;
 					faction wh2_main_hef_order_of_loremasters;
+
 					faction wh2_dlc11_def_the_blessed_dread;
+
 					faction wh2_dlc11_cst_vampire_coast;
 					faction wh2_dlc11_cst_the_drowned;
+
 					faction wh2_main_lzd_hexoatl;
 					confederation_valid;
 				}
@@ -294,8 +294,6 @@
 					type OWN_N_UNITS;
 					total 100;
 				}
-
-				//
 
 				payload
 				{
@@ -322,8 +320,6 @@
 					type RAZE_OR_OWN_X_SETTLEMENTS;
 					total 100;
 				}
-
-				//
 
 				payload
 				{
@@ -365,8 +361,6 @@
 					technology_category rom_roman_mil_top;
 				}
 
-				//
-
 				payload
 				{
 					game_victory;
@@ -391,8 +385,7 @@
 			issuer CLAN_ELDERS;
 			primary_objectives_and_payload
 			{
-
-				objective																		// At least 50% SKV corruption in named provinces
+				objective
 				{
 					type AT_LEAST_X_RELIGION_IN_PROVINCES;
 					province wh2_main_the_clawed_coast;
@@ -403,8 +396,9 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Destroy MAZDAMUNDI and TYRION's factions
+					type DESTROY_FACTION;
 					faction wh2_main_lzd_hexoatl;
+
 					faction wh2_main_hef_eataine;
 					confederation_valid;
 				}
@@ -413,8 +407,6 @@
 					type OWN_N_UNITS;
 					total 60;
 				}
-
-				//
 
 				payload
 				{
@@ -432,7 +424,7 @@
 			primary_objectives_and_payload
 			{
 
-				objective																		// At least 50% SKV corruption in named provinces
+				objective
 				{
 					type AT_LEAST_X_RELIGION_IN_PROVINCES;
 					province wh2_main_the_clawed_coast;
@@ -448,10 +440,13 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Destroy MAZDAMUNDI and TYRION's factions
+					type DESTROY_FACTION;
 					faction wh2_main_lzd_hexoatl;
+
 					faction wh2_main_hef_eataine;
+
 					faction wh_main_emp_empire;
+
 					faction wh_main_dwf_dwarfs;
 					confederation_valid;
 				}
@@ -460,8 +455,6 @@
 					type OWN_N_UNITS;
 					total 100;
 				}
-
-				//
 
 				payload
 				{
@@ -488,8 +481,6 @@
 					type RAZE_OR_OWN_X_SETTLEMENTS;
 					total 100;
 				}
-
-				//
 
 				payload
 				{
@@ -531,8 +522,6 @@
 					technology_category rom_roman_mil_top;
 				}
 
-				//
-
 				payload
 				{
 					game_victory;
@@ -559,11 +548,11 @@
 			{
 				objective
 				{
-					type AT_LEAST_X_RELIGION_IN_ALL_PROVINCES;									// At least 50% SKV corruption in all owned provinces
+					type AT_LEAST_X_RELIGION_IN_ALL_PROVINCES;
 					total 50;
 					religion wh2_main_religion_skaven;
 				}
-				objective																		// At least 50% SKV corruption in named provinces
+				objective
 				{
 					type AT_LEAST_X_RELIGION_IN_PROVINCES;
 					province wh_main_talsyn;
@@ -577,10 +566,12 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Queek Short - Destroy GRIMGOR, THORGRIM, KROQ-GAR, MUTINOUS GITS
+					type DESTROY_FACTION;
 					faction wh_dlc05_wef_wood_elves;
+
 					faction wh_main_brt_carcassonne;
 					faction wh_main_brt_bordeleaux;
+
 					faction wh2_dlc11_cst_pirates_of_sartosa;
 					confederation_valid;
 				}
@@ -589,8 +580,6 @@
 					type OWN_N_UNITS;
 					total 60;
 				}
-
-				//
 
 				payload
 				{
@@ -609,11 +598,11 @@
 			{
 				objective
 				{
-					type AT_LEAST_X_RELIGION_IN_ALL_PROVINCES;											// At least 50% SKV corruption in all owned provinces
+					type AT_LEAST_X_RELIGION_IN_ALL_PROVINCES;
 					total 50;
 					religion wh2_main_religion_skaven;
 				}
-				objective																		// At least 50% SKV corruption in named provinces
+				objective
 				{
 					type AT_LEAST_X_RELIGION_IN_PROVINCES;
 					province wh_main_talsyn;
@@ -634,15 +623,21 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Queek Long - Destroy GRIMGOR, THORGRIM, KROQ-GAR, MUTINOUS GITS, SKARSNIK, WURRZAG, BELEGAR, UNGRIM and SETTRA
-					faction wh_dlc05_wef_wood_elves;
+					type DESTROY_FACTION;
+
+					faction wh_main_emp_empire;
+
+					faction wh_main_brt_bretonnia;
 					faction wh_main_brt_carcassonne;
 					faction wh_main_brt_bordeleaux;
-					faction wh2_dlc11_cst_pirates_of_sartosa;
-					faction wh_main_emp_empire;
-					faction wh_main_brt_bretonnia;
-					faction wh_main_dwf_karak_izor;
+
 					faction wh_main_vmp_vampire_counts;
+
+					faction wh_dlc05_wef_wood_elves;
+
+					faction wh2_dlc11_cst_pirates_of_sartosa;
+
+					faction wh_main_dwf_karak_izor;
 					confederation_valid;
 				}
 				objective
@@ -650,8 +645,6 @@
 					type OWN_N_UNITS;
 					total 100;
 				}
-
-				//
 
 				payload
 				{
@@ -678,8 +671,6 @@
 					type RAZE_OR_OWN_X_SETTLEMENTS;
 					total 100;
 				}
-
-				//
 
 				payload
 				{
@@ -720,8 +711,6 @@
 					technology_category rom_roman_civ_top;
 					technology_category rom_roman_mil_top;
 				}
-
-				//
 
 				payload
 				{
@@ -776,8 +765,11 @@
 				{
 					type DESTROY_FACTION;
 					faction wh_main_grn_greenskins;
+
 					faction wh_main_dwf_dwarfs;
+
 					faction wh2_main_def_hag_graef;
+
 					faction wh2_main_lzd_last_defenders;
 					confederation_valid;
 				}
@@ -805,8 +797,6 @@
 					unit wh2_main_skv_art_warp_lightning_cannon;
 					unit wh2_dlc12_skv_art_warp_lightning_cannon_ror_0;
 				}
-
-				//
 
 				payload
 				{
@@ -850,16 +840,23 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Queek Long - Destroy GRIMGOR, THORGRIM, KROQ-GAR, MUTINOUS GITS, SKARSNIK, WURRZAG, BELEGAR, UNGRIM and SETTRA
+					type DESTROY_FACTION;
 					faction wh_main_grn_greenskins;
+
 					faction wh_main_dwf_dwarfs;
+
 					faction wh2_main_def_hag_graef;
-					faction wh2_main_lzd_last_defenders;
-					faction wh_main_emp_empire;
-					faction wh2_dlc09_tmb_khemri;
-					faction wh_main_brt_bretonnia;
-					faction wh2_main_hef_eataine;
+
 					faction wh2_main_lzd_hexoatl;
+					faction wh2_main_lzd_last_defenders;
+
+					faction wh_main_emp_empire;
+
+					faction wh2_dlc09_tmb_khemri;
+
+					faction wh_main_brt_bretonnia;
+
+					faction wh2_main_hef_eataine;
 					confederation_valid;
 				}
 				objective
@@ -893,7 +890,6 @@
 					type CONTROL_N_PROVINCES_INCLUDING;
 					total 18;
 				}
-				//
 
 				payload
 				{
@@ -920,8 +916,6 @@
 					type RAZE_OR_OWN_X_SETTLEMENTS;
 					total 100;
 				}
-
-				//
 
 				payload
 				{
@@ -962,8 +956,6 @@
 					technology_category rom_roman_civ_top;
 					technology_category rom_roman_mil_top;
 				}
-
-				//
 
 				payload
 				{

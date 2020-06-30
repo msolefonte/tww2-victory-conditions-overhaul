@@ -65,7 +65,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - Gelt is now encouraged to go South
     - Conquer all provinces of the Empire has been removed from the Short Victory conditions
     - New factions to destroy (All victories):
-        - Black Venom, Crooked Moon, The Bloody Hand, Clan Skyre, Pirates of Sartosa
+        - Black Venom, Crooked Moon, The Bloody Handz, Clan Skyre, Pirates of Sartosa
     - New factions to destroy (Long Victory):
         - Broken Nose, Gresnskins, Sylvannia, Von Carstein, Clan Kreepus
     - Building the Nuln Gunnery School is now required
@@ -184,3 +184,76 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Now The Barrow Legion does not have to destroy Bordelaux and Carcasonne anymore
 - Now Carcasonne does not have to defeat Clan Fester but Clan Spittel
+
+## [1.7.0] The Elves Update - 2020.06.30
+
+- Redone of the Order of Loremaster victory conditions
+    - Clan Pestilens has to be destroyed
+    - The White Tower of Hoeth has to be constructed
+    - Now they have to control the Saphery province
+- Redone of Yvresse
+    - Having control of Marshes of Madness is no longer required
+    - Building the Warden's Tower is now required to achieve a victory
+    - Destroying The Bloody Handz is now required to achieve a LV
+    - Controling 18 provinces is no longer required to achieve a LV
+- Now Nagarythe has to destroy Naggarond instead of the Cult of Pleasure to achieve a SV
+- Added a Short Victory for Talsyn
+    - Control Athel Loren
+    - Athel Loren has to be at least 80% untained
+    - Destroy factions
+        - Clan Skryre, Clan Spittel, Crooked Moon and Pirates of Sartosa
+    - Construct the Oak of Ages 5
+    - Complete the final battle
+    - Own at least 60 units
+    - Own at least 7 sisters of the thorn and/or wild riders (shielded/unshielded)
+- Complete redone of the Talsyn Long Victory conditions
+    - Control Athel Loren, the Laurelorn Forest and the Heart of the Jungle
+    - Athel Loren has to be at least 80% untained
+    - Destroy factions
+        - Clan Skryre, Clan Spittel, Crooked Moon, The Barrow Legion, Mousillon, Pirates of Sartosa, 
+        Greenskins, The Bloody Handz
+    - Construct the Oak of Ages 5
+    - Complete the final battle
+    - Own at least 100 units
+    - Own at least 10 sisters of the thorn and/or wild riders (shielded/unshielded)
+    - Defeat Archaon
+- Added a Short Victory for Talsyn
+    - Control Athel Loren
+    - Athel Loren has to be at least 80% untained
+    - Destroy factions
+        - Clan Spittel, The Barrow Legion and Mousillon
+    - Construct the Oak of Ages 5
+    - Complete the final battle
+    - Own at least 40 units
+    - Own at least 10 tree units
+- Complete redone of the Argwylon Long Victory conditions
+    - Control Athel Loren, the Laurelorn Forest and Avelorn
+    - Athel Loren has to be at least 80% untained
+    - Destroy factions
+        - Clan Skryre, Clan Spittel, Crooked Moon, The Barrow Legion, Mousillon, Pirates of Sartosa, 
+        Wintertooth, World Walkers
+    - Construct the Oak of Ages 5
+    - Complete the final battle
+    - Own at least 80 units
+    - Own at least 16 tree units
+    - Defeat Archaon
+- Minor redone of Naggarond
+    - Now it has to control Lothern and Shrine of Asuryan to achieve a victory
+    - Destroying Nagarytge, Eataine and Avelorn is no longer required to achieve a SV anymore
+- Redone of the Cult of Pleasure Short Victory conditions
+    - Now it does not have to control Ulthuan anymore
+    - Destroying Avelorn is no longer required
+    - Now building Dark Convent of Sorcery is not required
+- Minor redone of Har Ganeth
+    - Controlling Gaean Vale is now a requisite
+    - Now it does not have to control Ulthuan anymore to achieve a SV
+    - Destroying Bretonnia is no longer required to achieve a LV
+- Redone of Hag Graef
+    - Destroying Knights of Caledor and Court of Lybaras is now required
+    - Destroying Last Defenders is now required to achieve a SV
+    - Destroying Dwarfs and Greenskins is no longer required to achieve a SV
+    - Destroying The Empire, Clan Pestilen, Eataine and Hexoatl is no longer required to achieve a LV
+    - Controlling 18 provinces is no longer required to achieve a SV
+- Now The Gold Order has to control Solland and Fort Soll to achieve a victory
+- Now The Huntsmarshal's Expedition have to destroy The Spirit of the Jungle to achieve a SV
+- Minor changes

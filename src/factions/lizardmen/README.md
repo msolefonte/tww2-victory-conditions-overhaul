@@ -40,14 +40,14 @@
 	    Southlands Jungle, Kingdom of Beasts, Southern Badlands, Sartosa, Skavenblight
 	* Construct 3 Star Chambers
 	* Destroy factions
-	    * Clan Mors, The Bloody Hand, Pirates of Sartosa, Followers of Nagash
+	    * Clan Mors, The Bloody Handz, Pirates of Sartosa, Followers of Nagash
 * **Long Victory Conditions**:
 	* Conquer, ally with or assimilate provinces:
 	    * Land of Assasins, Land of the Dervishes, Great Desert of Araby, Land of the Dead, Great Mortis Delta, 
 	    Southlands Jungle, Kingdom of Beasts, Southern Badlands, Sartosa, Skavenblight
 	* Construct 5 Star Chambers
 	* Destroy factions
-	    * Clan Mors, Clan Skyre, The Bloody Hand, Pirates of Sartosa, Followers of Nagash, Khemri, Vampire Counts,
+	    * Clan Mors, Clan Skyre, The Bloody Handz, Pirates of Sartosa, Followers of Nagash, Khemri, Vampire Counts,
 	    Greenskins
 	* Defeat Archaon
 

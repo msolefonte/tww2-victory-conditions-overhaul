@@ -18,7 +18,7 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of the Empire
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 12;
 					override_text mission_text_text_wh_main_objective_override_empire_control;
 					province wh_main_nordland;
@@ -38,7 +38,7 @@
 				{
 					type CONTROL_N_PROVINCES_INCLUDING;
 					total 2;
-					override_text mission_text_text_wh_main_objective_override_empire_sylvania;	// Reconquer Sylvannia
+					override_text mission_text_text_wh_main_objective_override_empire_sylvania;
 					province wh_main_eastern_sylvania;
 					province wh_main_western_sylvania;
 				}
@@ -68,7 +68,7 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of the Empire
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 12;
 					override_text mission_text_text_wh_main_objective_override_empire_control;
 					province wh_main_nordland;
@@ -86,7 +86,7 @@
 				}
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;											// Reconquer Sylvannia
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 2;
 					override_text mission_text_text_wh_main_objective_override_empire_sylvania;
 					province wh_main_eastern_sylvania;
@@ -94,7 +94,7 @@
 				}
 				objective
                 {
-                    type DESTROY_FACTION;										// Destroy factions
+                    type DESTROY_FACTION;
                     faction wh_main_grn_black_venom;
                     faction wh_main_grn_broken_nose;
                     faction wh_main_grn_crooked_moon;
@@ -133,7 +133,7 @@
                 }
 				objective
 				{
-					type LIMIT_FACTION_TO_REGIONS;												// Defeat the Chaos Invasion
+					type LIMIT_FACTION_TO_REGIONS;
 					faction wh_main_chs_chaos;
 					faction wh_dlc03_bst_beastmen_chaos;
 					region wh_main_chaos_wastes;
@@ -146,7 +146,7 @@
                 }
 				objective
 				{
-					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					type HAVE_CHARACTER_WOUNDED;
 					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
 					start_pos_character 2140782858;
 				}
@@ -218,8 +218,6 @@
 					technology_category rom_roman_civ_top;
 					technology_category rom_roman_mil_top;
 				}
-
-				//
 
 				payload
 				{
@@ -245,11 +243,18 @@
 			issuer CLAN_ELDERS;
 			primary_objectives_and_payload
 			{
+                objective
+				{
+					type CONTROL_N_PROVINCES_INCLUDING;
+					total 2;
+					province wh2_main_solland;
+					province wh2_main_fort_soll;
+				}
 				objective
 				{
 					type CONTROL_N_PROVINCES_INCLUDING;
 					total 2;
-					override_text mission_text_text_wh_main_objective_override_empire_sylvania;	// Reconquer Sylvannia
+					override_text mission_text_text_wh_main_objective_override_empire_sylvania;
 					province wh_main_eastern_sylvania;
 					province wh_main_western_sylvania;
 				}
@@ -265,7 +270,7 @@
                     faction wh2_dlc11_cst_pirates_of_sartosa;
 					confederation_valid;
 				}
-                objective																		// Construct the Great Slayer Shrine in Karak Kadrin
+                objective
                 {
                     type CONSTRUCT_N_BUILDINGS_INCLUDING;
                     faction wh2_dlc13_emp_golden_order;
@@ -290,7 +295,7 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of the Empire
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 12;
 					override_text mission_text_text_wh_main_objective_override_empire_control;
 					province wh_main_nordland;
@@ -308,7 +313,7 @@
 				}
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;											// Reconquer Sylvannia
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 2;
 					override_text mission_text_text_wh_main_objective_override_empire_sylvania;
 					province wh_main_eastern_sylvania;
@@ -332,7 +337,7 @@
                     faction wh_main_vmp_schwartzhafen;
                     confederation_valid;
                 }
-                objective																		// Construct the Great Slayer Shrine in Karak Kadrin
+                objective
                 {
                     type CONSTRUCT_N_BUILDINGS_INCLUDING;
                     faction wh2_dlc13_emp_golden_order;
@@ -341,7 +346,7 @@
                 }
 				objective
 				{
-					type LIMIT_FACTION_TO_REGIONS;												// Defeat the Chaos Invasion
+					type LIMIT_FACTION_TO_REGIONS;
 					faction wh_main_chs_chaos;
 					faction wh_dlc03_bst_beastmen_chaos;
 					region wh_main_chaos_wastes;
@@ -354,7 +359,7 @@
                 }
 				objective
 				{
-					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					type HAVE_CHARACTER_WOUNDED;
 					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
 					start_pos_character 2140782858;
 				}
@@ -384,8 +389,6 @@
 					type RAZE_OR_OWN_X_SETTLEMENTS;
 					total 100;
 				}
-
-				//
 
 				payload
 				{
@@ -426,8 +429,6 @@
 					technology_category rom_roman_civ_top;
 					technology_category rom_roman_mil_top;
 				}
-
-				//
 
 				payload
 				{
@@ -463,7 +464,10 @@
 				{
 					type DESTROY_FACTION;
 					faction wh2_main_lzd_itza;
+					faction wh2_dlc13_lzd_spirits_of_the_jungle;
+
 					faction wh2_main_skv_clan_pestilens;
+
 					faction wh2_dlc11_cst_vampire_coast;
 					confederation_valid;
 				}
@@ -509,9 +513,13 @@
 					type DESTROY_FACTION;
 					faction wh2_main_lzd_hexoatl;
 					faction wh2_main_lzd_itza;
+					faction wh2_dlc13_lzd_spirits_of_the_jungle;
+
 					faction wh2_main_skv_clan_pestilens;
+
 					faction wh2_dlc11_cst_vampire_coast;
 					faction wh2_dlc11_cst_noctilus;
+
 					faction wh2_dlc11_def_the_blessed_dread;
 					confederation_valid;
 				}
@@ -529,7 +537,7 @@
                 }
 				objective
 				{
-					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					type HAVE_CHARACTER_WOUNDED;
 					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
 					start_pos_character 2140782858;
 				}
@@ -559,8 +567,6 @@
 					type RAZE_OR_OWN_X_SETTLEMENTS;
 					total 100;
 				}
-
-				//
 
 				payload
 				{

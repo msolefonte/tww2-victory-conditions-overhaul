@@ -16,7 +16,7 @@
 	* Have at least 50% skaven corruption in the following provinces
 	    * Peak Pass, Eastern Badlands, The Silver Road
 	* Destroy factions
-	    * Greenskins, Dwarfs, Last Defenders, Necksnappers, Crooked Moon, Orcs of the Bloody Hand, Karak Kadrin, Karak
+	    * Greenskins, Dwarfs, Last Defenders, Necksnappers, Crooked Moon, Orcs of The Bloody Handz, Karak Kadrin, Karak
 	    Izor, Khemri
 	* Own at least 100 units
 

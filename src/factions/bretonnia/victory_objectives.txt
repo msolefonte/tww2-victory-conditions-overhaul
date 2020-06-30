@@ -144,8 +144,6 @@
 					total 100;
 				}
 
-				//
-
 				payload
 				{
 					game_victory;
@@ -186,8 +184,6 @@
 					technology_category rom_roman_mil_top;
 				}
 
-				//
-
 				payload
 				{
 					game_victory;
@@ -221,9 +217,6 @@
                 objective
 				{
 					type DESTROY_FACTION;
-					faction wh2_dlc11_cst_rogue_boyz_of_the_forbidden_coast;
-					faction wh2_dlc11_cst_rogue_freebooters_of_port_royale;
-
 					faction wh2_dlc11_cst_vampire_coast;
 					faction wh2_dlc11_cst_noctilus;
 					faction wh2_dlc11_cst_the_drowned;
@@ -339,8 +332,6 @@
 					total 100;
 				}
 
-				//
-
 				payload
 				{
 					game_victory;
@@ -380,8 +371,6 @@
 					technology_category rom_roman_civ_top;
 					technology_category rom_roman_mil_top;
 				}
-
-				//
 
 				payload
 				{
@@ -529,8 +518,6 @@
 					total 100;
 				}
 
-				//
-
 				payload
 				{
 					game_victory;
@@ -571,8 +558,6 @@
 					technology_category rom_roman_mil_top;
 				}
 
-				//
-
 				payload
 				{
 					game_victory;
@@ -597,7 +582,7 @@
 			issuer CLAN_ELDERS;
 			primary_objectives_and_payload
 			{
-				objective // Attain Chivalrous Chivalry.
+				objective
 				{
 					override_text mission_text_text_mis_activity_attain_chivalry_1000;
                     type SCRIPTED;
@@ -618,20 +603,18 @@
 				}
 				objective
                 {
-                    type CONTROL_N_PROVINCES_INCLUDING;							// Unify Araby
+                    type CONTROL_N_PROVINCES_INCLUDING;
                     total 3;
                     province wh2_main_coast_of_araby;
                     province wh2_main_great_desert_of_araby;
                     province wh2_main_western_jungles;
                 }
-				objective // Complete the final Errantry War battle.
+				objective
 				{
 					override_text mission_text_text_mis_activity_win_errantry_war;
                     type SCRIPTED;
                     script_key win_errantry_war;
 				}
-
-				//
 
 				payload
 				{
@@ -658,8 +641,6 @@
 					type RAZE_OR_OWN_X_SETTLEMENTS;
 					total 100;
 				}
-
-				//
 
 				payload
 				{
@@ -700,8 +681,6 @@
 					technology_category rom_roman_civ_top;
 					technology_category rom_roman_mil_top;
 				}
-
-				//
 
 				payload
 				{

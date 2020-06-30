@@ -89,8 +89,6 @@
 					total 100;
 				}
 
-				//
-
 				payload
 				{
 					game_victory;
@@ -130,8 +128,6 @@
 					technology_category rom_roman_civ_top;
 					technology_category rom_roman_mil_top;
 				}
-
-				//
 
 				payload
 				{
@@ -180,10 +176,11 @@
 				{
 					type DESTROY_FACTION;
 					faction wh_main_emp_empire;
+
 					faction wh_main_vmp_vampire_counts;
 					confederation_valid;
 				}
-				objective																		// Construct some special buildings
+				objective
 				{
 					type CONSTRUCT_N_BUILDINGS_FROM;
 					faction wh_main_vmp_schwartzhafen;
@@ -234,14 +231,16 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;										// Destroy the Empire faction
+					type DESTROY_FACTION;
 					faction wh_main_emp_empire;
+
 					faction wh_main_vmp_vampire_counts;
+
 					faction wh_dlc08_nor_norsca;
 					faction wh_dlc08_nor_wintertooth;
 					confederation_valid;
 				}
-				objective																		// Construct some special buildings
+				objective
 				{
 					type CONSTRUCT_N_BUILDINGS_FROM;
 					faction wh_main_vmp_schwartzhafen;
@@ -269,8 +268,6 @@
 					start_pos_character 2140782858;
 				}
 
-				//
-
 				payload
 				{
 					game_victory;
@@ -296,8 +293,6 @@
 					type RAZE_OR_OWN_X_SETTLEMENTS;
 					total 100;
 				}
-
-				//
 
 				payload
 				{
@@ -338,8 +333,6 @@
 					technology_category rom_roman_civ_top;
 					technology_category rom_roman_mil_top;
 				}
-
-				//
 
 				payload
 				{
@@ -512,8 +505,6 @@
 					total 100;
 				}
 
-				//
-
 				payload
 				{
 					game_victory;
@@ -553,8 +544,6 @@
 					technology_category rom_roman_civ_top;
 					technology_category rom_roman_mil_top;
 				}
-
-				//
 
 				payload
 				{

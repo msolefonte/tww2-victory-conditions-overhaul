@@ -18,14 +18,18 @@
 
 * **Short Victory Conditions**:
 	* Hold 12 settlements
+	* Control the Saphery province
+	* Construct the White Tower of Hoeth
 	* Construct a Tower of Mages
 	* Destroy factions:
-	    * The Blessed Dread, Vampire Coast
+	    * The Blessed Dread, Vampire Coast, Clan Pestilens
 * **Long Victory Conditions**:
 	* Hold 20 settlements
+	* Control the Saphery province
+	* Construct the White Tower of Hoeth
 	* Construct 3 Tower of Mages
 	* Destroy factions:
-	    * Followers of Nagash, Noctilus, Vampire Coast, The Blessed Dread
+	    * Followers of Nagash, Noctilus, Vampire Coast, The Blessed Dread, Clan Pestilens
 	* Defeat Archaon
 
 ### Nagarythe 
@@ -34,7 +38,7 @@
 	* Conquer two of the following provinces
 	    * Nagarythe, Iron Mountains, Titan Peaks, The Road of Skulls, Doom Glades
 	* Destroy factions
-	    * Bleak Holds, Cult of Pleasure, Clar Karond
+	    * Bleak Holds, Naggarond, Clar Karond
 	* Construct the Black Citadel of Anlec
 	* Own 2 Moon Dragons
 * **Long Victory Conditions**:
@@ -92,20 +96,21 @@
 * **Short Victory Conditions**:
 	* Complete 3 Missions
 	* Control provinces
-	    * Yvresse, Cothique, Chrace, Southern Badlands, Western Badlands, Marshes of Madness
+	    * Yvresse, Cothique, Chrace, Southern Badlands, Western Badlands
 	* Destroy faction
 	    * Broken Axe
 	* Have at least 100 Yvresse's defence level
+	* Construct the Warden's Tower
 	* Own 3 of the following units
 	    * Faithbearers, Griffon Knights, Sentinels, Skyhawks, Spireguard
 * **Long Victory Conditions**:
 	* Complete 5 Missions
 	* Conquer, ally with or assimilate all provinces of Ulthuan
 	* Control provinces
-	    * Southern Badlands, Western Badlands, Marshes of Madness
+	    * Southern Badlands, Western Badlands
 	* Destroy factions
-	    * Broken Axe, Naggarond, Greenskins
+	    * Broken Axe, Naggarond, Greenskins,The Bloody Handz
 	* Have at least 100 Yvresse's defence level
+	* Construct the Warden's Tower
 	* Own 5 of the following units
 	    * Faithbearers, Griffon Knights, Sentinels, Skyhawks, Spireguard
-    * Control 18 provinces

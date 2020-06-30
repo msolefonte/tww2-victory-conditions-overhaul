@@ -18,9 +18,8 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Lustria
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 14;
-//					override_text mission_text_text_wh2_main_objective_override_mazdamundi_control;
 					province wh2_main_isthmus_of_lustria;
 					province wh2_main_northern_jungle_of_pahualaxa;
 					province wh2_main_southern_jungle_of_pahualaxa;
@@ -33,8 +32,7 @@
 					province wh2_main_volcanic_islands;
 					province wh2_main_headhunters_jungle;
 				}
-
-				objective																		// Construct special building
+				objective
 				{
 					type CONSTRUCT_N_OF_A_BUILDING;
 					faction wh2_main_lzd_hexoatl;
@@ -43,14 +41,14 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Mazdamundi Short - Destroy SKROLK, MORATHI and CYLOSTRA
+					type DESTROY_FACTION;
 					faction wh2_main_def_cult_of_pleasure;
+
 					faction wh2_main_skv_clan_pestilens;
+
 					faction wh2_dlc11_cst_the_drowned;
 					confederation_valid;
 				}
-
-				//
 
 				payload
 				{
@@ -69,9 +67,8 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Lustria
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 14;
-//					override_text mission_text_text_wh2_main_objective_override_mazdamundi_control;
 					province wh2_main_isthmus_of_lustria;
 					province wh2_main_northern_jungle_of_pahualaxa;
 					province wh2_main_southern_jungle_of_pahualaxa;
@@ -84,15 +81,14 @@
 					province wh2_main_volcanic_islands;
 					province wh2_main_headhunters_jungle;
 				}
-
-				objective																		// Construct special building
+				objective
 				{
 					type CONSTRUCT_N_OF_A_BUILDING;
 					faction wh2_main_lzd_hexoatl;
 					total 5;
 					building_level wh2_main_lzd_slann_1;
 				}
-				objective																		// Construct special building
+				objective
 				{
 					type CONSTRUCT_N_OF_A_BUILDING;
 					faction wh2_main_lzd_hexoatl;
@@ -101,12 +97,14 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Mazdamundi Long - Destroy SKROLK, MORATHI, CYLOSTRA, HARKON, LOKHIR and NOCTILUS
+					type DESTROY_FACTION;
 					faction wh2_main_def_cult_of_pleasure;
+					faction wh2_dlc11_def_the_blessed_dread;
+
 					faction wh2_main_skv_clan_pestilens;
+
 					faction wh2_dlc11_cst_the_drowned;
 					faction wh2_dlc11_cst_vampire_coast;
-					faction wh2_dlc11_def_the_blessed_dread;
 					faction wh2_dlc11_cst_noctilus;
 					confederation_valid;
 				}
@@ -118,12 +116,10 @@
                 }
 				objective
 				{
-					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					type HAVE_CHARACTER_WOUNDED;
 					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
 					start_pos_character 2140782858;
 				}
-
-				//
 
 				payload
 				{
@@ -150,8 +146,6 @@
 					type RAZE_OR_OWN_X_SETTLEMENTS;
 					total 100;
 				}
-
-				//
 
 				payload
 				{
@@ -192,8 +186,6 @@
 					technology_category rom_roman_civ_top;
 					technology_category rom_roman_mil_top;
 				}
-
-				//
 
 				payload
 				{
@@ -221,9 +213,8 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Lustria
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 14;
-//					override_text mission_text_text_wh2_main_objective_override_kroq_gar_control;
 					province wh2_main_southlands_jungle;
 					province wh2_main_kingdom_of_beasts;
 					province wh2_main_crater_of_the_walking_dead;
@@ -235,7 +226,7 @@
 					province wh2_main_land_of_assassins;
 					province wh2_main_great_mortis_delta;
 				}
-				objective																		// Construct special building
+				objective
 				{
 					type CONSTRUCT_N_OF_A_BUILDING;
 					faction wh2_main_lzd_last_defenders;
@@ -244,15 +235,14 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Kroq-Gar Short - Destroy QUEEK, KHALIDA, SETTRA and ARKHAN
+					type DESTROY_FACTION;
 					faction wh2_main_skv_clan_mors;
+
 					faction wh2_dlc09_tmb_lybaras;
 					faction wh2_dlc09_tmb_khemri;
 					faction wh2_dlc09_tmb_followers_of_nagash;
 					confederation_valid;
 				}
-
-				//
 
 				payload
 				{
@@ -271,9 +261,8 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Lustria
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 14;
-//					override_text mission_text_text_wh2_main_objective_override_kroq_gar_control;
 					province wh2_main_southlands_jungle;
 					province wh2_main_kingdom_of_beasts;
 					province wh2_main_crater_of_the_walking_dead;
@@ -286,14 +275,14 @@
 					province wh2_main_great_mortis_delta;
 				}
 
-				objective																		// Construct special building
+				objective
 				{
 					type CONSTRUCT_N_OF_A_BUILDING;
 					faction wh2_main_lzd_last_defenders;
 					total 5;
 					building_level wh2_main_lzd_slann_1;
 				}
-				objective																		// Construct special building
+				objective
 				{
 					type CONSTRUCT_N_OF_A_BUILDING;
 					faction wh2_main_lzd_last_defenders;
@@ -302,13 +291,16 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Kroq-Gar Long - Destroy QUEEK, KHALIDA, SETTRA, ARKHAN, ARANESSA, HARKON and LOKHIR
+					type DESTROY_FACTION;
 					faction wh2_main_skv_clan_mors;
+
 					faction wh2_dlc09_tmb_lybaras;
 					faction wh2_dlc09_tmb_khemri;
 					faction wh2_dlc09_tmb_followers_of_nagash;
+
 					faction wh2_dlc11_cst_pirates_of_sartosa;
 					faction wh2_dlc11_cst_vampire_coast;
+
 					faction wh2_dlc11_def_the_blessed_dread;
 					confederation_valid;
 				}
@@ -320,12 +312,10 @@
                 }
 				objective
 				{
-					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					type HAVE_CHARACTER_WOUNDED;
 					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
 					start_pos_character 2140782858;
 				}
-
-				//
 
 				payload
 				{
@@ -352,8 +342,6 @@
 					type RAZE_OR_OWN_X_SETTLEMENTS;
 					total 100;
 				}
-
-				//
 
 				payload
 				{
@@ -394,8 +382,6 @@
 					technology_category rom_roman_civ_top;
 					technology_category rom_roman_mil_top;
 				}
-
-				//
 
 				payload
 				{
@@ -423,9 +409,8 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Lustria
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 14;
-//					override_text mission_text_text_wh2_main_objective_override_kroq_gar_control;
 					province wh2_main_land_of_assassins;
 					province wh2_main_land_of_the_dervishes;
 					province wh2_main_great_desert_of_araby;
@@ -436,10 +421,8 @@
 					province wh_main_southern_badlands;
 					province wh2_main_sartosa;
 					province wh2_main_skavenblight;
-
-
 				}
-				objective																		// Construct special building
+				objective
 				{
 					type CONSTRUCT_N_OF_A_BUILDING;
 					faction wh2_main_lzd_tlaqua;
@@ -448,15 +431,16 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Tiktaq'to Short - Destroy QUEEK, NOCTILUS, ARANESSA and ARKHAN
+					type DESTROY_FACTION;
 					faction wh2_main_skv_clan_mors;
+
 					faction wh_main_grn_orcs_of_the_bloody_hand;
+
 					faction wh2_dlc11_cst_pirates_of_sartosa;
+
 					faction wh2_dlc09_tmb_followers_of_nagash;
 					confederation_valid;
 				}
-
-				//
 
 				payload
 				{
@@ -475,9 +459,8 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Lustria
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 14;
-//					override_text mission_text_text_wh2_main_objective_override_kroq_gar_control;
 					province wh2_main_land_of_assassins;
 					province wh2_main_land_of_the_dervishes;
 					province wh2_main_great_desert_of_araby;
@@ -490,7 +473,7 @@
 					province wh2_main_skavenblight;
 				}
 
-				objective																		// Construct special building
+				objective
 				{
 					type CONSTRUCT_N_OF_A_BUILDING;
 					faction wh2_main_lzd_tlaqua;
@@ -499,15 +482,19 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Tiktaq'to Long - Destroy QUEEK, IKIT CLAW, NOCTILUS, ARANESSA, ARKHAN, SETTRA, MANNFRED, GRIMGOR
+					type DESTROY_FACTION;
 					faction wh2_main_skv_clan_mors;
 					faction wh2_main_skv_clan_skyre;
+
+					faction wh_main_grn_greenskins;
 					faction wh_main_grn_orcs_of_the_bloody_hand;
+
 					faction wh2_dlc11_cst_pirates_of_sartosa;
+
 					faction wh2_dlc09_tmb_followers_of_nagash;
 					faction wh2_dlc09_tmb_khemri;
+
 					faction wh_main_vmp_vampire_counts;
-					faction wh_main_grn_greenskins;
 					confederation_valid;
 				}
 				objective
@@ -518,12 +505,10 @@
                 }
 				objective
 				{
-					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					type HAVE_CHARACTER_WOUNDED;
 					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
 					start_pos_character 2140782858;
 				}
-
-				//
 
 				payload
 				{
@@ -550,8 +535,6 @@
 					type RAZE_OR_OWN_X_SETTLEMENTS;
 					total 100;
 				}
-
-				//
 
 				payload
 				{
@@ -592,8 +575,6 @@
 					technology_category rom_roman_civ_top;
 					technology_category rom_roman_mil_top;
 				}
-
-				//
 
 				payload
 				{
@@ -621,9 +602,8 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Lustria
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 14;
-//					override_text mission_text_text_wh2_main_objective_override_mazdamundi_control;
 					province wh2_main_vampire_coast;
 					province wh2_main_volcanic_islands;
 					province wh2_main_spine_of_sotek;
@@ -636,7 +616,7 @@
 					province wh2_main_southern_jungle_of_pahualaxa;
 				}
 
-				objective																		// Construct special building
+				objective
 				{
 					type CONSTRUCT_N_OF_A_BUILDING;
 					faction wh2_dlc12_lzd_cult_of_sotek;
@@ -645,16 +625,16 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Tehenhauin Short - Destroy HARKON, SKROLK, IKIT CLAW and NOCTILUS
+					type DESTROY_FACTION;
 					faction wh2_main_skv_clan_pestilens;
 					faction wh2_main_skv_clan_skyre;
+
 					faction wh2_dlc11_cst_vampire_coast;
 					faction wh2_dlc11_cst_noctilus;
+
 					faction wh2_dlc11_def_the_blessed_dread;
 					confederation_valid;
 				}
-
-				//
 
 				payload
 				{
@@ -673,9 +653,8 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Lustria
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 14;
-//					override_text mission_text_text_wh2_main_objective_override_mazdamundi_control;
 					province wh2_main_vampire_coast;
 					province wh2_main_volcanic_islands;
 					province wh2_main_spine_of_sotek;
@@ -688,14 +667,14 @@
 					province wh2_main_southern_jungle_of_pahualaxa;
 				}
 
-				objective																		// Construct special building
+				objective
 				{
 					type CONSTRUCT_N_OF_A_BUILDING;
 					faction wh2_dlc12_lzd_cult_of_sotek;
 					total 5;
 					building_level wh2_main_lzd_worship_sotek_3;
 				}
-				objective																		// Construct special building
+				objective
 				{
 					type CONSTRUCT_N_OF_A_BUILDING;
 					faction wh2_dlc12_lzd_cult_of_sotek;
@@ -704,12 +683,15 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Tehenhauin Long - Destroy SKROLK, IKIT CLAW, HARKON, NOCTILUS, LOKHIR, and ARKHAN
+					type DESTROY_FACTION;
 					faction wh2_main_skv_clan_pestilens;
 					faction wh2_main_skv_clan_skyre;
+
 					faction wh2_dlc11_cst_vampire_coast;
 					faction wh2_dlc11_cst_noctilus;
+
 					faction wh2_dlc11_def_the_blessed_dread;
+
 					faction wh2_dlc09_tmb_followers_of_nagash;
 					confederation_valid;
 				}
@@ -721,12 +703,10 @@
                 }
 				objective
 				{
-					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					type HAVE_CHARACTER_WOUNDED;
 					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
 					start_pos_character 2140782858;
 				}
-
-				//
 
 				payload
 				{
@@ -753,8 +733,6 @@
 					type RAZE_OR_OWN_X_SETTLEMENTS;
 					total 100;
 				}
-
-				//
 
 				payload
 				{
@@ -795,8 +773,6 @@
 					technology_category rom_roman_civ_top;
 					technology_category rom_roman_mil_top;
 				}
-
-				//
 
 				payload
 				{
@@ -824,9 +800,8 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of the Empire
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 10;
-//					override_text mission_text_text_wh2_main_objective_override_kroq_gar_control;
 					province wh2_main_the_creeping_jungle;
 					province wh2_main_northern_great_jungle;
 					province wh2_main_southern_great_jungle;
@@ -842,9 +817,13 @@
 				{
 					type DESTROY_FACTION;
 					faction wh2_dlc11_def_the_blessed_dread;
+
 					faction wh2_main_hef_order_of_loremasters;
+
 					faction wh2_main_skv_clan_pestilens;
+
 					faction wh2_dlc13_emp_the_huntmarshals_expedition;
+
 					faction wh2_dlc11_cst_vampire_coast;
 					confederation_valid;
 				}
@@ -855,8 +834,6 @@
 					total 3;
 					building_level wh2_main_lzd_slann_1;
 				}
-
-				//
 
 				payload
 				{
@@ -875,9 +852,8 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of the Empire
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 10;
-//					override_text mission_text_text_wh2_main_objective_override_kroq_gar_control;
 					province wh2_main_the_creeping_jungle;
 					province wh2_main_northern_great_jungle;
 					province wh2_main_southern_great_jungle;
@@ -892,15 +868,18 @@
 				objective
 				{
 					type DESTROY_FACTION;
+					faction wh2_main_def_naggarond;
+					faction wh2_main_def_cult_of_pleasure;
 					faction wh2_dlc11_def_the_blessed_dread;
+
 					faction wh2_main_hef_order_of_loremasters;
+
 					faction wh2_main_skv_clan_pestilens;
+
 					faction wh2_dlc13_emp_the_huntmarshals_expedition;
+
 					faction wh2_dlc11_cst_vampire_coast;
 					faction wh2_dlc11_cst_the_drowned;
-					faction wh2_main_def_cult_of_pleasure;
-					faction wh2_main_def_naggarond;
-					faction wh2_dlc11_def_the_blessed_dread;
 					confederation_valid;
 				}
 				objective
@@ -925,19 +904,17 @@
                 }
 				objective
 				{
-					type LIMIT_FACTION_TO_REGIONS;												// Defeat the Chaos Invasion
+					type LIMIT_FACTION_TO_REGIONS;
 					faction wh_main_chs_chaos;
 					faction wh_dlc03_bst_beastmen_chaos;
 					region wh_main_chaos_wastes;
 				}
 				objective
 				{
-					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					type HAVE_CHARACTER_WOUNDED;
 					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
 					start_pos_character 2140782858;
 				}
-
-				//
 
 				payload
 				{
@@ -964,8 +941,6 @@
 					type RAZE_OR_OWN_X_SETTLEMENTS;
 					total 100;
 				}
-
-				//
 
 				payload
 				{
@@ -1006,8 +981,6 @@
 					technology_category rom_roman_civ_top;
 					technology_category rom_roman_mil_top;
 				}
-
-				//
 
 				payload
 				{
@@ -1050,8 +1023,11 @@
 				{
 					type DESTROY_FACTION;
 					faction wh_dlc08_nor_norsca;
+
 					faction wh2_main_skv_clan_moulder;
+
 					faction wh_main_vmp_vampire_counts;
+
 					faction wh_main_grn_greenskins;
 					confederation_valid;
 				}
@@ -1068,8 +1044,6 @@
 					total 1;
 					building_level wh2_dlc13_horde_lizardmen_slann_3;
 				}
-
-				//
 
 				payload
 				{
@@ -1103,12 +1077,17 @@
 				{
 					type DESTROY_FACTION;
 					faction wh_dlc08_nor_norsca;
+
 					faction wh2_main_skv_clan_moulder;
-					faction wh_main_vmp_vampire_counts;
-					faction wh_main_grn_greenskins;
-					faction wh2_main_def_naggarond;
 					faction wh2_main_skv_clan_mors;
 					faction wh2_main_skv_clan_skyre;
+
+					faction wh_main_vmp_vampire_counts;
+
+					faction wh_main_grn_greenskins;
+
+					faction wh2_main_def_naggarond;
+
 					faction wh2_dlc13_emp_the_huntmarshals_expedition;
 					confederation_valid;
 				}
@@ -1127,19 +1106,17 @@
 				}
 				objective
 				{
-					type LIMIT_FACTION_TO_REGIONS;												// Defeat the Chaos Invasion
+					type LIMIT_FACTION_TO_REGIONS;
 					faction wh_main_chs_chaos;
 					faction wh_dlc03_bst_beastmen_chaos;
 					region wh_main_chaos_wastes;
 				}
 				objective
 				{
-					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					type HAVE_CHARACTER_WOUNDED;
 					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
 					start_pos_character 2140782858;
 				}
-
-				//
 
 				payload
 				{
@@ -1172,10 +1149,7 @@
                     building_level wh2_dlc13_lzd_port_nakai_quetzl;
                     building_level wh2_dlc13_lzd_port_nakai_xholankha;
 					total 100;
-
                 }
-
-				//
 
 				payload
 				{
@@ -1216,8 +1190,6 @@
 					technology_category rom_roman_civ_top;
 					technology_category rom_roman_mil_top;
 				}
-
-				//
 
 				payload
 				{

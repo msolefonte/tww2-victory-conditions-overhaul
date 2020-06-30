@@ -18,7 +18,7 @@
 			{
 				objective
 				{
-					type RAZE_OR_SACK_N_DIFFERENT_SETTLEMENTS_INCLUDING;		// Raze or sack 50 regions
+					type RAZE_OR_SACK_N_DIFFERENT_SETTLEMENTS_INCLUDING;
 					total 50;
 				}
 
@@ -39,11 +39,9 @@
 			{
 				objective
 				{
-					type RAZE_OR_SACK_N_DIFFERENT_SETTLEMENTS_INCLUDING;	// Raze or sack 80 regions
+					type RAZE_OR_SACK_N_DIFFERENT_SETTLEMENTS_INCLUDING;
 					total 80;
 				}
-
-				//
 
 				payload
 				{
@@ -70,8 +68,6 @@
 					type RAZE_OR_OWN_X_SETTLEMENTS;
 					total 100;
 				}
-
-				//
 
 				payload
 				{
@@ -112,8 +108,6 @@
 					technology_category rom_roman_civ_top;
 					technology_category rom_roman_mil_top;
 				}
-
-				//
 
 				payload
 				{

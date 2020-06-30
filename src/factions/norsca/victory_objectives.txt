@@ -16,15 +16,12 @@
 			issuer CLAN_ELDERS;
 			primary_objectives_and_payload
 			{
-				// Attain maximum favour with one Chaos god
 				objective
 				{
 					override_text mission_text_text_mis_activity_attain_chaos_god_favour;
                     type SCRIPTED;
                     script_key attain_chaos_god_favour;
 				}
-
-				// Defeat all of the Chaos Gods challengers
 				objective
 				{
 					override_text mission_text_text_mis_activity_defeat_chaos_gods_challengers;
@@ -33,11 +30,11 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Destroy factions
+					type DESTROY_FACTION;
 					faction wh_dlc08_nor_wintertooth;
 					confederation_valid;
 				}
-				objective													// Earn 10000 from raiding
+				objective
 				{
 					type EARN_X_AMOUNT_FROM_RAIDING;
 					total 10000;
@@ -46,6 +43,7 @@
 				{
 					type OWN_N_UNITS;
 					total 7;
+					additive;
 					unit wh_dlc08_nor_mon_skinwolves_0;
 					unit wh_dlc08_nor_mon_skinwolves_1;
 					unit wh_dlc08_nor_mon_war_mammoth_0;
@@ -57,8 +55,6 @@
 					type OWN_N_UNITS;
 					total 40;
 				}
-
-				//
 
 				payload
 				{
@@ -75,15 +71,12 @@
 			issuer CLAN_ELDERS;
 			primary_objectives_and_payload
 			{
-				// Attain maximum favour with one Chaos god
 				objective
 				{
 					override_text mission_text_text_mis_activity_attain_chaos_god_favour;
                     type SCRIPTED;
                     script_key attain_chaos_god_favour;
 				}
-
-				// Defeat all of the Chaos Gods challengers
 				objective
 				{
 					override_text mission_text_text_mis_activity_defeat_chaos_gods_challengers;
@@ -92,7 +85,7 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Destroy factions
+					type DESTROY_FACTION;
 					faction wh_dlc08_nor_wintertooth;
 					confederation_valid;
 				}
@@ -229,15 +222,12 @@
 			issuer CLAN_ELDERS;
 			primary_objectives_and_payload
 			{
-				// Attain maximum favour with one Chaos god
 				objective
 				{
 					override_text mission_text_text_mis_activity_attain_chaos_god_favour;
                     type SCRIPTED;
                     script_key attain_chaos_god_favour;
 				}
-
-				// Defeat all of the Chaos Gods challengers
 				objective
 				{
 					override_text mission_text_text_mis_activity_defeat_chaos_gods_challengers;
@@ -246,8 +236,9 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Destroy factions
+					type DESTROY_FACTION;
 					faction wh_dlc08_nor_norsca;
+
 					faction wh_main_ksl_kislev;
 					confederation_valid;
 				}
@@ -273,8 +264,6 @@
 					total 40;
 				}
 
-				//
-
 				payload
 				{
 					game_victory;
@@ -290,15 +279,12 @@
 			issuer CLAN_ELDERS;
 			primary_objectives_and_payload
 			{
-				// Attain maximum favour with one Chaos god
 				objective
 				{
 					override_text mission_text_text_mis_activity_attain_chaos_god_favour;
                     type SCRIPTED;
                     script_key attain_chaos_god_favour;
 				}
-
-				// Defeat all of the Chaos Gods challengers
 				objective
 				{
 					override_text mission_text_text_mis_activity_defeat_chaos_gods_challengers;
@@ -307,10 +293,13 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Destroy factions
+					type DESTROY_FACTION;
 					faction wh_dlc08_nor_norsca;
+
 					faction wh_main_ksl_kislev;
+
 					faction wh_main_dwf_karak_kadrin;
+
 					faction wh2_dlc15_grn_bonerattlaz;
 					confederation_valid;
 				}
@@ -341,8 +330,6 @@
 					total 60;
 				}
 
-				//
-
 				payload
 				{
 					game_victory;
@@ -368,8 +355,6 @@
 					type RAZE_OR_OWN_X_SETTLEMENTS;
 					total 100;
 				}
-
-				//
 
 				payload
 				{
@@ -402,8 +387,6 @@
 					type OWN_N_UNITS;
 					total 60;
 				}
-
-				//
 
 				payload
 				{

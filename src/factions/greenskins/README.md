@@ -4,13 +4,13 @@
 
 * **Short Victory Conditions**:
 	* Conquer or assimilate all of the Greenskin tribes
-	    * Black Venom, Bloody Spearz, Broken Nose, Crooken Moon, Necksnappers, Orcs od the Bloody Hand, Red Eye, Red 
+	    * Black Venom, Bloody Spearz, Broken Nose, Crooken Moon, Necksnappers, Orcs od The Bloody Handz, Red Eye, Red 
 	    Fangs, Scabby Eye, Skullmasherz, Teef Snatchaz, Top Knotz
 	* Occupy/loot/raze/sack at least 25 different settlements
 	* Earn 10000 from raiding
 * **Long Victory Conditions**:
 	* Conquer or assimilate all of the Greenskin tribes
-	    * Black Venom, Bloody Spearz, Broken Nose, Crooken Moon, Necksnappers, Orcs od the Bloody Hand, Red
+	    * Black Venom, Bloody Spearz, Broken Nose, Crooken Moon, Necksnappers, Orcs od The Bloody Handz, Red
 	    Eye, Red Fangs, Scabby Eye, Skullmasherz, Teef Snatchaz, Top Knotz
 	* Occupy/loot/raze/sack at least 50 different settlements
 	* Capture all of the Dwarf provinces
@@ -38,7 +38,7 @@
 
 * **Short Victory Conditions**:
 	*  Conquer or assimilate all of the Greenskin tribes
-	    * Greenskins, Black Venom, Bloody Spearz, Broken Nose, Crooken Moon, Necksnappers, Orcs od the Bloody Hand, Red
+	    * Greenskins, Black Venom, Bloody Spearz, Broken Nose, Crooken Moon, Necksnappers, Orcs od The Bloody Handz, Red
 	    Eye, Red Fangs, Scabby Eye, Skullmasherz, Teef Snatchaz, Top Knotz
 	* Conquer provinces:
 	    * Eastern Badlands, Southern Badlands, Western Badlands
@@ -46,7 +46,7 @@
 	* Earn 10000 from raiding
 * **Long Victory Conditions**:
 	*  Conquer or assimilate all of the Greenskin tribes
-	    * Greenskins, Black Venom, Bloody Spearz, Broken Nose, Crooken Moon, Necksnappers, Orcs od the Bloody Hand, Red
+	    * Greenskins, Black Venom, Bloody Spearz, Broken Nose, Crooken Moon, Necksnappers, Orcs od The Bloody Handz, Red
 	    Eye, Red Fangs, Scabby Eye, Skullmasherz, Teef Snatchaz, Top Knotz
 	* Conquer provinces:
 	    * Blighwater, Blood River Valley, Death Pass, Eastern Badlands, Southern Badlands, Western Badlands
@@ -63,7 +63,7 @@
 * **Long Victory Conditions**:
 	* Control Karak Eight Peaks
 	* Destroy Belegar and Queek and Conquer or assimilate all of the Greenskin tribes
-	    * Greenskins, Black Venom, Bloody Spearz, Broken Nose, Necksnappers, Orcs od the Bloody Hand, Red Eye, Red 
+	    * Greenskins, Black Venom, Bloody Spearz, Broken Nose, Necksnappers, Orcs od The Bloody Handz, Red Eye, Red 
 	    Fangs, Scabby Eye, Skullmasherz, Teef Snatchaz, Top Knotz, Dwarfs, Karak Izor, Clan Mors
 	* Occupy/loot/raze/sack at least 50 different settlements
 	* Capture all of the Dwarf provinces

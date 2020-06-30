@@ -79,7 +79,7 @@
 	    * Kraka Drak: Kraka Drak, Khazid Bordkarag, Sjoktraken
 	    * Zhufbar: Karag Dromar, Oakenhammer, Zhufbar
 	* Destroy factions
-	    * Greenskins, Crooken Moon, The Bloody Hand, Crooked Moon Mutinous Gits, Clan Mors, Clan Skrye, Clan Spittel, 
+	    * Greenskins, Crooken Moon, The Bloody Handz, Crooked Moon Mutinous Gits, Clan Mors, Clan Skrye, Clan Spittel, 
 	    Clan Ferrik, Clan Kreepus
 	* Recapture all of the fallen Dwarf holds
 	    * Karak Ungor, Mount Gunbad, Karak Drazh, Ekrund, Karak Azgal, Galbaraz

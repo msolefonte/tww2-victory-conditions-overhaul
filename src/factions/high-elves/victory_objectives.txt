@@ -18,7 +18,7 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Ulthuan
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 14;
 					override_text mission_text_text_wh2_main_objective_override_tyrion_control;
 					province wh2_main_eataine;
@@ -38,12 +38,12 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Tyrion Short - Destroy the MALEKITH and MORATHI factions
+					type DESTROY_FACTION;
 					faction wh2_main_def_naggarond;
 					faction wh2_main_def_cult_of_pleasure;
 					confederation_valid;
 				}
-				objective																		// Construct some special buildings
+				objective
 				{
 					type CONSTRUCT_N_BUILDINGS_FROM;
 					faction wh2_main_hef_eataine;
@@ -71,7 +71,7 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Ulthuan
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 14;
 					override_text mission_text_text_wh2_main_objective_override_tyrion_control;
 					province wh2_main_eataine;
@@ -91,14 +91,14 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Tyrion Long - Destroy the MALEKITH, MORATHI, HELLEBRON and LOKHIR factions
+					type DESTROY_FACTION;
 					faction wh2_main_def_naggarond;
 					faction wh2_main_def_cult_of_pleasure;
 					faction wh2_main_def_har_ganeth;
 					faction wh2_dlc11_def_the_blessed_dread;
 					confederation_valid;
 				}
-				objective																		// Construct some special buildings
+				objective
 				{
 					type CONSTRUCT_N_BUILDINGS_FROM;
 					faction wh2_main_hef_eataine;
@@ -114,7 +114,7 @@
                 }
 				objective
 				{
-					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					type HAVE_CHARACTER_WOUNDED;
 					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
 					start_pos_character 2140782858;
 				}
@@ -216,24 +216,39 @@
 			primary_objectives_and_payload
 			{
 				objective
+                {
+                    type CONTROL_N_PROVINCES_INCLUDING;
+                    total 1;
+					province wh2_main_saphery;
+                }
+                objective
 				{
-					type CONTROL_N_REGIONS_INCLUDING;											// Hold 12 settlements
+					type CONTROL_N_REGIONS_INCLUDING;
 					total 12;
 				}
+				objective
+				{
+					type DESTROY_FACTION;
+					faction wh2_dlc11_cst_vampire_coast;
 
-				objective																		// Construct special building
+					faction wh2_dlc11_def_the_blessed_dread;
+
+					faction wh2_main_skv_clan_pestilens;
+					confederation_valid;
+				}
+				objective
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_main_hef_order_of_loremasters;
+					total 1;
+					building_level wh2_main_special_tower_of_hoeth_2;
+				}
+				objective
 				{
 					type CONSTRUCT_N_OF_A_BUILDING;
 					faction wh2_main_hef_order_of_loremasters;
 					total 1;
 					building_level wh2_main_hef_mages_3;
-				}
-				objective
-				{
-					type DESTROY_FACTION;														// Teclis Short - Destroy HARKON and LOKHIR
-					faction wh2_dlc11_cst_vampire_coast;
-					faction wh2_dlc11_def_the_blessed_dread;
-					confederation_valid;
 				}
 
 				//
@@ -254,25 +269,42 @@
 			primary_objectives_and_payload
 			{
 				objective
+                {
+                    type CONTROL_N_PROVINCES_INCLUDING;
+                    total 1;
+					province wh2_main_saphery;
+                }
+                objective
 				{
-					type CONTROL_N_REGIONS_INCLUDING;											// Hold 20 settlements
+					type CONTROL_N_REGIONS_INCLUDING;
 					total 20;
 				}
-				objective																		// Construct some special buildings
+				objective
+				{
+					type DESTROY_FACTION;
+					faction wh2_dlc11_cst_vampire_coast;
+					faction wh2_dlc11_cst_noctilus;
+
+					faction wh2_dlc11_def_the_blessed_dread;
+
+					faction wh2_main_skv_clan_pestilens;
+
+					faction wh2_dlc09_tmb_followers_of_nagash;
+					confederation_valid;
+				}
+				objective
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_main_hef_order_of_loremasters;
+					total 1;
+					building_level wh2_main_special_tower_of_hoeth_2;
+				}
+				objective
 				{
 					type CONSTRUCT_N_OF_A_BUILDING;
 					faction wh2_main_hef_order_of_loremasters;
 					total 3;
 					building_level wh2_main_hef_mages_3;
-				}
-				objective
-				{
-					type DESTROY_FACTION;														// Teclis Long - Destroy HARKON, LOKHIR, ARKHAN and NOCTILUS
-					faction wh2_dlc11_cst_vampire_coast;
-					faction wh2_dlc11_def_the_blessed_dread;
-					faction wh2_dlc09_tmb_followers_of_nagash;
-					faction wh2_dlc11_cst_noctilus;
-					confederation_valid;
 				}
 				objective
                 {
@@ -282,7 +314,7 @@
                 }
 				objective
 				{
-					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					type HAVE_CHARACTER_WOUNDED;
 					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
 					start_pos_character 2140782858;
 				}
@@ -385,7 +417,7 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer provinces
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 2;
 					province wh2_main_nagarythe;
 					province wh2_main_iron_mountains;
@@ -395,13 +427,13 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Destroy the MALEKITH and MORATHI factions
-					faction wh2_main_def_cult_of_pleasure;
+					type DESTROY_FACTION;
+					faction wh2_main_def_naggarond;
 					faction wh2_main_def_bleak_holds;
 					faction wh2_main_def_clar_karond;
 					confederation_valid;
 				}
-				objective																		// Construct some special buildings
+				objective
 				{
 					type CONSTRUCT_N_BUILDINGS_FROM;
 					faction wh2_main_hef_nagarythe;
@@ -412,6 +444,7 @@
 				{
 					type OWN_N_UNITS;
 					total 2;
+					additive;
 					unit wh2_main_hef_mon_moon_dragon;
 				}
 
@@ -434,7 +467,7 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer the Dark Elves
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 4;
 					province wh2_main_nagarythe;
 					province wh2_main_iron_mountains;
@@ -444,7 +477,7 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Destroy the Dark Elves
+					type DESTROY_FACTION;
 					faction wh2_main_def_naggarond;
 					faction wh2_main_def_cult_of_pleasure;
 					faction wh2_main_def_har_ganeth;
@@ -452,7 +485,7 @@
 					faction wh2_main_def_clar_karond;
 					confederation_valid;
 				}
-				objective																		// Construct some special buildings
+				objective
 				{
 					type CONSTRUCT_N_BUILDINGS_FROM;
 					faction wh2_main_hef_nagarythe;
@@ -463,6 +496,7 @@
 				{
 					type OWN_N_UNITS;
 					total 3;
+					additive;
 					unit wh2_main_hef_mon_moon_dragon;
 				}
 
@@ -564,7 +598,7 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Ulthuan
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 14;
 					province wh2_main_eataine;
 					province wh2_main_yvresse;
@@ -583,12 +617,12 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Destroy Dark Elves
+					type DESTROY_FACTION;
 					faction wh2_main_def_har_ganeth;
 					faction wh2_main_def_scourge_of_khaine;
 					confederation_valid;
 				}
-				objective																		// Construct some special buildings
+				objective
 				{
 					type CONSTRUCT_N_BUILDINGS_FROM;
 					faction wh2_main_hef_avelorn;
@@ -597,7 +631,7 @@
 				}
 				objective
 				{
-					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					type HAVE_CHARACTER_WOUNDED;
 					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
 					start_pos_character 2140782858;
 				}
@@ -621,7 +655,7 @@
 			{
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Ulthuan
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 14;
 					province wh2_main_eataine;
 					province wh2_main_yvresse;
@@ -640,14 +674,15 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;														// Destroy Dark Elves & Norsca
+					type DESTROY_FACTION;
 					faction wh2_main_def_har_ganeth;
 					faction wh2_main_def_scourge_of_khaine;
+
 					faction wh_dlc08_nor_norsca;
 					faction wh_dlc08_nor_wintertooth;
 					confederation_valid;
 				}
-				objective																		// Construct some special buildings
+				objective
 				{
 					type CONSTRUCT_N_BUILDINGS_FROM;
 					faction wh2_main_hef_avelorn;
@@ -662,7 +697,7 @@
                 }
 				objective
 				{
-					type HAVE_CHARACTER_WOUNDED;												// Defeat Archaon
+					type HAVE_CHARACTER_WOUNDED;
 					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
 					start_pos_character 2140782858;
 				}
@@ -784,7 +819,9 @@
 				{
 					type DESTROY_FACTION;
 					faction wh2_main_skv_clan_eshin;
+
 					faction wh_main_grn_greenskins;
+
 					faction wh2_main_def_hag_graef;
 					confederation_valid;
 				}
@@ -845,7 +882,7 @@
 				}
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Ulthuan
+					type CONTROL_N_PROVINCES_INCLUDING;
 					total 18;
 					province wh2_main_eataine;
 					province wh2_main_yvresse;
@@ -870,9 +907,11 @@
 				{
 					type DESTROY_FACTION;
 					faction wh2_main_skv_clan_eshin;
-					faction wh_main_grn_greenskins;
-					faction wh2_main_def_hag_graef;
 					faction wh2_main_skv_clan_mors;
+
+					faction wh_main_grn_greenskins;
+
+					faction wh2_main_def_hag_graef;
 					confederation_valid;
 				}
 				objective
@@ -910,7 +949,7 @@
 					type CONTROL_N_PROVINCES_INCLUDING;
 					total 18;
 				}
-				//
+
 				payload
 				{
 					game_victory;
@@ -1015,13 +1054,19 @@
 				objective
 				{
 					type CONTROL_N_PROVINCES_INCLUDING;
-					total 6;
+					total 5;
 					province wh2_main_yvresse;
 					province wh2_main_cothique;
 					province wh2_main_chrace;
 					province wh_main_southern_badlands;
 					province wh_main_western_badlands;
-					province wh2_main_marshes_of_madness;
+				}
+				objective
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_main_hef_yvresse;
+					total 1;
+					building_level wh2_main_special_yvresse_amphitheatre;
 				}
 				objective
 				{
@@ -1047,8 +1092,6 @@
 					unit wh2_dlc15_hef_inf_mistwalkers_spireguard_0;
 				}
 
-				//
-
 				payload
 				{
 					game_victory;
@@ -1073,8 +1116,8 @@
 				}
 				objective
 				{
-					type CONTROL_N_PROVINCES_INCLUDING;											// Conquer, ally with or assimilate all provinces of Ulthuan
-					total 17;
+					type CONTROL_N_PROVINCES_INCLUDING;
+					total 16;
 					province wh2_main_eataine;
 					province wh2_main_yvresse;
 					province wh2_main_saphery;
@@ -1091,14 +1134,22 @@
 					province wh2_main_phoenix_gate;
 					province wh_main_southern_badlands;
 					province wh_main_western_badlands;
-					province wh2_main_marshes_of_madness;
+				}
+				objective
+				{
+					type CONSTRUCT_N_OF_A_BUILDING;
+					faction wh2_main_hef_yvresse;
+					total 1;
+					building_level wh2_main_special_yvresse_amphitheatre;
 				}
 				objective
 				{
 					type DESTROY_FACTION;
 					faction wh2_dlc15_grn_broken_axe;
-					faction wh2_main_def_naggarond;
 					faction wh_main_grn_greenskins;
+					faction wh_main_grn_orcs_of_the_bloody_hand;
+
+					faction wh2_main_def_naggarond;
 					confederation_valid;
 				}
 				objective
@@ -1118,12 +1169,7 @@
 					unit wh2_dlc15_hef_inf_mistwalkers_skyhawks_0;
 					unit wh2_dlc15_hef_inf_mistwalkers_spireguard_0;
 				}
-				objective
-				{
-					type CONTROL_N_PROVINCES_INCLUDING;
-					total 18;
-				}
-				//
+
 				payload
 				{
 					game_victory;

@@ -16,7 +16,7 @@
 			issuer CLAN_ELDERS;
 			primary_objectives_and_payload
 			{
-				objective													// Conquer or assimilate all of the Greenskin tribes
+				objective
 				{
 					type DESTROY_FACTION;
 					faction wh_main_grn_black_venom;
@@ -33,12 +33,12 @@
 					faction wh_main_grn_top_knotz;
 					confederation_valid;
 				}
-				objective													// Occupy/loot/raze/sack at least 25 different settlements
+				objective
 				{
 					type OCCUPY_LOOT_RAZE_OR_SACK_X_SETTLEMENTS;
 					total 25;
 				}
-				objective													// Earn 10000 from raiding
+				objective
 				{
 					type EARN_X_AMOUNT_FROM_RAIDING;
 					total 10000;
@@ -59,7 +59,7 @@
 			issuer CLAN_ELDERS;
 			primary_objectives_and_payload
 			{
-				objective													// Conquer or assimilate all of the Greenskin tribes
+				objective
 				{
 					type DESTROY_FACTION;
 					faction wh_main_grn_black_venom;
@@ -76,14 +76,14 @@
 					faction wh_main_grn_top_knotz;
 					confederation_valid;
 				}
-				objective													// Occupy/loot/raze/sack at least 50 different settlements
+				objective
 				{
 					type OCCUPY_LOOT_RAZE_OR_SACK_X_SETTLEMENTS;
 					total 50;
 				}
 				objective
 				{
-					type CONTROL_N_REGIONS_INCLUDING;						// Capture all of the Dwarf provinces
+					type CONTROL_N_REGIONS_INCLUDING;
 					override_text mission_text_text_wh_main_objective_override_greenskins_dwarfholds;
 					total 18;
 					region wh_main_northern_grey_mountains_karak_ziflin;
@@ -105,7 +105,7 @@
 					region wh_main_gianthome_mountains_sjoktraken;
 					region wh_main_desolation_of_nagash_karak_azul;
 				}
-				objective													// Earn 20000 from raiding
+				objective
 				{
 					type EARN_X_AMOUNT_FROM_RAIDING;
 					total 20000;
@@ -118,12 +118,10 @@
                 }
 				objective
 				{
-					type HAVE_CHARACTER_WOUNDED;							// Defeat Archaon
+					type HAVE_CHARACTER_WOUNDED;
 					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
 					start_pos_character 2140782858;
 				}
-
-				//
 
 				payload
 				{
@@ -150,8 +148,6 @@
 					type RAZE_OR_OWN_X_SETTLEMENTS;
 					total 100;
 				}
-
-				//
 
 				payload
 				{
@@ -192,8 +188,6 @@
 					technology_category rom_roman_civ_top;
 					technology_category rom_roman_mil_top;
 				}
-
-				//
 
 				payload
 				{
@@ -221,19 +215,21 @@
 			{
 				objective
 				{
-					type DESTROY_FACTION;									// Azhag Short - Conquer da Norf
+					type DESTROY_FACTION;
 					faction wh_main_emp_ostermark;
+
 					faction wh_main_ksl_kislev;
+
 					faction wh_main_dwf_karak_kadrin;
 					confederation_valid;
 
 				}
-				objective													// Occupy/loot/raze/sack at least 25 different settlements
+				objective
 				{
 					type OCCUPY_LOOT_RAZE_OR_SACK_X_SETTLEMENTS;
 					total 25;
 				}
-				objective													// Earn 10000 from raiding
+				objective
 				{
 					type EARN_X_AMOUNT_FROM_RAIDING;
 					total 10000;
@@ -256,7 +252,7 @@
 			{
 				objective
 				{
-					type DESTROY_FACTION;									// Azhg Long - Destroy Empire, Kislev and Karak Kadrin
+					type DESTROY_FACTION;
 					faction wh_main_emp_averland;
                     faction wh_main_emp_empire;
                     faction wh_main_emp_hochland;
@@ -270,21 +266,22 @@
                     faction wh_main_emp_wissenland;
 
 					faction wh_main_ksl_kislev;
+
 					faction wh_main_dwf_karak_kadrin;
 					confederation_valid;
 				}
-				objective													// Occupy/loot/raze/sack at least 50 different settlements
+				objective
 				{
 					type OCCUPY_LOOT_RAZE_OR_SACK_X_SETTLEMENTS;
 					total 50;
 				}
 				objective
 				{
-					type CONTROL_N_REGIONS_INCLUDING;						// Do what the Iron Hat sez
+					type CONTROL_N_REGIONS_INCLUDING;
 					total 1;
 					region wh2_main_the_broken_teeth_nagashizar;
 				}
-				objective													// Earn 20000 from raiding
+				objective
 				{
 					type EARN_X_AMOUNT_FROM_RAIDING;
 					total 20000;
@@ -297,12 +294,10 @@
                 }
 				objective
 				{
-					type HAVE_CHARACTER_WOUNDED;							// Defeat Archaon
+					type HAVE_CHARACTER_WOUNDED;
 					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
 					start_pos_character 2140782858;
 				}
-
-				//
 
 				payload
 				{
@@ -329,8 +324,6 @@
 					type RAZE_OR_OWN_X_SETTLEMENTS;
 					total 100;
 				}
-
-				//
 
 				payload
 				{
@@ -371,8 +364,6 @@
 					technology_category rom_roman_civ_top;
 					technology_category rom_roman_mil_top;
 				}
-
-				//
 
 				payload
 				{
@@ -400,7 +391,7 @@
 			{
 				objective
 				{
-					type DESTROY_FACTION;									// Wurrzag Short - Conquer or assimilate all of the Greenskin tribes
+					type DESTROY_FACTION;
 					faction wh_main_grn_greenskins;
 					faction wh_main_grn_black_venom;
 					faction wh_main_grn_bloody_spearz;
@@ -415,19 +406,19 @@
 					faction wh_main_grn_top_knotz;
 					confederation_valid;
 				}
-				objective													// Occupy/loot/raze/sack at least 25 different settlements
+				objective
 				{
 					type OCCUPY_LOOT_RAZE_OR_SACK_X_SETTLEMENTS;
 					total 25;
 				}
-				objective													// Earn 10000 from raiding
+				objective
 				{
 					type EARN_X_AMOUNT_FROM_RAIDING;
 					total 10000;
 				}
 				objective
                 {
-                    type CONTROL_N_PROVINCES_INCLUDING;							// Unify Badlands
+                    type CONTROL_N_PROVINCES_INCLUDING;
                     total 3;
                     province wh_main_southern_badlands;
                     province wh_main_western_badlands;
@@ -451,7 +442,7 @@
 			{
 				objective
 				{
-					type DESTROY_FACTION;									// Wurrzag Long - Destroy EMPIRE and DWARFS and Conquer or assimilate all of the Greenskin tribes
+					type DESTROY_FACTION;
 					faction wh_main_grn_greenskins;
 					faction wh_main_grn_black_venom;
 					faction wh_main_grn_bloody_spearz;
@@ -464,13 +455,15 @@
 					faction wh_main_grn_skullsmasherz;
 					faction wh_main_grn_teef_snatchaz;
 					faction wh_main_grn_top_knotz;
+
 					faction wh_main_emp_empire;
+
 					faction wh_main_dwf_dwarfs;
 					confederation_valid;
 				}
 				objective
                 {
-                    type CONTROL_N_PROVINCES_INCLUDING;							// Unify Badlands
+                    type CONTROL_N_PROVINCES_INCLUDING;
                     total 3;
                     province wh_main_blightwater;
                     province wh_main_blood_river_valley;
@@ -479,12 +472,12 @@
                     province wh_main_southern_badlands;
                     province wh_main_western_badlands;
                 }
-				objective													// Occupy/loot/raze/sack at least 50 different settlements
+				objective
 				{
 					type OCCUPY_LOOT_RAZE_OR_SACK_X_SETTLEMENTS;
 					total 50;
 				}
-				objective													// Earn 20000 from raiding
+				objective
 				{
 					type EARN_X_AMOUNT_FROM_RAIDING;
 					total 20000;
@@ -497,12 +490,10 @@
                 }
 				objective
 				{
-					type HAVE_CHARACTER_WOUNDED;							// Defeat Archaon
+					type HAVE_CHARACTER_WOUNDED;
 					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
 					start_pos_character 2140782858;
 				}
-
-				//
 
 				payload
 				{
@@ -529,8 +520,6 @@
 					type RAZE_OR_OWN_X_SETTLEMENTS;
 					total 100;
 				}
-
-				//
 
 				payload
 				{
@@ -571,8 +560,6 @@
 					technology_category rom_roman_civ_top;
 					technology_category rom_roman_mil_top;
 				}
-
-				//
 
 				payload
 				{
@@ -608,8 +595,9 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;									// Skarsnik Long - Destroy BELEGAR and QUEEK
+					type DESTROY_FACTION;
 					faction wh_main_dwf_karak_izor;
+
 					faction wh2_main_skv_clan_mors;
 					confederation_valid;
 				}
@@ -639,7 +627,7 @@
 				}
 				objective
 				{
-					type DESTROY_FACTION;									// Skarsnik Long - Destroy BELEGAR and QUEEK and Conquer or assimilate all of the Greenskin tribes
+					type DESTROY_FACTION;
 					faction wh_main_grn_greenskins;
 					faction wh_main_grn_black_venom;
 					faction wh_main_grn_bloody_spearz;
@@ -652,20 +640,22 @@
 					faction wh_main_grn_skullsmasherz;
 					faction wh_main_grn_teef_snatchaz;
 					faction wh_main_grn_top_knotz;
+
 					faction wh_main_dwf_dwarfs;
 					faction wh_main_dwf_karak_izor;
+
 					faction wh2_main_skv_clan_mors;
 					confederation_valid;
 
 				}
-				objective													// Occupy/loot/raze/sack at least 50 different settlements
+				objective
 				{
 					type OCCUPY_LOOT_RAZE_OR_SACK_X_SETTLEMENTS;
 					total 50;
 				}
 				objective
 				{
-					type CONTROL_N_REGIONS_INCLUDING;						// Capture all of the Dwarf provinces
+					type CONTROL_N_REGIONS_INCLUDING;
 					override_text mission_text_text_wh_main_objective_override_greenskins_dwarfholds;
 					total 18;
 					region wh_main_northern_grey_mountains_karak_ziflin;
@@ -695,12 +685,10 @@
                 }
 				objective
 				{
-					type HAVE_CHARACTER_WOUNDED;							// Defeat Archaon
+					type HAVE_CHARACTER_WOUNDED;
 					override_text mission_text_text_wh_main_objective_override_archaon_wounded;
 					start_pos_character 2140782858;
 				}
-
-				//
 
 				payload
 				{
@@ -727,8 +715,6 @@
 					type RAZE_OR_OWN_X_SETTLEMENTS;
 					total 100;
 				}
-
-				//
 
 				payload
 				{
@@ -769,8 +755,6 @@
 					technology_category rom_roman_civ_top;
 					technology_category rom_roman_mil_top;
 				}
-
-				//
 
 				payload
 				{
@@ -883,7 +867,7 @@
 					type CONTROL_N_PROVINCES_INCLUDING;
 					total 18;
 				}
-				//
+
 				payload
 				{
 					game_victory;
@@ -909,8 +893,6 @@
 					type RAZE_OR_OWN_X_SETTLEMENTS;
 					total 100;
 				}
-
-				//
 
 				payload
 				{
@@ -951,8 +933,6 @@
 					technology_category rom_roman_civ_top;
 					technology_category rom_roman_mil_top;
 				}
-
-				//
 
 				payload
 				{

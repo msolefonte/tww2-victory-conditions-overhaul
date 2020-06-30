@@ -36,7 +36,6 @@
                     faction wh_dlc05_wef_argwylon;
                     faction wh_dlc05_wef_wydrioth;
                     faction wh_dlc05_wef_torgovann;
-
                     confederation_valid;
                 }
                 objective
@@ -101,7 +100,6 @@
                     faction wh_dlc05_wef_argwylon;
                     faction wh_dlc05_wef_wydrioth;
                     faction wh_dlc05_wef_torgovann;
-
                     confederation_valid;
                 }
                 objective
@@ -109,8 +107,6 @@
                     type FIGHT_SET_PIECE_BATTLE;
                     set_piece_battle wh_dlc03_qb_bst_the_final_battle;
                 }
-
-                //
 
                 payload
                 {
@@ -179,8 +175,6 @@
                     technology_category rom_roman_civ_top;
                     technology_category rom_roman_mil_top;
                 }
-
-                //
 
                 payload
                 {

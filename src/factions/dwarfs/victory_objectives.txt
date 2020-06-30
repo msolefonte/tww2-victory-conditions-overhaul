@@ -18,48 +18,43 @@
             {
                 objective
                 {
-                    type HAVE_NO_ACTIVE_MISSIONS_OF_CATEGORY;					// Clear the book of grudges
+                    type HAVE_NO_ACTIVE_MISSIONS_OF_CATEGORY;
                     event_category Grudges;
                 }
                 objective
                 {
-                    type CONTROL_N_REGIONS_INCLUDING;							// Unite the Dwarfholds under your rule
+                    type CONTROL_N_REGIONS_INCLUDING;
                     total 19;
                     override_text mission_text_text_wh_main_objective_override_dwarfs_unite;
 
-                    region wh_main_the_silver_road_karaz_a_karak;				// wh_main_dwf_dwarfs
+                    region wh_main_the_silver_road_karaz_a_karak;
 
-                    region wh_main_blood_river_valley_barak_varr;				// wh_main_dwf_barak_varr
-                    region wh_main_blood_river_valley_varenka_hills;			// wh_main_dwf_barak_varr
+                    region wh_main_blood_river_valley_barak_varr;
+                    region wh_main_blood_river_valley_varenka_hills;
 
-                    region wh_main_eastern_badlands_dringorackaz;				// wh_main_dwf_karak_azul
-                    region wh_main_blightwater_kradtommen;						// wh_main_dwf_karak_azul
-                    region wh_main_blightwater_misty_mountain;					// wh_main_dwf_karak_azul
-                    region wh_main_desolation_of_nagash_karak_azul;				// wh_main_dwf_karak_azul
-                    region wh_main_desolation_of_nagash_spitepeak;				// wh_main_dwf_karak_azul
+                    region wh_main_eastern_badlands_dringorackaz;
+                    region wh_main_blightwater_kradtommen;
+                    region wh_main_blightwater_misty_mountain;
+                    region wh_main_desolation_of_nagash_karak_azul;
+                    region wh_main_desolation_of_nagash_spitepeak;
 
-                    region wh_main_black_mountains_karak_hirn;					// wh_main_dwf_karak_hirn
-                    region wh_main_black_mountains_mighdal_vongalbarak;			// wh_main_dwf_karak_hirn
+                    region wh_main_black_mountains_karak_hirn;
+                    region wh_main_black_mountains_mighdal_vongalbarak;
 
-                    region wh_main_the_vaults_karak_izor;						// wh_main_dwf_karak_izor
+                    region wh_main_the_vaults_karak_izor;
 
-                    region wh_main_peak_pass_karak_kadrin;						// wh_main_dwf_karak_kadrin
+                    region wh_main_peak_pass_karak_kadrin;
 
-                    region wh_main_southern_grey_mountains_karak_norn;			// wh_main_dwf_karak_norn
-                    region wh_main_southern_grey_mountains_grimhold;			// wh_main_dwf_karak_norn
+                    region wh_main_southern_grey_mountains_karak_norn;
+                    region wh_main_southern_grey_mountains_grimhold;
 
-                    region wh_main_northern_grey_mountains_karak_ziflin;		// wh_main_dwf_karak_ziflin
-                    region wh_main_northern_grey_mountains_blackstone_post;		// wh_main_dwf_karak_ziflin
+                    region wh_main_northern_grey_mountains_karak_ziflin;
+                    region wh_main_northern_grey_mountains_blackstone_post;
 
-                    //region wh_main_gianthome_mountains_kraka_drak;			// wh_main_dwf_kraka_drak
-                    //region wh_main_gianthome_mountains_khazid_bordkarag;		// wh_main_dwf_kraka_drak
-                    //region wh_main_gianthome_mountains_sjoktraken;			// wh_main_dwf_kraka_drak
-
-                    region wh_main_zhufbar_karag_dromar;						// wh_main_dwf_zhufbar
-                    region wh_main_zhufbar_oakenhammer;							// wh_main_dwf_zhufbar
-                    region wh_main_zhufbar_zhufbar;								// wh_main_dwf_zhufbar
+                    region wh_main_zhufbar_karag_dromar;
+                    region wh_main_zhufbar_oakenhammer;
+                    region wh_main_zhufbar_zhufbar;
                 }
-                //
 
                 payload
                 {
@@ -78,50 +73,50 @@
             {
                 objective
                 {
-                    type HAVE_NO_ACTIVE_MISSIONS_OF_CATEGORY;					// Clear the book of grudges
+                    type HAVE_NO_ACTIVE_MISSIONS_OF_CATEGORY;
                     event_category Grudges;
                 }
                 objective
                 {
-                    type CONTROL_N_REGIONS_INCLUDING;							// Unite the Dwarfholds under your rule
+                    type CONTROL_N_REGIONS_INCLUDING;
                     total 22;
                     override_text mission_text_text_wh_main_objective_override_dwarfs_unite;
 
-                    region wh_main_the_silver_road_karaz_a_karak;				// wh_main_dwf_dwarfs
+                    region wh_main_the_silver_road_karaz_a_karak;
 
-                    region wh_main_blood_river_valley_barak_varr;				// wh_main_dwf_barak_varr
-                    region wh_main_blood_river_valley_varenka_hills;			// wh_main_dwf_barak_varr
+                    region wh_main_blood_river_valley_barak_varr;
+                    region wh_main_blood_river_valley_varenka_hills;
 
-                    region wh_main_eastern_badlands_dringorackaz;				// wh_main_dwf_karak_azul
-                    region wh_main_blightwater_kradtommen;						// wh_main_dwf_karak_azul
-                    region wh_main_blightwater_misty_mountain;					// wh_main_dwf_karak_azul
-                    region wh_main_desolation_of_nagash_karak_azul;				// wh_main_dwf_karak_azul
-                    region wh_main_desolation_of_nagash_spitepeak;				// wh_main_dwf_karak_azul
+                    region wh_main_eastern_badlands_dringorackaz;
+                    region wh_main_blightwater_kradtommen;
+                    region wh_main_blightwater_misty_mountain;
+                    region wh_main_desolation_of_nagash_karak_azul;
+                    region wh_main_desolation_of_nagash_spitepeak;
 
-                    region wh_main_black_mountains_karak_hirn;					// wh_main_dwf_karak_hirn
-                    region wh_main_black_mountains_mighdal_vongalbarak;			// wh_main_dwf_karak_hirn
+                    region wh_main_black_mountains_karak_hirn;
+                    region wh_main_black_mountains_mighdal_vongalbarak;
 
-                    region wh_main_the_vaults_karak_izor;						// wh_main_dwf_karak_izor
+                    region wh_main_the_vaults_karak_izor;
 
-                    region wh_main_peak_pass_karak_kadrin;						// wh_main_dwf_karak_kadrin
+                    region wh_main_peak_pass_karak_kadrin;
 
-                    region wh_main_southern_grey_mountains_karak_norn;			// wh_main_dwf_karak_norn
-                    region wh_main_southern_grey_mountains_grimhold;			// wh_main_dwf_karak_norn
+                    region wh_main_southern_grey_mountains_karak_norn;
+                    region wh_main_southern_grey_mountains_grimhold;
 
-                    region wh_main_northern_grey_mountains_karak_ziflin;		// wh_main_dwf_karak_ziflin
-                    region wh_main_northern_grey_mountains_blackstone_post;		// wh_main_dwf_karak_ziflin
+                    region wh_main_northern_grey_mountains_karak_ziflin;
+                    region wh_main_northern_grey_mountains_blackstone_post;
 
-                    region wh_main_gianthome_mountains_kraka_drak;				// wh_main_dwf_kraka_drak
-                    region wh_main_gianthome_mountains_khazid_bordkarag;		// wh_main_dwf_kraka_drak
-                    region wh_main_gianthome_mountains_sjoktraken;				// wh_main_dwf_kraka_drak
+                    region wh_main_gianthome_mountains_kraka_drak;
+                    region wh_main_gianthome_mountains_khazid_bordkarag;
+                    region wh_main_gianthome_mountains_sjoktraken;
 
-                    region wh_main_zhufbar_karag_dromar;						// wh_main_dwf_zhufbar
-                    region wh_main_zhufbar_oakenhammer;							// wh_main_dwf_zhufbar
-                    region wh_main_zhufbar_zhufbar;								// wh_main_dwf_zhufbar
+                    region wh_main_zhufbar_karag_dromar;
+                    region wh_main_zhufbar_oakenhammer;
+                    region wh_main_zhufbar_zhufbar;
                 }
                 objective
                 {
-                    type CONTROL_N_REGIONS_INCLUDING;							// Recapture all of the fallen Dwarf holds
+                    type CONTROL_N_REGIONS_INCLUDING;
                     total 7;
                     override_text mission_text_text_wh_main_objective_override_dwarfs_reclaim;
                     region wh_main_northern_worlds_edge_mountains_karak_ungor;
@@ -134,7 +129,7 @@
                 }
                 objective
                 {
-                    type DESTROY_FACTION;										// Destroy the Greenskins factions and Queek
+                    type DESTROY_FACTION;
                     faction wh_main_grn_greenskins;
 
                     faction wh2_main_skv_clan_mors;
@@ -146,7 +141,7 @@
                 }
                 objective
                 {
-                    type LIMIT_FACTION_TO_REGIONS;								// Defeat the Chaos Invasion
+                    type LIMIT_FACTION_TO_REGIONS;
                     faction wh_main_chs_chaos;
                     faction wh_dlc03_bst_beastmen_chaos;
                     region wh_main_chaos_wastes;
@@ -159,12 +154,10 @@
                 }
                 objective
                 {
-                    type HAVE_CHARACTER_WOUNDED;								// Defeat Archaon
+                    type HAVE_CHARACTER_WOUNDED;
                     override_text mission_text_text_wh_main_objective_override_archaon_wounded;
                     start_pos_character 2140782858;
                 }
-
-                //
 
                 payload
                 {
@@ -191,8 +184,6 @@
                     type RAZE_OR_OWN_X_SETTLEMENTS;
                     total 100;
                 }
-
-                //
 
                 payload
                 {
@@ -234,8 +225,6 @@
                     technology_category rom_roman_mil_top;
                 }
 
-                //
-
                 payload
                 {
                     game_victory;
@@ -262,13 +251,13 @@
             {
                 objective
                 {
-                    type AQUIRE_MISSION_CATEGORY_WEIGHT;										// Ensure total grudges severity is no more than 9
+                    type AQUIRE_MISSION_CATEGORY_WEIGHT;
                     event_category Grudges;
                     value 5.0;
                     value_minimum false;
                     override_text mission_text_text_wh_main_objective_override_dwarfs_grudges_threshold;
                 }
-                objective																		// Construct the Great Slayer Shrine in Karak Kadrin
+                objective
                 {
                     type CONSTRUCT_N_BUILDINGS_INCLUDING;
                     faction wh_main_dwf_karak_kadrin;
@@ -277,16 +266,18 @@
                 }
                 objective
                 {
-                    type DESTROY_FACTION;														// Destroy factions
+                    type DESTROY_FACTION;
+                    faction wh2_dlc15_grn_bonerattlaz;
+
+                    faction wh2_main_skv_clan_moulder;
+
                     faction wh_dlc08_nor_norsca;
                     faction wh_dlc08_nor_wintertooth;
-                    faction wh2_main_skv_clan_moulder;
-                    faction wh2_dlc15_grn_bonerattlaz;
                     confederation_valid;
                 }
                 objective
                 {
-                    type CONTROL_N_PROVINCES_INCLUDING;											// Conquer Provinces
+                    type CONTROL_N_PROVINCES_INCLUDING;
                     total 5;
                     province wh_main_peak_pass;
                     province wh_main_zhufbar;
@@ -324,10 +315,10 @@
             {
                 objective
                 {
-                    type HAVE_NO_ACTIVE_MISSIONS_OF_CATEGORY;									// Clear the book of grudges
+                    type HAVE_NO_ACTIVE_MISSIONS_OF_CATEGORY;
                     event_category Grudges;
                 }
-                objective																		// Construct the Great Slayer Shrine in Karak Kadrin
+                objective
                 {
                     type CONSTRUCT_N_BUILDINGS_INCLUDING;
                     faction wh_main_dwf_karak_kadrin;
@@ -336,20 +327,23 @@
                 }
                 objective
                 {
-                    type DESTROY_FACTION;														// Destroy factions
-                    faction wh_dlc08_nor_norsca;
-                    faction wh_dlc08_nor_wintertooth;
-                    faction wh2_main_skv_clan_moulder;
+                    type DESTROY_FACTION;
                     faction wh_main_grn_crooked_moon;
                     faction wh2_dlc15_grn_bonerattlaz;
+
+					faction wh_main_vmp_vampire_counts;
 					faction wh_main_vmp_schwartzhafen;
 					faction wh2_dlc11_vmp_the_barrow_legion;
-					faction wh_main_vmp_vampire_counts;
+
+                    faction wh2_main_skv_clan_moulder;
+
+                    faction wh_dlc08_nor_norsca;
+                    faction wh_dlc08_nor_wintertooth;
                     confederation_valid;
                 }
                 objective
                 {
-                    type CONTROL_N_PROVINCES_INCLUDING;											// Conquer Provinces
+                    type CONTROL_N_PROVINCES_INCLUDING;
                     total 10;
                     province wh_main_peak_pass;
                     province wh_main_zhufbar;
@@ -372,7 +366,7 @@
                 }
                 objective
                 {
-                    type LIMIT_FACTION_TO_REGIONS;								// Defeat the Chaos Invasion
+                    type LIMIT_FACTION_TO_REGIONS;
                     faction wh_main_chs_chaos;
                     faction wh_dlc03_bst_beastmen_chaos;
                     region wh_main_chaos_wastes;
@@ -385,11 +379,10 @@
                 }
                 objective
                 {
-                    type HAVE_CHARACTER_WOUNDED;								// Defeat Archaon
+                    type HAVE_CHARACTER_WOUNDED;
                     override_text mission_text_text_wh_main_objective_override_archaon_wounded;
                     start_pos_character 2140782858;
                 }
-                //
 
                 payload
                 {
@@ -416,8 +409,6 @@
                     type RAZE_OR_OWN_X_SETTLEMENTS;
                     total 100;
                 }
-
-                //
 
                 payload
                 {
@@ -458,8 +449,6 @@
                     technology_category rom_roman_civ_top;
                     technology_category rom_roman_mil_top;
                 }
-
-                //
 
                 payload
                 {
@@ -506,6 +495,7 @@
                     type DESTROY_FACTION;
                     faction wh_main_grn_crooked_moon;
                     faction wh_main_grn_necksnappers;
+
 					faction wh2_main_skv_clan_mors;
                     confederation_valid;
                 }
@@ -544,41 +534,41 @@
                     total 22;
                     override_text mission_text_text_wh_main_objective_override_dwarfs_unite;
 
-                    region wh_main_the_silver_road_karaz_a_karak;				// wh_main_dwf_dwarfs
+                    region wh_main_the_silver_road_karaz_a_karak;
 
-                    region wh_main_blood_river_valley_barak_varr;				// wh_main_dwf_barak_varr
-                    region wh_main_blood_river_valley_varenka_hills;			// wh_main_dwf_barak_varr
+                    region wh_main_blood_river_valley_barak_varr;
+                    region wh_main_blood_river_valley_varenka_hills;
 
-                    region wh_main_eastern_badlands_dringorackaz;				// wh_main_dwf_karak_azul
-                    region wh_main_blightwater_kradtommen;						// wh_main_dwf_karak_azul
-                    region wh_main_blightwater_misty_mountain;					// wh_main_dwf_karak_azul
-                    region wh_main_desolation_of_nagash_karak_azul;				// wh_main_dwf_karak_azul
-                    region wh_main_desolation_of_nagash_spitepeak;				// wh_main_dwf_karak_azul
+                    region wh_main_eastern_badlands_dringorackaz;
+                    region wh_main_blightwater_kradtommen;
+                    region wh_main_blightwater_misty_mountain;
+                    region wh_main_desolation_of_nagash_karak_azul;
+                    region wh_main_desolation_of_nagash_spitepeak;
 
-                    region wh_main_black_mountains_karak_hirn;					// wh_main_dwf_karak_hirn
-                    region wh_main_black_mountains_mighdal_vongalbarak;			// wh_main_dwf_karak_hirn
+                    region wh_main_black_mountains_karak_hirn;
+                    region wh_main_black_mountains_mighdal_vongalbarak;
 
-                    region wh_main_the_vaults_karak_izor;						// wh_main_dwf_karak_izor
+                    region wh_main_the_vaults_karak_izor;
 
-                    region wh_main_peak_pass_karak_kadrin;						// wh_main_dwf_karak_kadrin
+                    region wh_main_peak_pass_karak_kadrin;
 
-                    region wh_main_southern_grey_mountains_karak_norn;			// wh_main_dwf_karak_norn
-                    region wh_main_southern_grey_mountains_grimhold;			// wh_main_dwf_karak_norn
+                    region wh_main_southern_grey_mountains_karak_norn;
+                    region wh_main_southern_grey_mountains_grimhold;
 
-                    region wh_main_northern_grey_mountains_karak_ziflin;		// wh_main_dwf_karak_ziflin
-                    region wh_main_northern_grey_mountains_blackstone_post;		// wh_main_dwf_karak_ziflin
+                    region wh_main_northern_grey_mountains_karak_ziflin;
+                    region wh_main_northern_grey_mountains_blackstone_post;
 
-                    region wh_main_gianthome_mountains_kraka_drak;				// wh_main_dwf_kraka_drak
-                    region wh_main_gianthome_mountains_khazid_bordkarag;		// wh_main_dwf_kraka_drak
-                    region wh_main_gianthome_mountains_sjoktraken;				// wh_main_dwf_kraka_drak
+                    region wh_main_gianthome_mountains_kraka_drak;
+                    region wh_main_gianthome_mountains_khazid_bordkarag;
+                    region wh_main_gianthome_mountains_sjoktraken;
 
-                    region wh_main_zhufbar_karag_dromar;						// wh_main_dwf_zhufbar
-                    region wh_main_zhufbar_oakenhammer;							// wh_main_dwf_zhufbar
-                    region wh_main_zhufbar_zhufbar;								// wh_main_dwf_zhufbar
+                    region wh_main_zhufbar_karag_dromar;
+                    region wh_main_zhufbar_oakenhammer;
+                    region wh_main_zhufbar_zhufbar;
                 }
                 objective
                 {
-                    type DESTROY_FACTION;										// Destroy the Greenskins factions and Queek
+                    type DESTROY_FACTION;
                     faction wh_main_grn_greenskins;
                     faction wh_main_grn_crooked_moon;
                     faction wh_main_grn_necksnappers;
@@ -589,13 +579,11 @@
                     faction wh2_dlc15_skv_clan_ferrik;
                     faction wh2_main_skv_clan_spittel;
                     faction wh2_dlc15_skv_clan_kreepus;
-
-                    faction wh2_dlc15_skv_clan_kreepus;
                     confederation_valid;
                 }
                 objective
                 {
-                    type CONTROL_N_REGIONS_INCLUDING;							// Recapture all of the fallen Dwarf holds
+                    type CONTROL_N_REGIONS_INCLUDING;
                     total 7;
                     override_text mission_text_text_wh_main_objective_override_dwarfs_reclaim;
                     region wh_main_northern_worlds_edge_mountains_karak_ungor;
@@ -607,7 +595,7 @@
                 }
                 objective
                 {
-                    type LIMIT_FACTION_TO_REGIONS;								// Defeat the Chaos Invasion
+                    type LIMIT_FACTION_TO_REGIONS;
                     faction wh_main_chs_chaos;
                     faction wh_dlc03_bst_beastmen_chaos;
                     region wh_main_chaos_wastes;
@@ -620,12 +608,10 @@
                 }
                 objective
                 {
-                    type HAVE_CHARACTER_WOUNDED;								// Defeat Archaon
+                    type HAVE_CHARACTER_WOUNDED;
                     override_text mission_text_text_wh_main_objective_override_archaon_wounded;
                     start_pos_character 2140782858;
                 }
-
-                //
 
                 payload
                 {
@@ -652,8 +638,6 @@
                     type RAZE_OR_OWN_X_SETTLEMENTS;
                     total 100;
                 }
-
-                //
 
                 payload
                 {
@@ -694,8 +678,6 @@
                     technology_category rom_roman_civ_top;
                     technology_category rom_roman_mil_top;
                 }
-
-                //
 
                 payload
                 {

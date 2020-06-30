@@ -7,10 +7,10 @@
 	    * Ironfrost Glacier, The Chill Road, The Road of Skulls, The Black Flood, Deadwood, Aghol Wastelands, The Broken 
 	    Land, The Clawed Coast, Iron Mountains, Obsidian Peaks, Blackspine Mountains, Doom Glades, The Black Coast, 
 	    Titan Peaks
+	* Control regions:
+	    * Lothern, Shrine of Asuryan
 	* Construct The Black Tower of Malekith
 	* Own 3 Black Arks
-	* Destroy factions:
-	    * Averlorn, Eataine, Nagarythe
 	* Capture 10,000 battle captives
 * **Long Victory Conditions**:
 	* Conquer, ally with or assimilate provinces in Naggaroth:
@@ -29,13 +29,9 @@
 ### Cult of Pleasure
 
 * **Short Victory Conditions**:
-	* Conquer, ally with or assimilate provinces of Ulthuan:
-	    * Eataine, Yvresse, Saphery, Cothique, Avelorn, Chrace, Nagarythe, Ellyrion, Tiranoc, Caledor, Eagle Gate, 
-	    Griffon Gate, Unicorn Gate, Phoenix Gate
-	* Construct the Dark Convent of Sorcery
-	* Own 3 Black Arks
 	* Destroy factions:
-	    * Averlorn, Nagarythe, Exiles of Nehek, Clan Rictus
+	    * Nagarythe, Exiles of Nehek, Clan Rictus
+	* Own 3 Black Arks
 	* Capture 10,000 battle captives
 * **Long Victory Conditions**:
 	* Conquer, ally with or assimilate all provinces of Ulthuan:
@@ -71,9 +67,7 @@
 ### Har Ganeth
 
 * **Short Victory Conditions**:
-	* Conquer, ally with or assimilate all provinces of Ulthuan:
-	    * Eataine, Yvresse, Saphery, Cothique, Avelorn, Chrace, Nagarythe, Ellyrion, Tiranoc, Caledor, Eagle Gate, 
-	    Griffon Gate, Unicorn Gate, Phoenix Gate
+	* Conquer Gaean Vale
 	* Destroy factions:
 	    * Nagarythe, Avelorn, Ghrond
 	* Construct 2 of the following special buildings:
@@ -88,7 +82,7 @@
 	    * Eataine, Yvresse, Saphery, Cothique, Avelorn, Chrace, Nagarythe, Ellyrion, Tiranoc, Caledor, Eagle Gate, 
 	    Griffon Gate, Unicorn Gate, Phoenix Gate
 	* Destroy factions:
-	    * Nagarythe, Avelorn, Ghrond, Cult of Pleasure, Bretonnia, Norsca
+	    * Nagarythe, Avelorn, Ghrond, Cult of Pleasure, Norsca
 	* Construct the following special buildings:
 	    * Palace of Hellebron, Fiery Pits of Sacrifice, Shrine of Widowmaker, Vandalised Court of the 
 	    Everqueen
@@ -103,7 +97,7 @@
 	* Complete 3 Missions
 	* Capture 15000 battle captives
 	* Destroy factions:
-	    * Clan Eshin, Greenskins, Karak Azul, Dwarfs 
+	    * Clan Eshin, Karak Azul, Knights of Caledor, Last Defenders, Court of Lybaras
 	* Own at least 15 of the following units:
 	    * Ganeth Executioners, Black Dragon, Cold One Knights, Bloodwrack Shrine, War Hydra, Chill of Sontar, Bloodwrack 
 	    Medusa, Blades of the Blood Queen
@@ -111,8 +105,7 @@
 	* Complete 5 Missions
 	* Capture 30000 battle captives
 	* Destroy factions:
-	    * Clan Eshin, Greenskins, Karak Azul, Last Defenders, Empire, Clan Pestilens, Dwarfs, Eataine, Hexoatl
+	    * Clan Eshin, Greenskins, Karak Azul, Knights of Caledor, Last Defenders, Dwarfs, Court of Lybaras
 	* Own at least 30 of the following units:
 	    * Ganeth Executioners, Black Dragon, Cold One Knights, Bloodwrack Shrine, War Hydra, Chill of Sontar, Bloodwrack 
 	    Medusa, Blades of the Blood Queen
-	* Control 18 provinces
